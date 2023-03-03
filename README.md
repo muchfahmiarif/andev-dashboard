@@ -15,8 +15,8 @@ Andev dashboard adalah web apps yang dibuat untuk memudahkan pengguna dalam meng
 - [ ] Halaman pembuka
 - [ ] Diagram schema database dengan [drawsql](https://drawsql.app/)
 - [ ] Wireframe
-- [ ] Fitur lupa password dengan [elasticemail](https://elasticemail.com/)
-- [ ] Fitur login
+- [x] Fitur lupa password dengan [elasticemail](https://elasticemail.com/)
+- [x] Fitur login
 - [ ] 3 level user (admin, user dan guest)
 - [ ] Dokumentasi jelas dan lengkap
 
