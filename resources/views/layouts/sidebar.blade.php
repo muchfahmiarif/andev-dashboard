@@ -3,6 +3,11 @@
     <a href="#" class="sidebar-brand">
       Andev <span>Dash</span>
     </a>
+    <div class="sidebar-toggler not-active">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
   <div class="sidebar-body">
     <ul class="nav">
