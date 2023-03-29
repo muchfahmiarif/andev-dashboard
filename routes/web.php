@@ -25,7 +25,7 @@ Auth::routes();
 // Route::get('/users', [UsersController::class, 'index'])->name('users.index');
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/registered', [HomeController::class, 'index'])->name('home');
     Route::get('/users', [UsersController::class, 'index'])->name('users.index');
 });
 
@@ -33,8 +33,8 @@ Route::middleware(['auth'])->group(function () {
 //     return view('dashboard');
 // })->middleware(['auth'])->name('dashboard');
 
-Route::get('/dashboard', function() {
-    return view('dashboard');
+Route::get('/home', function() {
+    return view('home');
 });
 
 Route::group(['prefix' => 'report-analysis'], function () {
@@ -54,4 +54,27 @@ Route::group(['prefix' => 'lka'], function () {
 Route::group(['prefix' => 'jadwal-stabilita'], function () {
     Route::get('ss-1', function () { return view('pages.jadwal-stabilita.ss-1'); });
     Route::get('ss-2', function () { return view('pages.jadwal-stabilita.ss-2'); });
+});
+
+Route::get('/dashboard', function() {
+    return view('dashboard.index');
+});
+
+Route::group(['prefix' => 'dashboard/report-analysis'], function () {
+    Route::get('finish-good', function () { return view('dashboard.pages.report-analysis.finish-good'); });
+    Route::get('raw-material', function () { return view('dashboard.pages.report-analysis.raw-material'); });
+    Route::get('stabilita', function () { return view('dashboard.pages.report-analysis.stabilita'); });
+    Route::get('mikrobiologi', function () { return view('dashboard.pages.report-analysis.mikrobiologi'); });
+});
+
+Route::group(['prefix' => 'dashboard/lka'], function () {
+    Route::get('finish-good', function () { return view('dashboard.pages.lka.finish-good'); });
+    Route::get('raw-material', function () { return view('dashboard.pages.lka.raw-material'); });
+    Route::get('stabilita', function () { return view('dashboard.pages.lka.stabilita'); });
+    Route::get('mikrobiologi', function () { return view('dashboard.pages.lka.mikrobiologi'); });
+});
+
+Route::group(['prefix' => 'dashboard/jadwal-stabilita'], function () {
+    Route::get('ss-1', function () { return view('dashboard.pages.jadwal-stabilita.ss-1'); });
+    Route::get('ss-2', function () { return view('dashboard.pages.jadwal-stabilita.ss-2'); });
 });

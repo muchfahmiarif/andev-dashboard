@@ -7,8 +7,8 @@
 @section('content')
   <nav class="hstack gap-3">
     <div class="ms-auto">
-      <button class="btn btn-primary">
-        Add Report
+      <button class="btn btn-outline-primary">
+        Upload File
       </button>
     </div>
     <div class="vr"></div>
@@ -28,6 +28,7 @@
         <option value="3">November</option>
         <option value="3">Desember</option>
       </select>
+      <a href="#" class="btn btn-primary btn-sm text-white mt-2 d-block">Terapkan Bulan</a>
     </div>
     <div class="vr"></div>
     <div class="col-lg-1 text-center">
@@ -42,6 +43,7 @@
         <option value="3">2029</option>
         <option value="3">2030</option>
       </select>
+      <a href="#" class="btn btn-primary btn-sm text-white mt-2 d-block">Terapkan Tahun</a>
     </div>
   </nav>
 
@@ -51,1600 +53,185 @@
         <table id="example" class="table hover stripe" >
           <thead>
             <tr>
-              <th>No</th>
-              <th>Nama Produk</th>
-              <th>No. Bets</th>
-              <th>Tanggal Mulai Stabtest</th>
-              <th>Tanggal Pemeriksaan</th>
-              <th>Bulan Ke</th>
-              <th>Kondisi</th>
-              <th>Parameter</th>
-              <th>Keterangan</th>
-              <th>Formulator</th>
-              <th>Analisa By</th>
-              <th>Tanggal Jatuh Tempo</th>
-              <th>Spek Pemerian</th>
-              <th>Spek pH</th>
-              <th>Spek Visko</th>
-              <th>Spek BJ</th>
-              <th>Hasil</th>
-              <th>Action</th>
-              <th>Timestamps</th>
+              <th class="text-center">No</th>
+              <th class="text-center">Nama Produk</th>
+              <th class="text-center">No. Bets</th>
+              <th class="text-center">Tanggal Mulai Stabtest</th>
+              <th class="text-center">Tanggal Pemeriksaan</th>
+              <th class="text-center">Bulan Ke</th>
+              <th class="text-center">Kondisi</th>
+              <th class="text-center">Parameter</th>
+              <th class="text-center">Keterangan</th>
+              <th class="text-center">Formulator</th>
+              <th class="text-center">Analisa By</th>
+              <th class="text-center">Tanggal Jatuh Tempo</th>
+              <th class="text-center">Spek Pemerian</th>
+              <th class="text-center">Spek pH</th>
+              <th class="text-center">Spek Visko</th>
+              <th class="text-center">Spek BJ</th>
+              <th class="text-center">Hasil</th>
+              <th class="text-center">Action</th>
+              <th class="text-center">Timestamps</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
+              <td class="align-center">1</td>
+              <td class="align-center">Aza 20 Cream</td>
+              <td class="align-center">TC229S</td>
+              <td class="align-center">01-Des-23</td>
+              <td class="align-center">01-Des-23</td>
+              <td class="align-center">6</td>
+              <td class="align-center">SK, SO</td>
+              <td class="align-center">ph, visko</td>
+              <td class="align-center">Scale Up</td>
+              <td class="align-center">Saputf</td>
+              <td class="align-center">Andev</td>
+              <td class="align-center">01-Des-23</td>
+              <td class="align-center">Cairan, Kental, Tidak berwarna</td>
+              <td class="align-center">5,0 - 6,5</td>
+              <td class="align-center">15.000 – 45.000 cps
                 Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
+              <td class="align-center">Pendataan</td>
+              <td class="align-center">...</td>
               <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
+                <a href="#" class="text-decoration-none btn btn-warning btn-sm"><i data-feather="edit" class="text-dark"></i></a>
+                <button class="btn btn-danger btn-sm">
+                  <i data-feather="trash" class="text-dark"></i>
+                </button>
               </td>
-              <td>2 days ago</td>
+              <td class="align-center">2 days ago</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
+              <td class="align-center">1</td>
+              <td class="align-center">Aza 20 Cream</td>
+              <td class="align-center">TC229S</td>
+              <td class="align-center">01-Des-23</td>
+              <td class="align-center">01-Des-23</td>
+              <td class="align-center">6</td>
+              <td class="align-center">SK, SO</td>
+              <td class="align-center">ph, visko</td>
+              <td class="align-center">Scale Up</td>
+              <td class="align-center">Saputf</td>
+              <td class="align-center">Andev</td>
+              <td class="align-center">01-Des-23</td>
+              <td class="align-center">Cairan, Kental, Tidak berwarna</td>
+              <td class="align-center">5,0 - 6,5</td>
+              <td class="align-center">15.000 – 45.000 cps
                 Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
+              <td class="align-center">Pendataan</td>
+              <td class="align-center">...</td>
               <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
+                <a href="#" class="text-decoration-none btn btn-warning btn-sm"><i data-feather="edit" class="text-dark"></i></a>
+                <button class="btn btn-danger btn-sm">
+                  <i data-feather="trash" class="text-dark"></i>
+                </button>
               </td>
-              <td>2 days ago</td>
+              <td class="align-center">2 days ago</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
+              <td class="align-center">1</td>
+              <td class="align-center">Aza 20 Cream</td>
+              <td class="align-center">TC229S</td>
+              <td class="align-center">01-Des-23</td>
+              <td class="align-center">01-Des-23</td>
+              <td class="align-center">6</td>
+              <td class="align-center">SK, SO</td>
+              <td class="align-center">ph, visko</td>
+              <td class="align-center">Scale Up</td>
+              <td class="align-center">Saputf</td>
+              <td class="align-center">Andev</td>
+              <td class="align-center">01-Des-23</td>
+              <td class="align-center">Cairan, Kental, Tidak berwarna</td>
+              <td class="align-center">5,0 - 6,5</td>
+              <td class="align-center">15.000 – 45.000 cps
                 Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
+              <td class="align-center">Pendataan</td>
+              <td class="align-center">...</td>
               <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
+                <a href="#" class="text-decoration-none btn btn-warning btn-sm"><i data-feather="edit" class="text-dark"></i></a>
+                <button class="btn btn-danger btn-sm">
+                  <i data-feather="trash" class="text-dark"></i>
+                </button>
               </td>
-              <td>2 days ago</td>
+              <td class="align-center">2 days ago</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
+              <td class="align-center">1</td>
+              <td class="align-center">Aza 20 Cream</td>
+              <td class="align-center">TC229S</td>
+              <td class="align-center">01-Des-23</td>
+              <td class="align-center">01-Des-23</td>
+              <td class="align-center">6</td>
+              <td class="align-center">SK, SO</td>
+              <td class="align-center">ph, visko</td>
+              <td class="align-center">Scale Up</td>
+              <td class="align-center">Saputf</td>
+              <td class="align-center">Andev</td>
+              <td class="align-center">01-Des-23</td>
+              <td class="align-center">Cairan, Kental, Tidak berwarna</td>
+              <td class="align-center">5,0 - 6,5</td>
+              <td class="align-center">15.000 – 45.000 cps
                 Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
+              <td class="align-center">Pendataan</td>
+              <td class="align-center">...</td>
               <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
+                <a href="#" class="text-decoration-none btn btn-warning btn-sm"><i data-feather="edit" class="text-dark"></i></a>
+                <button class="btn btn-danger btn-sm">
+                  <i data-feather="trash" class="text-dark"></i>
+                </button>
               </td>
-              <td>2 days ago</td>
+              <td class="align-center">2 days ago</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
+              <td class="align-center">1</td>
+              <td class="align-center">Aza 20 Cream</td>
+              <td class="align-center">TC229S</td>
+              <td class="align-center">01-Des-23</td>
+              <td class="align-center">01-Des-23</td>
+              <td class="align-center">6</td>
+              <td class="align-center">SK, SO</td>
+              <td class="align-center">ph, visko</td>
+              <td class="align-center">Scale Up</td>
+              <td class="align-center">Saputf</td>
+              <td class="align-center">Andev</td>
+              <td class="align-center">01-Des-23</td>
+              <td class="align-center">Cairan, Kental, Tidak berwarna</td>
+              <td class="align-center">5,0 - 6,5</td>
+              <td class="align-center">15.000 – 45.000 cps
                 Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
+              <td class="align-center">Pendataan</td>
+              <td class="align-center">...</td>
               <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
+                <a href="#" class="text-decoration-none btn btn-warning btn-sm"><i data-feather="edit" class="text-dark"></i></a>
+                <button class="btn btn-danger btn-sm">
+                  <i data-feather="trash" class="text-dark"></i>
+                </button>
               </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Aza 20 Cream</td>
-              <td>TC229S</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>6</td>
-              <td>SK, SO</td>
-              <td>ph, visko</td>
-              <td>Scale Up</td>
-              <td>Saputf</td>
-              <td>Andev</td>
-              <td>01-Des-23</td>
-              <td>Cairan, Kental, Tidak berwarna</td>
-              <td>5,0 - 6,5</td>
-              <td>15.000 – 45.000 cps
-                Brookfield type RVDV II + pro, Sp. 06, 20 rpm, T:25 ± 0,5 ̊C, t : 1 menit</td>
-              <td>Pendataan</td>
-              <td></td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
+              <td class="align-center">2 days ago</td>
             </tr>
           </tbody>
           <tfoot>
             <tr>
-              <th>No</th>
-              <th>Nama Produk</th>
-              <th>No. Bets</th>
-              <th>Tanggal Mulai Stabtest</th>
-              <th>Tanggal Pemeriksaan</th>
-              <th>Bulan Ke</th>
-              <th>Kondisi</th>
-              <th>Parameter</th>
-              <th>Keterangan</th>
-              <th>Formulator</th>
-              <th>Analisa By</th>
-              <th>Tanggal Jatuh Tempo</th>
-              <th>Spek Pemerian</th>
-              <th>Spek pH</th>
-              <th>Spek Visko</th>
-              <th>Spek BJ</th>
-              <th>Hasil</th>
-              <th>Action</th>
-              <th>Timestamps</th>
+              <th class="text-center">No</th>
+              <th class="text-center">Nama Produk</th>
+              <th class="text-center">No. Bets</th>
+              <th class="text-center">Tanggal Mulai Stabtest</th>
+              <th class="text-center">Tanggal Pemeriksaan</th>
+              <th class="text-center">Bulan Ke</th>
+              <th class="text-center">Kondisi</th>
+              <th class="text-center">Parameter</th>
+              <th class="text-center">Keterangan</th>
+              <th class="text-center">Formulator</th>
+              <th class="text-center">Analisa By</th>
+              <th class="text-center">Tanggal Jatuh Tempo</th>
+              <th class="text-center">Spek Pemerian</th>
+              <th class="text-center">Spek pH</th>
+              <th class="text-center">Spek Visko</th>
+              <th class="text-center">Spek BJ</th>
+              <th class="text-center">Hasil</th>
+              <th class="text-center">Action</th>
+              <th class="text-center">Timestamps</th>
             </tr>
           </tfoot>
         </table>

@@ -7,7 +7,7 @@
 @section('content')
 <nav class="hstack gap-3">
   <div class=" text-center ms-auto">
-    <button class="btn btn-primary">
+    <button class="btn btn-outline-primary">
       Add Lembar Kerja Analisa
     </button>
   </div>
@@ -19,806 +19,96 @@
         <table id="example" class="table hover stripe" >
           <thead>
             <tr>
-              <th>No</th>
-              <th>Nama Item</th>
-              <th>No. LKA</th>
-              <th>Tahun Terbit</th>
-              <th>Keterangan</th>
-              <th>Action</th>
-              <th>Timestamps</th>
+              <th class="text-center">No</th>
+              <th class="text-center">Nama Item</th>
+              <th class="text-center">No. LKA</th>
+              <th class="text-center">Tahun Terbit</th>
+              <th class="text-center">Keterangan</th>
+              <th class="text-center">Action</th>
+              <th class="text-center">Timestamps</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
+              <td class="align-middle">1</td>
+              <td class="align-middle">Glycerin</td>
+              <td class="align-middle">J.001.A.23</td>
+              <td class="align-middle">2019</td>
+              <td class="align-middle">Tidak ada keterangan</td>
               <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
+                <a href="#" class="text-decoration-none btn btn-warning btn-sm"><i data-feather="edit" class="text-dark"></i></a>
+                <button class="btn btn-danger btn-sm">
+                  <i data-feather="trash" class="text-dark"></i>
+                </button>
               </td>
-              <td>2 days ago</td>
+              <td class="align-middle">2 days ago</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
+              <td class="align-middle">1</td>
+              <td class="align-middle">Glycerin</td>
+              <td class="align-middle">J.001.A.23</td>
+              <td class="align-middle">2019</td>
+              <td class="align-middle">Tidak ada keterangan</td>
               <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
+                <a href="#" class="text-decoration-none btn btn-warning btn-sm"><i data-feather="edit" class="text-dark"></i></a>
+                <button class="btn btn-danger btn-sm">
+                  <i data-feather="trash" class="text-dark"></i>
+                </button>
               </td>
-              <td>2 days ago</td>
+              <td class="align-middle">2 days ago</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
+              <td class="align-middle">1</td>
+              <td class="align-middle">Glycerin</td>
+              <td class="align-middle">J.001.A.23</td>
+              <td class="align-middle">2019</td>
+              <td class="align-middle">Tidak ada keterangan</td>
               <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
+                <a href="#" class="text-decoration-none btn btn-warning btn-sm"><i data-feather="edit" class="text-dark"></i></a>
+                <button class="btn btn-danger btn-sm">
+                  <i data-feather="trash" class="text-dark"></i>
+                </button>
               </td>
-              <td>2 days ago</td>
+              <td class="align-middle">2 days ago</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
+              <td class="align-middle">1</td>
+              <td class="align-middle">Glycerin</td>
+              <td class="align-middle">J.001.A.23</td>
+              <td class="align-middle">2019</td>
+              <td class="align-middle">Tidak ada keterangan</td>
               <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
+                <a href="#" class="text-decoration-none btn btn-warning btn-sm"><i data-feather="edit" class="text-dark"></i></a>
+                <button class="btn btn-danger btn-sm">
+                  <i data-feather="trash" class="text-dark"></i>
+                </button>
               </td>
-              <td>2 days ago</td>
+              <td class="align-middle">2 days ago</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
+              <td class="align-middle">1</td>
+              <td class="align-middle">Glycerin</td>
+              <td class="align-middle">J.001.A.23</td>
+              <td class="align-middle">2019</td>
+              <td class="align-middle">Tidak ada keterangan</td>
               <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
+                <a href="#" class="text-decoration-none btn btn-warning btn-sm"><i data-feather="edit" class="text-dark"></i></a>
+                <button class="btn btn-danger btn-sm">
+                  <i data-feather="trash" class="text-dark"></i>
+                </button>
               </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Glycerin</td>
-              <td>J.001.A.23</td>
-              <td>2019</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
+              <td class="align-middle">2 days ago</td>
             </tr>
           </tbody>
           <tfoot>
             <tr>
-              <th>No</th>
-              <th>Nama Item</th>
-              <th>No. LKA</th>
-              <th>Tahun Terbit</th>
-              <th>Keterangan</th>
-              <th>Action</th>
-              <th>Timestamps</th>
+              <th class="text-center">No</th>
+              <th class="text-center">Nama Item</th>
+              <th class="text-center">No. LKA</th>
+              <th class="text-center">Tahun Terbit</th>
+              <th class="text-center">Keterangan</th>
+              <th class="text-center">Action</th>
+              <th class="text-center">Timestamps</th>
             </tr>
           </tfoot>
         </table>

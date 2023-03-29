@@ -7,7 +7,7 @@
 @section('content')
   <nav class="hstack gap-3">
     <div class="ms-auto">
-      <button class="btn btn-primary">
+      <button class="btn btn-outline-primary">
         Add Report
       </button>
     </div>
@@ -28,6 +28,7 @@
         <option value="3">November</option>
         <option value="3">Desember</option>
       </select>
+      <a href="#" class="btn btn-primary btn-sm text-white mt-2 d-block">Terapkan Bulan</a>
     </div>
     <div class="vr"></div>
     <div class="col-lg-1 text-center">
@@ -42,686 +43,332 @@
         <option value="3">2029</option>
         <option value="3">2030</option>
       </select>
+      <a href="#" class="btn btn-primary btn-sm text-white mt-2 d-block">Terapkan Tahun</a>
     </div>
   </nav>
 
   <div class="container">
     <div class="card mt-5">
       <div class="card-body">
-        <table id="example" class="table hover stripe" >
+        <table id="example" class="table hover stripe align-midle" >
           <thead>
             <tr>
-              <th>No</th>
-              <th>No. Permintaan Analisa</th>
-              <th>No. Laporan Analisa</th>
-              <th>Nama Item</th>
-              <th>Kategori</th>
-              <th>PIC</th>
-              <th>No. Bets</th>
-              <th>Bulan</th>
-              <th>Parameter</th>
-              <th>Storage</th>
-              <th>Tgl Masuk</th>
-              <th>Tgl Estimasi Selesai</th>
-              <th>Tgl Analisa</th>
-              <th>Tgl Selesai Analisa</th>
-              <th>Nama Analis</th>
-              <th>Download File</th>
-              <th>Status</th>
-              <th>Keterangan</th>
-              <th>Action</th>
-              <th>Timestamps</th>
+              <th class="text-center">No</th>
+              <th class="text-center">No. Permintaan Analisa</th>
+              <th class="text-center">No. Laporan Analisa</th>
+              <th class="text-center">Nama Item</th>
+              <th class="text-center">Kategori</th>
+              <th class="text-center">PIC</th>
+              <th class="text-center">No. Bets</th>
+              <th class="text-center">Bulan</th>
+              <th class="text-center">Parameter</th>
+              <th class="text-center">Storage</th>
+              <th class="text-center">Tgl Masuk</th>
+              <th class="text-center">Tgl Estimasi Selesai</th>
+              <th class="text-center">Tgl Analisa</th>
+              <th class="text-center">Tgl Selesai Analisa</th>
+              <th class="text-center">Nama Analis</th>
+              <th class="text-center">Download File</th>
+              <th class="text-center">Status</th>
+              <th class="text-center">Keterangan</th>
+              <th class="text-center">Action</th>
+              <th class="text-center">Timestamps</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
+              <td class="align-middle">1</td>
+              <td class="align-middle">FG.001.A.23</td>
+              <td class="align-middle">J.001.A.23</td>
+              <td class="align-middle">Aza 20 Cream</td>
+              <td class="align-middle">Obat</td>
+              <td class="align-middle">Fahmi</td>
+              <td class="align-middle">TJ112S</td>
+              <td class="align-middle">B12</td>
+              <td class="align-middle">ph, visko</td>
+              <td class="align-middle">SK, SO</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">Wahyu</td>
+              <td class="align-middle">Disini</td>
+              <td class="align-middle">MS</td>
+              <td class="align-middle">Tidak ada keterangan</td>
               <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
+                <a href="#" class="text-decoration-none btn btn-warning btn-sm"><i data-feather="edit" class="text-dark"></i></a>
+                <button class="btn btn-danger btn-sm">
+                  <i data-feather="trash" class="text-dark"></i>
+                </button>
               </td>
-              <td>2 days ago</td>
+              <td class="align-middle">2 days ago</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
+              <td class="align-middle">1</td>
+              <td class="align-middle">FG.001.A.23</td>
+              <td class="align-middle">J.001.A.23</td>
+              <td class="align-middle">Aza 20 Cream</td>
+              <td class="align-middle">Obat</td>
+              <td class="align-middle">Fahmi</td>
+              <td class="align-middle">TJ112S</td>
+              <td class="align-middle">B12</td>
+              <td class="align-middle">ph, visko</td>
+              <td class="align-middle">SK, SO</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">Wahyu</td>
+              <td class="align-middle">Disini</td>
+              <td class="align-middle">MS</td>
+              <td class="align-middle">Tidak ada keterangan</td>
               <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
+                <a href="#" class="text-decoration-none btn btn-warning btn-sm"><i data-feather="edit" class="text-dark"></i></a>
+                <button class="btn btn-danger btn-sm">
+                  <i data-feather="trash" class="text-dark"></i>
+                </button>
               </td>
-              <td>2 days ago</td>
+              <td class="align-middle">2 days ago</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
+              <td class="align-middle">1</td>
+              <td class="align-middle">FG.001.A.23</td>
+              <td class="align-middle">J.001.A.23</td>
+              <td class="align-middle">Aza 20 Cream</td>
+              <td class="align-middle">Obat</td>
+              <td class="align-middle">Fahmi</td>
+              <td class="align-middle">TJ112S</td>
+              <td class="align-middle">B12</td>
+              <td class="align-middle">ph, visko</td>
+              <td class="align-middle">SK, SO</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">Wahyu</td>
+              <td class="align-middle">Disini</td>
+              <td class="align-middle">MS</td>
+              <td class="align-middle">Tidak ada keterangan</td>
               <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
+                <a href="#" class="text-decoration-none btn btn-warning btn-sm"><i data-feather="edit" class="text-dark"></i></a>
+                <button class="btn btn-danger btn-sm">
+                  <i data-feather="trash" class="text-dark"></i>
+                </button>
               </td>
-              <td>2 days ago</td>
+              <td class="align-middle">2 days ago</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
+              <td class="align-middle">1</td>
+              <td class="align-middle">FG.001.A.23</td>
+              <td class="align-middle">J.001.A.23</td>
+              <td class="align-middle">Aza 20 Cream</td>
+              <td class="align-middle">Obat</td>
+              <td class="align-middle">Fahmi</td>
+              <td class="align-middle">TJ112S</td>
+              <td class="align-middle">B12</td>
+              <td class="align-middle">ph, visko</td>
+              <td class="align-middle">SK, SO</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">Wahyu</td>
+              <td class="align-middle">Disini</td>
+              <td class="align-middle">MS</td>
+              <td class="align-middle">Tidak ada keterangan</td>
               <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
+                <a href="#" class="text-decoration-none btn btn-warning btn-sm"><i data-feather="edit" class="text-dark"></i></a>
+                <button class="btn btn-danger btn-sm">
+                  <i data-feather="trash" class="text-dark"></i>
+                </button>
               </td>
-              <td>2 days ago</td>
+              <td class="align-middle">2 days ago</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
+              <td class="align-middle">1</td>
+              <td class="align-middle">FG.001.A.23</td>
+              <td class="align-middle">J.001.A.23</td>
+              <td class="align-middle">Aza 20 Cream</td>
+              <td class="align-middle">Obat</td>
+              <td class="align-middle">Fahmi</td>
+              <td class="align-middle">TJ112S</td>
+              <td class="align-middle">B12</td>
+              <td class="align-middle">ph, visko</td>
+              <td class="align-middle">SK, SO</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">Wahyu</td>
+              <td class="align-middle">Disini</td>
+              <td class="align-middle">MS</td>
+              <td class="align-middle">Tidak ada keterangan</td>
               <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
+                <a href="#" class="text-decoration-none btn btn-warning btn-sm"><i data-feather="edit" class="text-dark"></i></a>
+                <button class="btn btn-danger btn-sm">
+                  <i data-feather="trash" class="text-dark"></i>
+                </button>
               </td>
-              <td>2 days ago</td>
+              <td class="align-middle">2 days ago</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
+              <td class="align-middle">1</td>
+              <td class="align-middle">FG.001.A.23</td>
+              <td class="align-middle">J.001.A.23</td>
+              <td class="align-middle">Aza 20 Cream</td>
+              <td class="align-middle">Obat</td>
+              <td class="align-middle">Fahmi</td>
+              <td class="align-middle">TJ112S</td>
+              <td class="align-middle">B12</td>
+              <td class="align-middle">ph, visko</td>
+              <td class="align-middle">SK, SO</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">Wahyu</td>
+              <td class="align-middle">Disini</td>
+              <td class="align-middle">MS</td>
+              <td class="align-middle">Tidak ada keterangan</td>
               <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
+                <a href="#" class="text-decoration-none btn btn-warning btn-sm"><i data-feather="edit" class="text-dark"></i></a>
+                <button class="btn btn-danger btn-sm">
+                  <i data-feather="trash" class="text-dark"></i>
+                </button>
               </td>
-              <td>2 days ago</td>
+              <td class="align-middle">2 days ago</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
+              <td class="align-middle">1</td>
+              <td class="align-middle">FG.001.A.23</td>
+              <td class="align-middle">J.001.A.23</td>
+              <td class="align-middle">Aza 20 Cream</td>
+              <td class="align-middle">Obat</td>
+              <td class="align-middle">Fahmi</td>
+              <td class="align-middle">TJ112S</td>
+              <td class="align-middle">B12</td>
+              <td class="align-middle">ph, visko</td>
+              <td class="align-middle">SK, SO</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">Wahyu</td>
+              <td class="align-middle">Disini</td>
+              <td class="align-middle">MS</td>
+              <td class="align-middle">Tidak ada keterangan</td>
               <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
+                <a href="#" class="text-decoration-none btn btn-warning btn-sm"><i data-feather="edit" class="text-dark"></i></a>
+                <button class="btn btn-danger btn-sm">
+                  <i data-feather="trash" class="text-dark"></i>
+                </button>
               </td>
-              <td>2 days ago</td>
+              <td class="align-middle">2 days ago</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
+              <td class="align-middle">1</td>
+              <td class="align-middle">FG.001.A.23</td>
+              <td class="align-middle">J.001.A.23</td>
+              <td class="align-middle">Aza 20 Cream</td>
+              <td class="align-middle">Obat</td>
+              <td class="align-middle">Fahmi</td>
+              <td class="align-middle">TJ112S</td>
+              <td class="align-middle">B12</td>
+              <td class="align-middle">ph, visko</td>
+              <td class="align-middle">SK, SO</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">Wahyu</td>
+              <td class="align-middle">Disini</td>
+              <td class="align-middle">MS</td>
+              <td class="align-middle">Tidak ada keterangan</td>
               <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
+                <a href="#" class="text-decoration-none btn btn-warning btn-sm"><i data-feather="edit" class="text-dark"></i></a>
+                <button class="btn btn-danger btn-sm">
+                  <i data-feather="trash" class="text-dark"></i>
+                </button>
               </td>
-              <td>2 days ago</td>
+              <td class="align-middle">2 days ago</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
+              <td class="align-middle">1</td>
+              <td class="align-middle">FG.001.A.23</td>
+              <td class="align-middle">J.001.A.23</td>
+              <td class="align-middle">Aza 20 Cream</td>
+              <td class="align-middle">Obat</td>
+              <td class="align-middle">Fahmi</td>
+              <td class="align-middle">TJ112S</td>
+              <td class="align-middle">B12</td>
+              <td class="align-middle">ph, visko</td>
+              <td class="align-middle">SK, SO</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">Wahyu</td>
+              <td class="align-middle">Disini</td>
+              <td class="align-middle">MS</td>
+              <td class="align-middle">Tidak ada keterangan</td>
               <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
+                <a href="#" class="text-decoration-none btn btn-warning btn-sm"><i data-feather="edit" class="text-dark"></i></a>
+                <button class="btn btn-danger btn-sm">
+                  <i data-feather="trash" class="text-dark"></i>
+                </button>
               </td>
-              <td>2 days ago</td>
+              <td class="align-middle">2 days ago</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
+              <td class="align-middle">1</td>
+              <td class="align-middle">FG.001.A.23</td>
+              <td class="align-middle">J.001.A.23</td>
+              <td class="align-middle">Aza 20 Cream</td>
+              <td class="align-middle">Obat</td>
+              <td class="align-middle">Fahmi</td>
+              <td class="align-middle">TJ112S</td>
+              <td class="align-middle">B12</td>
+              <td class="align-middle">ph, visko</td>
+              <td class="align-middle">SK, SO</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">01-Des-23</td>
+              <td class="align-middle">Wahyu</td>
+              <td class="align-middle">Disini</td>
+              <td class="align-middle">MS</td>
+              <td class="align-middle">Tidak ada keterangan</td>
               <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
+                <a href="#" class="text-decoration-none btn btn-warning btn-sm"><i data-feather="edit" class="text-dark"></i></a>
+                <button class="btn btn-danger btn-sm">
+                  <i data-feather="trash" class="text-dark"></i>
+                </button>
               </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>FG.001.A.23</td>
-              <td>J.001.A.23</td>
-              <td>Aza 20 Cream</td>
-              <td>Obat</td>
-              <td>Fahmi</td>
-              <td>TJ112S</td>
-              <td>B12</td>
-              <td>ph, visko</td>
-              <td>SK, SO</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>01-Des-23</td>
-              <td>Wahyu</td>
-              <td>Disini</td>
-              <td>MS</td>
-              <td>Tidak ada keterangan</td>
-              <td>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </td>
-              <td>2 days ago</td>
+              <td class="align-middle">2 days ago</td>
             </tr>
           </tbody>
           <tfoot>
             <tr>
-              <th>No</th>
-              <th>No. Permintaan Analisa</th>
-              <th>No. Laporan Analisa</th>
-              <th>Nama Item</th>
-              <th>Kategori</th>
-              <th>PIC</th>
-              <th>No. Bets</th>
-              <th>Bulan</th>
-              <th>Parameter</th>
-              <th>Storage</th>
-              <th>Tgl Masuk</th>
-              <th>Tgl Estimasi Selesai</th>
-              <th>Tgl Analisa</th>
-              <th>Tgl Selesai Analisa</th>
-              <th>Nama Analis</th>
-              <th>Download File</th>
-              <th>Status</th>
-              <th>Keterangan</th>
-              <th>Action</th>
-              <th>Timestamps</th>
+              <th class="text-center">No</th>
+              <th class="text-center">No. Permintaan Analisa</th>
+              <th class="text-center">No. Laporan Analisa</th>
+              <th class="text-center">Nama Item</th>
+              <th class="text-center">Kategori</th>
+              <th class="text-center">PIC</th>
+              <th class="text-center">No. Bets</th>
+              <th class="text-center">Bulan</th>
+              <th class="text-center">Parameter</th>
+              <th class="text-center">Storage</th>
+              <th class="text-center">Tgl Masuk</th>
+              <th class="text-center">Tgl Estimasi Selesai</th>
+              <th class="text-center">Tgl Analisa</th>
+              <th class="text-center">Tgl Selesai Analisa</th>
+              <th class="text-center">Nama Analis</th>
+              <th class="text-center">Download File</th>
+              <th class="text-center">Status</th>
+              <th class="text-center">Keterangan</th>
+              <th class="text-center">Action</th>
+              <th class="text-center">Timestamps</th>
             </tr>
           </tfoot>
         </table>
