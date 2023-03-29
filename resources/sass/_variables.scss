@@ -1,7 +1,28 @@
-// Body
-$body-bg: #f8fafc;
+// --- Bootstrap Theme Colors --- //
+//
+$primary: #6571ff !default;
+$secondary: #7987a1 !default;
+$success: #05a34a !default;
+$info: #66d1d1 !default;
+$warning: #fbbc06 !default;
+$danger: #ff3366 !default;
+$light: #e9ecef !default;
+$dark: #060c17 !default;
+//
+// --- Bootstrap Theme Colors --- //
 
-// Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+// Social colors
+$social-colors: (
+    "facebook": #3b5998,
+    "twitter": #1da1f2,
+    "google": #dc4e41,
+    "youtube": #f00,
+    "vimeo": #1ab7ea,
+    "dribbble": #ea4c89,
+    "github": #181717,
+    "instagram": #e4405f,
+    "pinterest": #bd081c,
+    "flickr": #0063dc,
+    "bitbucket": #0052cc,
+    "linkedin": #0077b5,
+) !default;

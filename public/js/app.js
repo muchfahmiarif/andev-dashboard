@@ -4,6 +4,19 @@ const sidebarHeaderToggler = document.querySelector(
     ".sidebar-header .sidebar-toggler"
 );
 const body = document.body;
+let sidebar = document.querySelector(".sidebar");
+const settingsSidebarToggler = document.querySelector(
+    ".settings-sidebar-toggler"
+);
+const sidebarThemeSettings = document.querySelectorAll(
+    'input[name="sidebarThemeSettings"]'
+);
+var horizontalMenuToggle = document.querySelector(
+    '[data-toggle="horizontal-menu-toggle"]'
+);
+var navItems = document.querySelectorAll(
+    ".horizontal-menu .page-navigation >.nav-item"
+);
 
 // Sidebar toggle to sidebar-folded
 sidebarToggler.addEventListener("click", function (e) {
@@ -33,9 +46,6 @@ sidebarBody.addEventListener("mouseleave", function () {
 });
 
 // Settings sidebar toggle
-const settingsSidebarToggler = document.querySelector(
-    ".settings-sidebar-toggler"
-);
 if (settingsSidebarToggler) {
     settingsSidebarToggler.addEventListener("click", function (e) {
         document.body.classList.toggle("settings-open");
@@ -43,9 +53,6 @@ if (settingsSidebarToggler) {
 }
 
 // Sidebar theme settings
-const sidebarThemeSettings = document.querySelectorAll(
-    'input[name="sidebarThemeSettings"]'
-);
 if (sidebarThemeSettings) {
     sidebarThemeSettings.forEach(function (radio) {
         radio.addEventListener("click", function () {
@@ -85,8 +92,11 @@ if (sidebarBody) {
 // }
 
 // Close other submenu in sidebar on opening any
-sidebar.on("show.bs.collapse", ".collapse", function () {
-    sidebar.find(".collapse.show").collapse("hide");
+sidebar.addEventListener("show.bs.collapse", function (event) {
+    var shownCollapse = sidebar.querySelector(".collapse.show");
+    if (shownCollapse && shownCollapse !== event.target) {
+        shownCollapse.classList.remove("show");
+    }
 });
 
 // Prevent body scrolling while sidebar scroll
@@ -115,9 +125,6 @@ document.addEventListener("click", function (e) {
 });
 
 //Horizontal menu in mobile
-var horizontalMenuToggle = document.querySelector(
-    '[data-toggle="horizontal-menu-toggle"]'
-);
 if (horizontalMenuToggle) {
     horizontalMenuToggle.addEventListener("click", function () {
         var bottomNavbar = document.querySelector(
@@ -128,9 +135,6 @@ if (horizontalMenuToggle) {
 }
 
 // Horizontal menu navigation in mobile menu on click
-var navItems = document.querySelectorAll(
-    ".horizontal-menu .page-navigation >.nav-item"
-);
 navItems.forEach(function (navItem) {
     navItem.addEventListener("click", function (event) {
         if (window.matchMedia("(max-width: 991px)").matches) {

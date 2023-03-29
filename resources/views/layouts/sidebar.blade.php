@@ -1,6 +1,6 @@
 <nav class="sidebar">
   <div class="sidebar-header">
-    <a href="#" class="sidebar-brand">
+    <a href="#" class="sidebar-brand text-decoration-none">
       Andev <span>Dash</span>
     </a>
     <div class="sidebar-toggler not-active">
@@ -126,10 +126,10 @@
         <div class="collapse {{ Request::is(['jadwal-stabilita/*']) ? 'show' : '' }}" id="jadwal-stabilita">
           <ul class="nav sub-menu">
             <li class="nav-item">
-              <a href="{{ url('/jadwal-stabilita/ss1') }}" class="nav-link {{ Request::is(['jadwal-stabilita/ss1']) ? 'active' : '' }}">SS 1</a>
+              <a href="{{ url('/jadwal-stabilita/ss-1') }}" class="nav-link {{ Request::is(['jadwal-stabilita/ss-1']) ? 'active' : '' }}">SS 1</a>
             </li>
             <li class="nav-item">
-              <a href="{{ url('/jadwal-stabilita/ss2') }}" class="nav-link {{ Request::is(['jadwal-stabilita/ss2']) ? 'active' : '' }}">SS 2</a>
+              <a href="{{ url('/jadwal-stabilita/ss-2') }}" class="nav-link {{ Request::is(['jadwal-stabilita/ss-2']) ? 'active' : '' }}">SS 2</a>
             </li>
           </ul>
         </div>

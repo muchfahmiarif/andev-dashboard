@@ -32,14 +32,16 @@
   <link rel="icon" type="image/png" href="{{ asset('ico/favicon-16x16.png') }}" sizes="16x16" />
   <link rel="icon" type="image/png" href="{{ asset('ico/favicon-128.png') }}" sizes="128x128" />
 
+  {{-- Plugin CSS --}}
   @stack('plugin-style')
 
-  {{-- Common css --}}
+  {{-- Common CSS --}}
   <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
   
   @stack('style')
 
-  @vite(['resources/js/app.js', 'resources/css/app.scss'])
+  {{-- Script --}}
+  @vite(['resources/js/app.js'])
 </head>
 <body data-base-url="{{url('/')}}">
   
@@ -56,15 +58,16 @@
     </div>
   </div>
 
-  {{-- Feather Icon --}}
-  <script src="{{ asset('js/feather.min.js') }}"></script>
+  
+  <script src="{{ asset('js/feather-icons/feather.min.js') }}"></script>
+  <script src="{{ asset('plugin/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
+  
+  {{-- Plugin js --}}
+  @stack('plugin-scripts')
+  
+  @stack('custom-scripts')
   
   {{-- Common js --}}
   <script src="{{ asset('js/app.js') }}"></script>
-
-  {{-- Plugin js --}}
-  @stack('plugin-scripts')
-
-  @stack('custom-scripts')
 </body>
 </html>

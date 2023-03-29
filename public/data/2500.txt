@@ -1,0 +1,68 @@
+{
+    "data": [
+        [
+            "1",
+            "FG.001.A.23",
+            "J.001.A.23",
+            "Aza 20 Cream",
+            "Obat1",
+            "Fahmi1",
+            "TJ112S",
+            "B12",
+            "ph, visko1",
+            "SK, SO1",
+            "01-Des-23",
+            "01-Des-23",
+            "01-Des-23",
+            "01-Des-23",
+            "Wahyu1",
+            "Disini1",
+            "MS1",
+            "Tidak ada keterangan1",
+            "1 days ago"
+        ],
+        [
+            "2",
+            "FG.002.A.23",
+            "J.002.A.23",
+            "Aza 21 Cream",
+            "Obat2",
+            "Fahmi2",
+            "TJ113S",
+            "B13",
+            "ph, visko2",
+            "SK, SO2",
+            "02-Des-23",
+            "02-Des-23",
+            "02-Des-23",
+            "02-Des-23",
+            "Wahyu2",
+            "Disini2",
+            "MS2",
+            "Tidak ada keterangan2",
+            "2 days ago"
+        ],
+        [
+            "3",
+            "FG.003.A.23",
+            "J.003.A.23",
+            "Aza 22 Cream",
+            "Obat3",
+            "Fahmi3",
+            "TJ114S",
+            "B14",
+            "ph, visko3",
+            "SK, SO3",
+            "03-Des-23",
+            "03-Des-23",
+            "03-Des-23",
+            "03-Des-23",
+            "Wahyu3",
+            "Disini",
+            "MS3",
+            "Tidak ada keterangan3",
+            "3 days ago"
+        ]
+
+    ]
+}

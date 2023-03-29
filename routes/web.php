@@ -43,3 +43,15 @@ Route::group(['prefix' => 'report-analysis'], function () {
     Route::get('stabilita', function () { return view('pages.report-analysis.stabilita'); });
     Route::get('mikrobiologi', function () { return view('pages.report-analysis.mikrobiologi'); });
 });
+
+Route::group(['prefix' => 'lka'], function () {
+    Route::get('finish-good', function () { return view('pages.lka.finish-good'); });
+    Route::get('raw-material', function () { return view('pages.lka.raw-material'); });
+    Route::get('stabilita', function () { return view('pages.lka.stabilita'); });
+    Route::get('mikrobiologi', function () { return view('pages.lka.mikrobiologi'); });
+});
+
+Route::group(['prefix' => 'jadwal-stabilita'], function () {
+    Route::get('ss-1', function () { return view('pages.jadwal-stabilita.ss-1'); });
+    Route::get('ss-2', function () { return view('pages.jadwal-stabilita.ss-2'); });
+});
