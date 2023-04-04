@@ -58,9 +58,6 @@
             <li class="nav-item">
               <a href="{{ url('/rpv-riv/mikrobiologi') }}" class="nav-link {{ Request::is(['rpv-riv/mikrobiologi']) ? 'active' : '' }}">Mikrobiologi</a>
             </li>
-            <li class="nav-item">
-              <a href="{{ url('/rpv-riv/stabilita') }}" class="nav-link {{ Request::is(['rpv-riv/stabilita']) ? 'active' : '' }}">Stabilita</a>
-            </li>
           </ul>
         </div>
       </li>
