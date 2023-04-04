@@ -37,6 +37,13 @@ Route::get('/home', function() {
     return view('home');
 });
 
+Route::group(['prefix' => 'development-journey'], function() {
+    Route::get('finish-good', function() { return view('pages.development-journey.finish-good'); });
+    Route::get('raw-material', function() { return view('pages.development-journey.raw-material'); });
+    Route::get('stabilita', function() { return view('pages.development-journey.stabilita'); });
+    Route::get('mikrobiologi', function() { return view('pages.development-journey.mikrobiologi'); });
+});
+
 Route::group(['prefix' => 'report-analysis'], function () {
     Route::get('finish-good', function () { return view('pages.report-analysis.finish-good'); });
     Route::get('raw-material', function () { return view('pages.report-analysis.raw-material'); });
