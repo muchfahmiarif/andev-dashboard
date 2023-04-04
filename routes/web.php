@@ -39,8 +39,8 @@ Route::get('/home', function() {
 
 Route::group(['prefix' => 'development-journey'], function() {
     Route::get('finish-good', function() { return view('pages.development-journey.finish-good'); });
-    Route::get('raw-material', function() { return view('pages.development-journey.raw-material'); });
-    Route::get('stabilita', function() { return view('pages.development-journey.stabilita'); });
+    Route::get('raw-material', function() { return view('pages.development-journey.raw-material.index'); });
+    Route::get('raw-material/detail', function() { return view('pages.development-journey.raw-material.detail'); });
     Route::get('mikrobiologi', function() { return view('pages.development-journey.mikrobiologi'); });
 });
 

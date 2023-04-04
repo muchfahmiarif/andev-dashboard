@@ -30,16 +30,13 @@
         <div class="collapse {{ Request::is(['development-journey/*']) ? 'show' : ''}}" id="development-journey">
           <ul class="nav sub-menu">
             <li class="nav-item">
-              <a href="{{ url('/development-journey/raw-material') }}" class="nav-link {{ Request::is(['development-journey/raw-material']) ? 'active' : '' }}">Raw Material</a>
+              <a href="{{ url('/development-journey/raw-material') }}" class="nav-link {{ Request::is(['development-journey/raw-material*']) ? 'active' : '' }}">Raw Material</a>
             </li>
             <li class="nav-item">
-              <a href="{{ url('/development-journey/finish-good') }}" class="nav-link {{ Request::is(['development-journey/finish-good']) ? 'active' : '' }}">Finish Good</a>
+              <a href="{{ url('/development-journey/finish-good') }}" class="nav-link {{ Request::is(['development-journey/finish-good*']) ? 'active' : '' }}">Finish Good</a>
             </li>
             <li class="nav-item">
-              <a href="{{ url('/development-journey/mikrobiologi') }}" class="nav-link {{ Request::is(['development-journey/mikrobiologi']) ? 'active' : '' }}">Mikrobiologi</a>
-            </li>
-            <li class="nav-item">
-              <a href="{{ url('/development-journey/stabilita') }}" class="nav-link {{ Request::is(['development-journey/stabilita']) ? 'active' : '' }}">Stabilita</a>
+              <a href="{{ url('/development-journey/mikrobiologi') }}" class="nav-link {{ Request::is(['development-journey/mikrobiologi*']) ? 'active' : '' }}">Mikrobiologi</a>
             </li>
           </ul>
         </div>
