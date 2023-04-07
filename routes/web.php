@@ -16,11 +16,15 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('portal.home');
+});
+
+Route::get('/about', function () {
+    return view('portal.about');
 });
 
 Route::get('/hello', function () {
-    return view('hello-world');
+    return view('welcome');
 });
 
 Auth::routes();
