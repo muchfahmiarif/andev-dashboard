@@ -45,6 +45,10 @@ Route::get('/home', function() {
     return view('home');
 });
 
+Route::get('/documentation', function() {
+    return view('pages.docs');
+});
+
 Route::group(['prefix' => 'development-journey'], function() {
     Route::get('finish-good', function() { return view('pages.development-journey.finish-good'); });
     Route::get('raw-material', function() { return view('pages.development-journey.raw-material.index'); });
