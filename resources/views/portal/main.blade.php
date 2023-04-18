@@ -74,25 +74,27 @@
   <footer class="border-t text-white pb-6">
 		<div class="container mx-auto px-4 flex flex-col items-center justify-between gap-10 pt-8 lg:flex-row lg:gap-8">
 			<!-- stats - start -->
-      <div class="-mx-6 grid grid-cols-2 gap-4 md:-mx-8 md:flex md:divide-x">
-        <div class="px-6 md:px-8">
+      <div class="-mx-6 grid grid-cols-2 gap-2 md:-mx-8 md:flex md:divide-x">
+        <div class="md:ps-8 md:pe-2">
           <span class="block text-center text-lg font-bold text-indigo-500 md:text-left md:text-xl">200</span>
-          <span class="block text-center text-sm font-semibold text-gray-800 md:text-left md:text-base">People</span>
+          <span class="block text-center text-sm font-semibold text-gray-800 md:text-left md:text-base">Method Refers to FI</span>
         </div>
 
-        <div class="px-6 md:px-8">
+        <div class="md:ps-8 md:pe-3">
           <span class="block text-center text-lg font-bold text-indigo-500 md:text-left md:text-xl">500+</span>
           <span class="block text-center text-sm font-semibold text-gray-800 md:text-left md:text-base">Projects</span>
         </div>
 
-        <div class="px-6 md:px-8">
+        <div class="md:ps-8 md:pe-2">
           <span class="block text-center text-lg font-bold text-indigo-500 md:text-left md:text-xl">250+</span>
-          <span class="block text-center text-sm font-semibold text-gray-800 md:text-left md:text-base">Customers</span>
+          <span class="block text-center text-sm font-semibold text-gray-800 md:text-left md:text-base">Validated Methode</span>
         </div>
 
         <div class="px-6 md:px-8">
-          <span class="block text-center text-lg font-bold text-indigo-500 md:text-left md:text-xl">A couple</span>
-          <span class="block text-center text-sm font-semibold text-gray-800 md:text-left md:text-base">Coffee breaks</span>
+          <span id="clock" class="loading block text-center text-lg font-bold text-indigo-500 md:text-left md:text-xl">
+            <div class="loading-text">Loading...</div>
+          </span>
+          <span id="date-container" class="block text-center text-sm font-semibold text-gray-800 md:text-left md:text-base"></span>
         </div>
       </div>
       <!-- stats - end -->
@@ -116,7 +118,7 @@
           </div>
 
           <div class="group cursor-pointer inline-block text-center relative">
-            <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+            <a href="https://www.linkedin.com/in/muchfahmiarif/" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
               <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
               </svg>
@@ -128,7 +130,7 @@
           </div>
 
           <div class="group cursor-pointer inline-block text-center relative">
-            <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+            <a href="https://www.linkedin.com/in/muhammad-aglia-dwitama-8170b9163/" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
               <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
               </svg>
@@ -156,6 +158,7 @@
       <!-- social - end -->
 		</div>
 	</footer>
+  <script src="{{ asset('js/clock.js') }}" defer></script>
   @stack('scripts')
 
 </body>
