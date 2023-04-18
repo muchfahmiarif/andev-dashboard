@@ -1,20 +1,33 @@
 @extends('portal.main')
 
 @push('css')
-  
+  <style>
+    details[open] summary {
+      /* background-color: #b896ff; */
+      /* animation-duration: 2s; */
+      /* animation-name: fadeIn; */
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
 @endpush
 
 @section('content')
 <section class="container block justify-center flex-grow gap-x-12 mx-auto">
   <div class="my-6">
-    <h3 class="text-center font-bold text-3xl">Frequently Asked Questions</h3>
+    <h3 class="text-center font-bold text-3xl text-gray-600">Frequently Asked Questions</h3>
   </div>
   <div class="px-72 space-y-4 my-10">
-    <details class="group [&_summary::-webkit-details-marker]:hidden" open>
-      <summary
-        class="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-50"
-      >
-        <h2 class="font-medium text-gray-900">
+    <details class="group [&_summary::-webkit-details-marker]:hidden " open>
+      <summary class="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-50 group-open:bg-violet-300 duration-500 ">
+        <h2 class="font-medium text-gray-900 select-none">
           Lorem ipsum dolor sit amet consectetur adipisicing?
         </h2>
 
@@ -34,16 +47,16 @@
         </svg>
       </summary>
 
-      <p class="px-4 mt-4 leading-relaxed text-gray-700 whitespace-pre-line">
+      <p class="px-4 mt-4 leading-relaxed text-gray-700 whitespace-pre-line ">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, voluptatem architecto pariatur totam labore tenetur ex nam rerum, facere neque aspernatur, doloremque minus. Tenetur distinctio maxime asperiores voluptas ea. Facere tempora in minima laborum, dolor commodi laboriosam explicabo quasi odio possimus iste doloribus repudiandae voluptate, velit veniam quia. Explicabo in quisquam, laboriosam sint repudiandae amet corporis veritatis ipsam maxime ut eligendi exercitationem consequuntur repellendus, qui nesciunt quod! Ab, minima minus perferendis illo deleniti praesentium vero rem delectus molestias vel quas, omnis maiores nemo ratione impedit. Culpa molestias tenetur harum exercitationem autem nulla quam mollitia consectetur esse omnis, similique vel laborum.
       </p>
     </details>
 
     <details class="group [&_summary::-webkit-details-marker]:hidden">
       <summary
-        class="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-50"
+        class="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-50 group-open:bg-violet-300 duration-500"
       >
-        <h2 class="font-medium text-gray-900">
+        <h2 class="font-medium text-gray-900 select-none">
           Lorem ipsum dolor sit amet consectetur adipisicing?
         </h2>
 

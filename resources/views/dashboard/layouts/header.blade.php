@@ -165,9 +165,15 @@
           </div>
           <ul class="list-unstyled">
             <li class="dropdown-item ">
-              <a href="{{ url('/home') }}" class="ms-0 text-decoration-none pe-7 py-2 btn btn-link ">
+              <a href="{{ url('/') }}" class="ms-0 text-decoration-none pe-7 py-2 btn btn-link ">
                 <i class="me-2 icon-md" data-feather="home"></i>
                 <span>Home</span>
+              </a>
+            </li>
+            <li class="dropdown-item ">
+              <a href="{{ url('/home') }}" class="ms-0 text-decoration-none pe-7 py-2 btn btn-link ">
+                <i class="me-2 icon-md" data-feather="layout"></i>
+                <span>Dashboard</span>
               </a>
             </li>
             <li class="dropdown-item ">
@@ -175,10 +181,6 @@
                 <i class="me-2 icon-md" data-feather="log-out"></i>
                 <span>Log Out</span>
               </button>
-              {{-- <a href="javascript:;" class="text-body ms-0 text-decoration-none pe-7 py-2">
-                <i class="me-2 icon-md" data-feather="log-out"></i>
-                <span>Log Out</span>
-              </a> --}}
             </li>
           </ul>
         </div>

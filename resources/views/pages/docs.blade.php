@@ -438,7 +438,7 @@
           <hr class="mt-5 mb-3" />
           <div class="d-flex  justify-content-between align-items-center">
             <p class="mb-2">Copyright © <script>document.write(new Date().getFullYear())</script> <a href="https://fahmiarif.site" target="_blank">NobleUI</a>.</p>
-            <p class="text-muted mb-1 mb-md-0">Handcrafted With<i class="mb-1 text-primary ms-1 icon-sm" data-feather="heart"></i> by <a href="https://www.linkedin.com/in/muchfahmiarif/" target="_blank">Fahmi</a> and <a href="https://www.linkedin.com/in/muhammad-aglia-dwitama-8170b9163/" target="_blank">Agi</a></p>
+            <p class="text-muted mb-1 mb-md-0">Handcrafted With<i class="mb-1 text-danger ms-1 icon-sm" data-feather="heart"></i> by <a class="text-muted" href="https://www.linkedin.com/in/muchfahmiarif/" target="_blank">Fahmi</a> and <a href="https://www.linkedin.com/in/muhammad-aglia-dwitama-8170b9163/" target="_blank">Agi</a></p>
           </div>
         </div>
       </div>
