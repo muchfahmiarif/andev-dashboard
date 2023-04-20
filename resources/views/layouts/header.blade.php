@@ -12,6 +12,11 @@
       </div>
     </form>
     <ul class="navbar-nav">
+      <li class="nav-item flex-wrap">
+        <p id="clock" class="loading text-nowrap text-center align-middle nav-link mb-0 fs-5" style="cursor: default">
+          <p class="loading-text mb-0 fs-5">Loading...</p>
+        </p>
+      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="notificationDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i data-feather="help-circle"></i>
@@ -22,7 +27,7 @@
         <div class="dropdown-menu p-0" aria-labelledby="notificationDropdown">
           <div class="px-3 py-2 d-flex align-items-center justify-content-between border-bottom gap-3">
             <p class="text-primary align-items-center justify-content-between my-auto">Need Help?</p>
-            <a href="javascript:;" class="badge bg-light text-dark">Click Me!</a>
+            <a href="https://helpdesk.aryanoble.co.id/" class="badge bg-light text-dark">Click Me!</a>
           </div>
         </div>
       </li>
@@ -62,3 +67,5 @@
     </ul>
   </div>
 </nav>
+
+<script src="{{ asset('js/clock.js') }}"></script>

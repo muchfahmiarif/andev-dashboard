@@ -50,7 +50,7 @@
       <nav class="hidden gap-12 lg:flex">
         <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700 {{ Request::is(['/']) ? 'text-indigo-500' : '' }}" target="_self">Home</a>
         <a href="{{ url('dashboard') }}" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700 " target="_self">Input Data</a>
-        <a href="{{ url('https://fahmiarif.site') }}" class="text-lg font-semibold text-gray-600 transition duration-100 hover:animate-text hover:bg-gradient-to-r from-teal-500 hover:via-purple-500 hover:to-orange-500 hover:bg-clip-text hover:text-transparent hover:font-black  active:text-indigo-700" target="_blank">Stock WS / RS</a>
+        <a href="{{ url('https://fahmiarif.site') }}" class="text-lg font-semibold text-gray-600 hover:animate-text hover:bg-gradient-to-r from-teal-500 hover:via-purple-500 hover:to-orange-500 hover:bg-clip-text hover:text-transparent  active:text-indigo-700" target="_blank">Stock WS / RS</a>
         <a href="{{ url('about') }}" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700 {{ Request::is(['about']) ? 'text-indigo-500' : '' }}" target="_self">About</a>
       </nav>
       <!-- nav - end -->
@@ -87,7 +87,7 @@
 
         <div class="md:ps-8 md:pe-2">
           <span class="block text-center text-lg font-bold text-indigo-500 md:text-left md:text-xl">250+</span>
-          <span class="block text-center text-sm font-semibold text-gray-800 md:text-left md:text-base">Validated Methode</span>
+          <span class="block text-center text-sm font-semibold text-gray-800 md:text-left md:text-base">Validated Method</span>
         </div>
 
         <div class="px-6 md:px-8">

@@ -33,19 +33,19 @@
   <body data-bs-spy="scroll" data-bs-target="#sidebarNav">
     <div class="main-wrapper">
       {{-- Sidebar Starts --}}
-      <div class="sidebar">
+      <div class="sidebar max-vh-100">
         <div class="logo-wrapper px-4 py-3">
-          <a href="https://nobleui.com" target="_blank" class="noble-ui-logo d-block">Noble<span>UI</span></a>
+          <a href="#" class="noble-ui-logo d-block">Andev<span> Dashboard</span></a>
         </div>
-        <ul class="nav flex-column my-4" id="sidebarNav">
+        <ul class="nav flex-column my-4 d-flex flex-column" id="sidebarNav">
           <li class="nav-item">
-            <a class="nav-link" href="#introduction"> <i data-feather="home"></i> Introduction </a>
+            <a class="nav-link" href="#introduction"> <i data-feather="home"></i> Perkenalan </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#fileStructure"> <i data-feather="code"></i> File Structure </a>
+            <a class="nav-link" href="#fileStructure"> <i data-feather="file-text"></i> Struktur Dokumentasi </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#setupEnvironment"> <i data-feather="settings"></i> Setup Environment </a>
+            <a class="nav-link" href="#setupEnvironment"> <i data-feather="code"></i> Source Code </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#installation"> <i data-feather="sliders"></i> Installation steps </a>
@@ -69,22 +69,17 @@
       <div id="introduction" class="page-content p-4 p-md-5 pb-0 pb-md-0">
         {{-- Introduction Starts --}}
         <div>
-          <h1 class="h4 mt-5 mb-4">
-            NobleUI - Laravel Admin Template <span class="badge bg-secondary tx-12 ms-2" style="vertical-align: middle">v 2.2</span>
+          <h1 class="h4 mt-5 mb-4 text-primary fw-semibold">
+            Andev Dashboard <span class="badge bg-secondary tx-12 ms-2" style="vertical-align: middle">v 2.2</span>
           </h1>
           <p class="">
-            Thank you so much for purchasing NobleUI - Laravel Admin Template. If you have any questions that are beyond the scope of this
-            documentation, please feel free to
-            <a href="https://themeforest.net/item/nobleui-laravel-admin-template/25229169/support" target="_blank">contact us</a>.
+            Andev Dashboard adalah platform Andev secara digital yang menggunakan sistem web apps. Kunci utama andev dashboard ini adalah untuk memudahkan melihat histori validasi metode kimia analis dan mempermudah pengelolaan data hasil analisa. Jika ada pertanyaan atau masalah, silahkan hubungi <a href="https://helpdesk.aryanoble.co.id/" target="_blank">team IT</a>.
           </p>
           <hr class="my-5" />
           <div class="grid-margin">
-            <h4 class="mb-4">Introduction</h4>
+            <h4 class="mb-4">Perkenalan</h4>
             <p>
-              <a href="https://laravel.com/" target="_blank">Laravel</a> is a PHP based web-framework for building high-end web applications using its
-              significant and graceful syntaxes. It comes with a strong collection of tools and provides application architecture. This template is
-              built on <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> - The most popular CSS Framework for developing responsive and
-              mobile-first websites. This template extended bootstrap components and add custom components.
+              Andev Dashboard ada platform digital andev untuk tracking data histori validasi metode kimia analisis, pengelolaan data hasil analisa dan masih banyak lagi. Kunci utama dari platform ini untuk mempermudah sortir data agar data yang di dapat akurat dan mudah di akses. Pengembangan aplikasi ini dilakukan oleh tim Andev dan IT Genero. Diharpkan dengan adanya aplikasi ini dapat mempermudah pengelolaan data dan kerja menjadi efisien.
             </p>
           </div>
         </div>
@@ -97,9 +92,9 @@
             <h4 class="mb-4">What's include</h4>
             <p>NobleUI - Laravel comes with a simple and logically organized file structure for easy to understand and maintainability.</p>
             <textarea rows="4" cols="50" class="code-non-editable">
-  NobleUI-Laravel/
-  ├── template
-              ├── demo1/                           ( Vertical Menu - Light )
+  andev-dashboard
+  ├── app
+              ├── Http/
                           ├── app/
                           ├── bootstrap/
                           ├── config/
@@ -143,18 +138,18 @@
           {{-- Setup Environment Starts --}}
           <hr class="my-5" id="setupEnvironment" />
 
-          <h4 class="mb-4">Set up the Development Environment</h4>
+          <h4 class="mb-4">Source Code</h4>
           <p>
-            Ensure that you have <a href="https://getcomposer.org/" target="_blank">Composer</a> and
-            <a href="https://nodejs.org/" target="_blank">Nodejs</a> installed on your machine.
+            Silahkan hubungi <a href="https://www.linkedin.com/in/muchfahmiarif/" target="_blank">Fahmi</a> dan <a href="https://www.linkedin.com/in/muhammad-aglia-dwitama-8170b9163/" target="_blank">Aglia</a> untuk mendapatkan source code.
           </p>
           {{-- Setup Environment Ends --}}
 
           {{-- Installation Steps Starts --}}
           <hr class="my-5" id="installation" />
 
-          <h4 class="mb-4">Installation Steps</h4>
-          <p class="mb-3">Assuming your machine meets all the requirements - let's proceed to the installation.</p>
+          <h4 class="mb-4">Development Journey</h4>
+          <p class="">Bagian development journey mencakup riwayat dari pengembangan metode analisa untuk kategori produk jadi, mikrobiologi dan bahan baku. Riwayat pengembangan metode diurut berdasarkan terbaru hingga yang lama.</p>
+          <p class="mb-3">Untuk melihat detail pengembangan metode dapat klik pada judul pengembangan metode dan akan terlihat detail deskripsi dan list dokumen dengan status dokumen</p>
           <p class="mb-3"><strong>1.</strong> Navigate to the project folder (demo1, demo2, demo3, or demo4)</p>
           <p class="mb-n2">Example:</p>
           <textarea rows="4" cols="50" class="code-non-editable">cd nobleui-laravel/template/demo1/</textarea>
@@ -438,22 +433,15 @@
           <hr class="mt-5 mb-3" />
           <div class="d-flex  justify-content-between align-items-center">
             <p class="mb-2">Copyright © <script>document.write(new Date().getFullYear())</script> <a href="https://fahmiarif.site" target="_blank">NobleUI</a>.</p>
-            <p class="text-muted mb-1 mb-md-0">Handcrafted With<i class="mb-1 text-danger ms-1 icon-sm" data-feather="heart"></i> by <a class="text-muted" href="https://www.linkedin.com/in/muchfahmiarif/" target="_blank">Fahmi</a> and <a href="https://www.linkedin.com/in/muhammad-aglia-dwitama-8170b9163/" target="_blank">Agi</a></p>
+            <p class="text-muted mb-1 mb-md-0">Handcrafted With<i class="mb-1 text-danger ms-1 icon-sm" data-feather="heart"></i> by <a  href="https://www.linkedin.com/in/muchfahmiarif/" target="_blank">Fahmi</a> and <a href="https://www.linkedin.com/in/muhammad-aglia-dwitama-8170b9163/" target="_blank">Agi</a></p>
           </div>
         </div>
       </div>
     </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/mode/python/python.min.js"></script> -->
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="{{ asset('js/docs.js') }}"></script>
   </body>

@@ -50,7 +50,8 @@ Route::get('/documentation', function() {
 });
 
 Route::group(['prefix' => 'development-journey'], function() {
-    Route::get('finish-good', function() { return view('pages.development-journey.finish-good'); });
+    Route::get('finish-good', function() { return view('pages.development-journey.finish-good.index'); });
+    Route::get('finish-good/detail', function() { return view('pages.development-journey.finish-good.detail'); });
     Route::get('raw-material', function() { return view('pages.development-journey.raw-material.index'); });
     Route::get('raw-material/detail', function() { return view('pages.development-journey.raw-material.detail'); });
     Route::get('mikrobiologi', function() { return view('pages.development-journey.mikrobiologi'); });
