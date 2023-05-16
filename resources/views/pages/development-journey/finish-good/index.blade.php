@@ -40,7 +40,7 @@
                     <li class="event" data-date="2 Days Ago">
                       <div>
                         <div class="hstack">
-                          <a class="title text-decoration-none" href="#">Registration</a>
+                          <a class="title text-decoration-none" href="{{ url('/development-journey/finish-good/detail') }}">Registration</a>
                           <p class="ms-auto badge bg-info">Mencari Literatur</p>
                         </div>
                         <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
@@ -49,7 +49,7 @@
                     <li class="event" data-date="9 Month Ago">
                       <div>
                         <div class="hstack">
-                          <a class="title text-decoration-none" href="#">BPO</a>
+                          <a class="title text-decoration-none" href="{{ url('/development-journey/finish-good/detail') }}">BPO ex Global</a>
                           <p class="ms-auto badge bg-danger">Pending</p>
                         </div>
                         <p>Perubahan prosedur kerja sesuai USP 44 dan perubahan format dokumen</p>
@@ -58,7 +58,7 @@
                     <li class="event" data-date="Apr 2018">
                       <div>
                         <div class="hstack gap-3">
-                          <a class="title text-decoration-none" href="#">BPO</a>
+                          <a class="title text-decoration-none" href="{{ url('/development-journey/finish-good/detail') }}">BPO ex Alchem</a>
                           <p class="ms-auto badge bg-warning">Work In Progress</p>
                         </div>
                         <p>Perubahan prosedur kerja dan perubahan alat dari HPLC menjadi UPLC</p>
@@ -67,7 +67,7 @@
                     <li class="event" data-date="Apr 2015">
                       <div>
                         <div class="hstack gap-3">
-                          <a class="title text-decoration-none" href="#">BPO</a>
+                          <a class="title text-decoration-none" href="{{ url('/development-journey/finish-good/detail') }}">BPO</a>
                           <p class="ms-auto badge bg-success">Done</p>
                         </div>
                         <p>Pertama Terbit</p>
@@ -83,7 +83,7 @@
                     <li class="event" data-date="2 Days Ago">
                       <div>
                         <div class="hstack">
-                          <a class="title text-decoration-none" href="#">Registration</a>
+                          <a class="title text-decoration-none" href="{{ url('/development-journey/finish-good/detail') }}">Registration</a>
                           <p class="ms-auto badge bg-info">Mencari Literatur</p>
                         </div>
                         <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
@@ -92,7 +92,7 @@
                     <li class="event" data-date="9 Month Ago">
                       <div>
                         <div class="hstack">
-                          <a class="title text-decoration-none" href="#">Adapalene</a>
+                          <a class="title text-decoration-none" href="{{ url('/development-journey/finish-good/detail') }}">Adapalene</a>
                           <p class="ms-auto badge bg-danger">Pending</p>
                         </div>
                         <p>Perubahan prosedur kerja sesuai USP 44 dan perubahan format dokumen</p>
@@ -101,7 +101,7 @@
                     <li class="event" data-date="Apr 2018">
                       <div>
                         <div class="hstack gap-3">
-                          <a class="title text-decoration-none" href="#">Adapalene</a>
+                          <a class="title text-decoration-none" href="{{ url('/development-journey/finish-good/detail') }}">Adapalene</a>
                           <p class="ms-auto badge bg-warning">Work In Progress</p>
                         </div>
                         <p>Perubahan prosedur kerja dan perubahan alat dari HPLC menjadi UPLC</p>
@@ -110,7 +110,7 @@
                     <li class="event" data-date="Apr 2015">
                       <div>
                         <div class="hstack gap-3">
-                          <a class="title text-decoration-none" href="#">Adapalene</a>
+                          <a class="title text-decoration-none" href="{{ url('/development-journey/finish-good/detail') }}">Adapalene</a>
                           <p class="ms-auto badge bg-success">Done</p>
                         </div>
                         <p>Pertama Terbit</p>
@@ -126,7 +126,7 @@
                     <li class="event" data-date="2 Days Ago">
                       <div>
                         <div class="hstack">
-                          <a class="title text-decoration-none" href="#">Registration</a>
+                          <a class="title text-decoration-none" href="{{ url('/development-journey/finish-good/detail') }}">Registration</a>
                           <p class="ms-auto badge bg-info">Mencari Literatur</p>
                         </div>
                         <p>Get here on time, it's first come first serve. Be late, get turned away.</p>

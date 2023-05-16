@@ -114,7 +114,7 @@
                   Salary
                 </th>
                 <th>
-                  Start date
+                  Download file
                 </th>
               </tr>
             </thead>
@@ -135,7 +135,7 @@
                   $206,850
                 </td>
                 <td>
-                  June 21, 2010
+                  <a href="#">Download</a>
                 </td>
               </tr>
               <tr>
