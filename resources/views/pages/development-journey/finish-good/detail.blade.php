@@ -114,28 +114,30 @@
                   Salary
                 </th>
                 <th>
-                  Start date
+                  Download
                 </th>
               </tr>
             </thead>
-            <tbody class="table-group-divider">
+            <tbody class="table-group-divider text-center">
               <tr>
                 <td>
                   1
                 </td>
-                <td>
+                <td class="text-start">
                   Cedric Kelly
                 </td>
                 <td>
                   <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 33%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div> {{-- 0 - 33% => danger --}}
                   </div>
                 </td>
                 <td>
                   $206,850
                 </td>
                 <td>
-                  June 21, 2010
+                  <button>
+                    <a href="#">Get File</a>
+                  </button>
                 </td>
               </tr>
               <tr>
@@ -147,7 +149,7 @@
                 </td>
                 <td>
                   <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 66%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </td>
                 <td>
@@ -166,7 +168,7 @@
                 </td>
                 <td>
                   <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 99%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </td>
                 <td>

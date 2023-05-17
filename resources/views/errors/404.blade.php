@@ -19,7 +19,7 @@
   <link rel="icon" type="image/png" href="{{ asset('ico/not-entry-16x16.png') }}" sizes="16x16" />
   <link rel="icon" type="image/png" href="{{ asset('ico/not-entry.ico') }}" sizes="48x48" />
 
-  <title>Not Found</title>
+  <title>Andev Dashboard | Not Found</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
