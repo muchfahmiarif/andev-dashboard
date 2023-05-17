@@ -7,47 +7,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css">
-        body{
-          margin-top: 150px;
-          background-color: #C4CCD9;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  {{-- Favicon --}}
+  <link rel="apple-touch-icon-precomposed" sizes="48x48" href="{{ asset('ico/not-entry-icon.png') }}" />
+  <link rel="icon" type="image/png" href="{{ asset('ico/not-entry-192x192.png') }}" sizes="192x192" />
+  <link rel="icon" type="image/png" href="{{ asset('ico/not-entry-512x512.png') }}" sizes="512x512" />
+  <link rel="icon" type="image/png" href="{{ asset('ico/not-entry-32x32.png') }}" sizes="32x32" />
+  <link rel="icon" type="image/png" href="{{ asset('ico/not-entry-16x16.png') }}" sizes="16x16" />
+  <link rel="icon" type="image/png" href="{{ asset('ico/not-entry.ico') }}" sizes="48x48" />
+
+  <title>Not Found</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            text: 'text 2.5s ease-in-out infinite',
+          },
+          keyframes: {
+            text: {
+              '0%, 100%': {
+                'background-size': '200% 200%',
+                'background-position': 'left center',
+              },
+              '50%': {
+                'background-size': '200% 200%',
+                'background-position': 'right center',
+              },
+            },
+          },
         }
-        .error-main{
-          background-color: #fff;
-          box-shadow: 0px 10px 10px -10px #5D6572;
-        }
-        .error-main h1{
-          font-weight: bold;
-          color: #444444;
-          font-size: 150px;
-          text-shadow: 2px 4px 5px #6E6E6E;
-        }
-        .error-main h6{
-          color: #42494F;
-          font-size: 20px;
-        }
-        .error-main p{
-          color: #9897A0;
-          font-size: 15px; 
-        }
-    </style>
+      }
+    }
+  </script>
 </head>
 <body>
+  <div class="grid h-screen px-4 bg-gray-900 place-content-center">
+    <div class="text-center">
+      <h1 class="font-black text-gray-700 text-9xl select-none">404</h1>
   
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-lg-6 offset-lg-3 col-sm-6 offset-sm-3 col-12 p-3 error-main">
-          <div class="row">
-            <div class="col-lg-8 col-12 col-sm-10 offset-lg-2 offset-sm-1">
-              <h1 class="m-0">404</h1>
-              <h6>Page not found - ItSolutionStuff.com</h6>
-              <p>Lorem ipsum dolor sit <span class="text-info">amet</span>, consectetur <span class="text-info">adipisicing</span> elit, sed do eiusmod.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <p class="text-2xl font-bold tracking-tight text-white sm:text-4xl">
+        Not Found
+      </p>
+  
+      <p class="mt-4 text-gray-400">We can't find that page.</p>
+  
+      <a href="javascript:history.back()" class="inline-block px-5 py-3 mt-6 text-sm font-medium text-white bg-indigo-600 rounded hover:bg-indigo-700 focus:outline-none focus:ring">Go Back</a>
     </div>
-      
+  </div>
 </body>
 </html>
