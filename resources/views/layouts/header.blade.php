@@ -18,7 +18,12 @@
         </p>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="notificationDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="{{ url('/') }}" role="button">
+          <i data-feather="home"></i>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="notificationDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i data-feather="help-circle"></i>
           <div class="indicator">
             <div class="circle"></div>
@@ -32,7 +37,7 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <img class="wd-30 ht-30 rounded-circle" src="{{ asset('img/user.svg') }}" alt="profile">
         </a>
         <div class="dropdown-menu p-0" aria-labelledby="profileDropdown">
@@ -43,12 +48,6 @@
             </div>
           </div>
           <ul class="list-unstyled">
-            <li class="dropdown-item ">
-              <a href="{{ url('/') }}" class="ms-0 text-decoration-none pe-7 py-2 btn btn-link ">
-                <i class="me-2 icon-md" data-feather="home"></i>
-                <span>Home</span>
-              </a>
-            </li>
             <li class="dropdown-item ">
               <a href="{{ url('/dashboard') }}" class="ms-0 text-decoration-none pe-7 py-2 btn btn-link ">
                 <i class="me-2 icon-md" data-feather="edit"></i>
