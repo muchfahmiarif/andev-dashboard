@@ -89,8 +89,8 @@
         <div>
           <hr class="my-5" id="fileStructure" />
           <div class="grid-margin">
-            <h4 class="mb-4">What's include</h4>
-            <p>NobleUI - Laravel comes with a simple and logically organized file structure for easy to understand and maintainability.</p>
+            <h4 class="mb-4"><abbr title="File Structure">What's include</abbr></h4>
+            <p>Andev Dashboard dibuat dengan stack laravel 9 dan menggunakan bootstrap ui serta auth. Berikut stuktur dari aplikasi Andev Digital</p>
             <textarea rows="4" cols="50" class="code-non-editable">
   andev-dashboard
   ├── app
@@ -130,6 +130,14 @@
               ├── demo4/                            ( Horizontal Menu - Dark )
   ├── documentation
           </textarea>
+          <p>Untuk gambaran diagram antar muka dapat dilihat dibawah ini</p>
+          <figure class="figure">
+            <img src="{{ asset('img/genero.webp') }}" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption">A caption for the above image.</figcaption>
+          </figure>
+          <div>
+            <a href="https://excalidraw.com/#room=4c489cd67d10f8aba82d,fNrZDqLdRIUkToCwpxcrEQ">https://excalidraw.com/</a>
+          </div>
           </div>
         </div>
         {{-- File Structure Ends --}}
