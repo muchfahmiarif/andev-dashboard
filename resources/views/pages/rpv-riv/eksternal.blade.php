@@ -5,7 +5,7 @@
 @endpush
 
 @section('content')
-  
+<!-- Code Here -->
 @endsection
 
 @push('plugin-scripts')
