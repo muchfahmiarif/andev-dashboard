@@ -16,6 +16,14 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', function () {
+    return view('portal.home');
+});
+
+Route::get('/about', function () {
+    return view('portal.about');
+});
+
+Route::get('/hello', function () {
     return view('welcome');
 });
 
@@ -34,47 +42,69 @@ Route::middleware(['auth'])->group(function () {
 // })->middleware(['auth'])->name('dashboard');
 
 Route::get('/home', function() {
-    return view('home');
+    return view('front-view.index');
+});
+
+Route::get('/documentation', function() {
+    return view('front-view.pages.docs');
+});
+
+Route::group(['prefix' => 'development-journey'], function() {
+    Route::get('finish-good', function() { return view('front-view.pages.development-journey.finish-good.index'); });
+    Route::get('finish-good/detail', function() { return view('front-view.pages.development-journey.finish-good.detail'); });
+    Route::get('raw-material', function() { return view('front-view.pages.development-journey.raw-material.index'); });
+    Route::get('raw-material/detail', function() { return view('front-view.pages.development-journey.raw-material.detail'); });
+    Route::get('mikrobiologi', function() { return view('front-view.pages.development-journey.mikrobiologi.index'); });
+    Route::get('mikrobiologi/detail', function() { return view('front-view.pages.development-journey.mikrobiologi.detail'); });
+    Route::get('eksternal', function() { return view('front-view.pages.development-journey.eksternal.index'); });
+    Route::get('eksternal/detail', function() { return view('front-view.pages.development-journey.eksternal.detail'); });
+});
+
+Route::group(['prefix' => 'rpv-riv'], function() {
+    Route::get('finish-good', function() { return view('front-view.pages.rpv-riv.finish-good'); });
+    Route::get('raw-material', function() { return view('front-view.pages.rpv-riv.raw-material'); });
+    Route::get('mikrobiologi', function() { return view('front-view.pages.rpv-riv.mikrobiologi'); });
+    Route::get('eksternal', function() { return view('front-view.pages.rpv-riv.eksternal'); });
 });
 
 Route::group(['prefix' => 'report-analysis'], function () {
-    Route::get('finish-good', function () { return view('pages.report-analysis.finish-good'); });
-    Route::get('raw-material', function () { return view('pages.report-analysis.raw-material'); });
-    Route::get('stabilita', function () { return view('pages.report-analysis.stabilita'); });
-    Route::get('mikrobiologi', function () { return view('pages.report-analysis.mikrobiologi'); });
+    Route::get('finish-good', function () { return view('front-view.pages.report-analysis.finish-good'); });
+    Route::get('raw-material', function () { return view('front-view.pages.report-analysis.raw-material'); });
+    Route::get('stabilita', function () { return view('front-view.pages.report-analysis.stabilita'); });
+    Route::get('mikrobiologi', function () { return view('front-view.pages.report-analysis.mikrobiologi'); });
 });
 
 Route::group(['prefix' => 'lka'], function () {
-    Route::get('finish-good', function () { return view('pages.lka.finish-good'); });
-    Route::get('raw-material', function () { return view('pages.lka.raw-material'); });
-    Route::get('stabilita', function () { return view('pages.lka.stabilita'); });
-    Route::get('mikrobiologi', function () { return view('pages.lka.mikrobiologi'); });
+    Route::get('finish-good', function () { return view('front-view.pages.lka.finish-good'); });
+    Route::get('raw-material', function () { return view('front-view.pages.lka.raw-material'); });
+    Route::get('stabilita', function () { return view('front-view.pages.lka.stabilita'); });
+    Route::get('mikrobiologi', function () { return view('front-view.pages.lka.mikrobiologi'); });
 });
 
 Route::group(['prefix' => 'jadwal-stabilita'], function () {
-    Route::get('ss-1', function () { return view('pages.jadwal-stabilita.ss-1'); });
-    Route::get('ss-2', function () { return view('pages.jadwal-stabilita.ss-2'); });
+    Route::get('ss-1', function () { return view('front-view.pages.jadwal-stabilita.ss-1'); });
+    Route::get('ss-2', function () { return view('front-view.pages.jadwal-stabilita.ss-2'); });
 });
 
-Route::get('/dashboard', function() {
-    return view('dashboard.index');
+Route::get('/rear-view', function() {
+    return view('rear-view.index');
 });
 
-Route::group(['prefix' => 'dashboard/report-analysis'], function () {
-    Route::get('finish-good', function () { return view('dashboard.pages.report-analysis.finish-good'); });
-    Route::get('raw-material', function () { return view('dashboard.pages.report-analysis.raw-material'); });
-    Route::get('stabilita', function () { return view('dashboard.pages.report-analysis.stabilita'); });
-    Route::get('mikrobiologi', function () { return view('dashboard.pages.report-analysis.mikrobiologi'); });
+Route::group(['prefix' => 'rear-view/report-analysis'], function () {
+    Route::get('finish-good', function () { return view('rear-view.pages.report-analysis.finish-good'); });
+    Route::get('raw-material', function () { return view('rear-view.pages.report-analysis.raw-material'); });
+    Route::get('stabilita', function () { return view('rear-view.pages.report-analysis.stabilita'); });
+    Route::get('mikrobiologi', function () { return view('rear-view.pages.report-analysis.mikrobiologi'); });
 });
 
-Route::group(['prefix' => 'dashboard/lka'], function () {
-    Route::get('finish-good', function () { return view('dashboard.pages.lka.finish-good'); });
-    Route::get('raw-material', function () { return view('dashboard.pages.lka.raw-material'); });
-    Route::get('stabilita', function () { return view('dashboard.pages.lka.stabilita'); });
-    Route::get('mikrobiologi', function () { return view('dashboard.pages.lka.mikrobiologi'); });
+Route::group(['prefix' => 'rear-view/lka'], function () {
+    Route::get('finish-good', function () { return view('rear-view.pages.lka.finish-good'); });
+    Route::get('raw-material', function () { return view('rear-view.pages.lka.raw-material'); });
+    Route::get('stabilita', function () { return view('rear-view.pages.lka.stabilita'); });
+    Route::get('mikrobiologi', function () { return view('rear-view.pages.lka.mikrobiologi'); });
 });
 
-Route::group(['prefix' => 'dashboard/jadwal-stabilita'], function () {
-    Route::get('ss-1', function () { return view('dashboard.pages.jadwal-stabilita.ss-1'); });
-    Route::get('ss-2', function () { return view('dashboard.pages.jadwal-stabilita.ss-2'); });
+Route::group(['prefix' => 'rear-view/jadwal-stabilita'], function () {
+    Route::get('ss-1', function () { return view('rear-view.pages.jadwal-stabilita.ss-1'); });
+    Route::get('ss-2', function () { return view('rear-view.pages.jadwal-stabilita.ss-2'); });
 });

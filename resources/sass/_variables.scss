@@ -8,6 +8,7 @@ $warning: #fbbc06 !default;
 $danger: #ff3366 !default;
 $light: #e9ecef !default;
 $dark: #060c17 !default;
+$black: #000 !default;
 //
 // --- Bootstrap Theme Colors --- //
 
@@ -26,3 +27,29 @@ $social-colors: (
     "bitbucket": #0052cc,
     "linkedin": #0077b5,
 ) !default;
+
+// Font family
+$font-family-sans-serif: "Roboto", Helvetica, sans-serif !default;
+
+$font-size-base: 0.875rem !default; // 14px
+$font-size-lg: 1rem !default; // 16px
+$font-size-sm: 0.812rem !default; // 13px
+
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 500 !default;
+$font-weight-bolder: 700 !default;
+$font-weight-boldest: 900 !default;
+
+$font-weight-base: $font-weight-normal !default;
+
+// Cards
+$card-box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2); // custom variable
+$card-spacer-y: 1.5rem !default;
+$card-spacer-x: 1.5rem !default;
+$card-title-spacer-y: 0.875rem !default;
+$card-border-color: #f2f4f9 !default;
+$card-cap-padding-y: 0.875rem !default;
+$card-cap-padding-x: $card-spacer-x !default;
+$card-cap-bg: rgba($black, 0.01) !default;
