@@ -105,13 +105,13 @@
                   #
                 </th>
                 <th>
-                  Name
+                  Nama Dokumen
                 </th>
                 <th>
                   Progress
                 </th>
                 <th>
-                  Salary
+                  Keterangan
                 </th>
                 <th>
                   Download
@@ -132,7 +132,7 @@
                   </div>
                 </td>
                 <td>
-                  $206,850
+                  Work In Progress
                 </td>
                 <td>
                   <button>
@@ -144,7 +144,7 @@
                 <td>
                   2
                 </td>
-                <td>
+                <td class="text-start">
                   Haley Kennedy
                 </td>
                 <td>
@@ -153,36 +153,40 @@
                   </div>
                 </td>
                 <td>
-                  $313,500
+                  Work In Progress
                 </td>
                 <td>
-                  May 15, 2013
+                  <button>
+                    <a href="#">Get File</a>
+                  </button>
                 </td>
               </tr>
               <tr>
                 <td>
                   3
                 </td>
-                <td>
+                <td class="text-start">
                   Bradley Greer
                 </td>
                 <td>
                   <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 99%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </td>
                 <td>
-                  $132,000
+                  Done
                 </td>
                 <td>
-                  Apr 12, 2014
+                  <button>
+                    <a href="#">Get File</a>
+                  </button>
                 </td>
               </tr>
               <tr>
                 <td>
                   4
                 </td>
-                <td>
+                <td class="text-start">
                   Brenden Wagner
                 </td>
                 <td>
@@ -191,17 +195,19 @@
                   </div>
                 </td>
                 <td>
-                  $206,850
+                  Work In Progress
                 </td>
                 <td>
-                  June 21, 2010
+                  <button>
+                    <a href="#">Get File</a>
+                  </button>
                 </td>
               </tr>
               <tr>
                 <td>
                   5
                 </td>
-                <td>
+                <td class="text-start">
                   Bruno Nash
                 </td>
                 <td>
@@ -210,17 +216,19 @@
                   </div>
                 </td>
                 <td>
-                  $163,500
+                  Work In Progress
                 </td>
                 <td>
-                  January 01, 2016
+                  <button>
+                    <a href="#">Get File</a>
+                  </button>
                 </td>
               </tr>
               <tr>
                 <td>
                   6
                 </td>
-                <td>
+                <td class="text-start">
                   Sonya Frost
                 </td>
                 <td>
@@ -229,17 +237,19 @@
                   </div>
                 </td>
                 <td>
-                  $103,600
+                  Work In Progress
                 </td>
                 <td>
-                  July 18, 2011
+                  <button>
+                    <a href="#">Get File</a>
+                  </button>
                 </td>
               </tr>
               <tr>
                 <td>
                   7
                 </td>
-                <td>
+                <td class="text-start">
                   Zenaida Frank
                 </td>
                 <td>
@@ -248,10 +258,12 @@
                   </div>
                 </td>
                 <td>
-                  $313,500
+                  Work In Progress
                 </td>
                 <td>
-                  March 22, 2013
+                  <button>
+                    <a href="#">Get File</a>
+                  </button>
                 </td>
               </tr>
             </tbody>
