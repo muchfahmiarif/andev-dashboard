@@ -39,6 +39,9 @@
             <div class="card">
                 <div class="card-body">
                     <h1 class="card-title">Home</h1>
+                    <div class="alert alert-warning d-flex align-items-center" role="alert">
+                        🏗️ Under development
+                    </div>
                     <div class="content d-flex flex-wrap justify-content-center gap-3">
                         <div class="text-center">
                             <div id="main-1" class="d-flex"></div>
@@ -57,8 +60,16 @@
                             </div>
                         </div>
 
-                        <div>
+                        <div class="text-center">
                             <div id="main-pie" class="d-flex"></div>
+                            <div class="d-flex gap-2 justify-content-center">
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div id="main-stacked-line"></div>
                         </div>
                     </div>
                 </div>
@@ -81,6 +92,11 @@
             text: 'Methode refer to FI VI'
         },
         tooltip: {},
+        toolbox: {
+        feature: {
+        saveAsImage: {}
+        }
+    },
         legend: {
             // Try 'horizontal'
             orient: 'vertical',
@@ -91,7 +107,7 @@
             type: 'category'
         },
         yAxis: {},
-            dataset: {
+        dataset: {
         // Provide a set of data.
         source: [
             ['product', '2015', '2016', '2017', '2018'],
@@ -100,10 +116,9 @@
             ['Cheese Cocoa', 86.4, 65.2, 82.5,],
             ['Walnut Brownie', 72.4, 53.9, 39.1,],
         ]
-    },
+        },
         series: [{ type: 'bar' }, { type: 'bar' }, { type: 'bar' },]
-};
-
+    };
     // Display the chart using the configuration items and data just specified.
     myChart.setOption(option);
 </script>
@@ -120,6 +135,11 @@
             text: 'Methode refer to FI VI'
         },
         tooltip: {},
+        toolbox: {
+        feature: {
+        saveAsImage: {}
+        }
+    },
         legend: {
             // Try 'horizontal'
             orient: 'vertical',
@@ -130,7 +150,7 @@
             type: 'category'
         },
         yAxis: {},
-            dataset: {
+        dataset: {
         // Provide a set of data.
         source: [
             ['product', '2015', '2016', '2017'],
@@ -139,14 +159,11 @@
             ['Cheese Cocoa', 86.4, 65.2, 82.5],
             ['Walnut Brownie', 72.4, 53.9, 39.1]
         ]
-    },
+        },
         series: [{ type: 'bar' }, { type: 'bar' }, { type: 'bar' }]
-};
-
+    };
     // Display the chart using the configuration items and data just specified.
     myChart.setOption(option);
-
-    
 </script>
 <script type="text/javascript">
     var myChart = echarts.init(document.getElementById('main-pie'), null, {
@@ -173,8 +190,84 @@
                 }
             ]
             }
-        ]
+        ],
+        toolbox: {
+        feature: {
+        saveAsImage: {}
+        }
+    },
     };
     myChart.setOption(option);
+</script>
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('main-stacked-line'), null, {
+        width: 600,
+        height: 400
+    });
+    var option;
+
+    option = {
+    title: {
+        text: 'Stacked Line'
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    toolbox: {
+        feature: {
+        saveAsImage: {}
+        }
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [
+        {
+        name: 'Email',
+        type: 'line',
+        stack: 'Total',
+        data: [120, 132, 101, 134, 90, 230, 210]
+        },
+        {
+        name: 'Union Ads',
+        type: 'line',
+        stack: 'Total',
+        data: [220, 182, 191, 234, 290, 330, 310]
+        },
+        {
+        name: 'Video Ads',
+        type: 'line',
+        stack: 'Total',
+        data: [150, 232, 201, 154, 190, 330, 410]
+        },
+        {
+        name: 'Direct',
+        type: 'line',
+        stack: 'Total',
+        data: [320, 332, 301, 334, 390, 330, 320]
+        },
+        {
+        name: 'Search Engine',
+        type: 'line',
+        stack: 'Total',
+        data: [820, 932, 901, 934, 1290, 1330, 1320]
+        }
+    ]
+    };
+    option && myChart.setOption(option);
 </script>
 @endpush
