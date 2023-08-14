@@ -9,7 +9,7 @@
       <div class="card">
         <div class="card-body">
           <div class="d-flex">
-            <h1 class="card-title">Home</h1>
+            <h1 class="card-title">Eksternal</h1>
             <div class="ms-auto d-flex align-items-center">
               <p class="align-self-center mb-0 px-2">Find </p>
               <input type="text" class="form-control" placeholder="Search">
