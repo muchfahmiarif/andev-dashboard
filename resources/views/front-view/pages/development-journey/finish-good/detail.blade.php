@@ -9,7 +9,8 @@
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a class="text-decoration-none" href="{{ url('#') }}">Development Journey</a></li>
     <li class="breadcrumb-item"><a class="text-decoration-none" href="{{ url('/development-journey/finish-good') }}">Finish Good</a></li>
-    <li class="breadcrumb-item active" aria-current="page">{{ 'Detail' }}</li> {{-- Dinamis sesuai nama judul --}}
+    <li class="breadcrumb-item"><a class="text-decoration-none" href="{{ url('/development-journey/finish-good') }}">Aza 20 Cream</a></li> {{-- URL statis, title dinamis --}}
+    <li class="breadcrumb-item active" aria-current="page">{{ 'BPO ex Indokemika' }}</li> {{-- Dinamis sesuai nama judul --}}
   </ol>
 </nav>
 
@@ -17,7 +18,7 @@
   <div class="col-md-12">
     <div class="card">
       <div class="card-body">
-        <h6 class="card-title mb-3">{{ 'Detail' }}</h6> {{-- Dinamis sesuai nama judul --}}
+        <h6 class="card-title mb-3">{{ 'BPO ex Indokemika' }}</h6> {{-- Dinamis sesuai nama judul --}}
         <div class="accordion" id="FaqAccordion">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
@@ -95,7 +96,7 @@
       </div>
 
       <div class="card-body">
-        <h6 class="card-title">Data {{ 'Detail' }}</h6> {{-- Dinamis sesuai nama judul --}}
+        <h6 class="card-title">Data {{ 'BPO ex Indokemika' }}</h6> {{-- Dinamis sesuai nama judul --}}
         {{-- <p class="text-muted mb-3">Add class <code>.table-bordered</code></p> --}}
         <div class="table-responsive pt-3">
           <table class="table table-hover align-middle">
@@ -105,13 +106,13 @@
                   #
                 </th>
                 <th>
-                  Name
+                  Nama Dokumen
                 </th>
                 <th>
                   Progress
                 </th>
                 <th>
-                  Salary
+                  Keterangan
                 </th>
                 <th>
                   Download
@@ -132,7 +133,7 @@
                   </div>
                 </td>
                 <td>
-                  $206,850
+                  Work In Progress
                 </td>
                 <td>
                   <button>
@@ -144,7 +145,7 @@
                 <td>
                   2
                 </td>
-                <td>
+                <td class="text-start">
                   Haley Kennedy
                 </td>
                 <td>
@@ -153,36 +154,40 @@
                   </div>
                 </td>
                 <td>
-                  $313,500
+                  Work In Progress
                 </td>
                 <td>
-                  May 15, 2013
+                  <button>
+                    <a href="#">Get File</a>
+                  </button>
                 </td>
               </tr>
               <tr>
                 <td>
                   3
                 </td>
-                <td>
+                <td class="text-start">
                   Bradley Greer
                 </td>
                 <td>
                   <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 99%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </td>
                 <td>
-                  $132,000
+                  Done
                 </td>
                 <td>
-                  Apr 12, 2014
+                  <button>
+                    <a href="#">Get File</a>
+                  </button>
                 </td>
               </tr>
               <tr>
                 <td>
                   4
                 </td>
-                <td>
+                <td class="text-start">
                   Brenden Wagner
                 </td>
                 <td>
@@ -191,17 +196,19 @@
                   </div>
                 </td>
                 <td>
-                  $206,850
+                  Work In Progress
                 </td>
                 <td>
-                  June 21, 2010
+                  <button>
+                    <a href="#">Get File</a>
+                  </button>
                 </td>
               </tr>
               <tr>
                 <td>
                   5
                 </td>
-                <td>
+                <td class="text-start">
                   Bruno Nash
                 </td>
                 <td>
@@ -210,17 +217,19 @@
                   </div>
                 </td>
                 <td>
-                  $163,500
+                  Work In Progress
                 </td>
                 <td>
-                  January 01, 2016
+                  <button>
+                    <a href="#">Get File</a>
+                  </button>
                 </td>
               </tr>
               <tr>
                 <td>
                   6
                 </td>
-                <td>
+                <td class="text-start">
                   Sonya Frost
                 </td>
                 <td>
@@ -229,17 +238,19 @@
                   </div>
                 </td>
                 <td>
-                  $103,600
+                  Work In Progress
                 </td>
                 <td>
-                  July 18, 2011
+                  <button>
+                    <a href="#">Get File</a>
+                  </button>
                 </td>
               </tr>
               <tr>
                 <td>
                   7
                 </td>
-                <td>
+                <td class="text-start">
                   Zenaida Frank
                 </td>
                 <td>
@@ -248,10 +259,12 @@
                   </div>
                 </td>
                 <td>
-                  $313,500
+                  Work In Progress
                 </td>
                 <td>
-                  March 22, 2013
+                  <button>
+                    <a href="#">Get File</a>
+                  </button>
                 </td>
               </tr>
             </tbody>
