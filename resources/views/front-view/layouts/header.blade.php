@@ -32,7 +32,7 @@
         <div class="dropdown-menu p-0" aria-labelledby="notificationDropdown">
           <div class="px-3 py-2 d-flex align-items-center justify-content-between border-bottom gap-3">
             <p class="text-primary align-items-center justify-content-between my-auto">Need Help?</p>
-            <a href="https://helpdesk.aryanoble.co.id/" class="badge bg-light text-dark">Click Me!</a>
+            <a href="https://helpdesk.aryanoble.co.id/" class="badge bg-light text-dark" target="_blank">Click Me!</a>
           </div>
         </div>
       </li>
