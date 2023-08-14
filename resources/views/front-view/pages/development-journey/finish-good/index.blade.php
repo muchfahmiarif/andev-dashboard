@@ -40,7 +40,7 @@
                     <li class="event" data-date="2 Days Ago">
                       <div>
                         <div class="hstack">
-                          <a class="title text-decoration-none" href="{{ url('/development-journey/finish-good/detail') }}">Registration</a>
+                          <a class="title text-decoration-none" href="{{ url('/development-journey/finish-good/detail') }}">BPO ex Indokemika</a>
                           <p class="ms-auto badge bg-info">Mencari Literatur</p>
                         </div>
                         <p>Get here on time, it's first come first serve. Be late, get turned away.</p>

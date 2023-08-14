@@ -9,7 +9,8 @@
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a class="text-decoration-none" href="{{ url('#') }}">Development Journey</a></li>
     <li class="breadcrumb-item"><a class="text-decoration-none" href="{{ url('/development-journey/finish-good') }}">Finish Good</a></li>
-    <li class="breadcrumb-item active" aria-current="page">{{ 'Detail' }}</li> {{-- Dinamis sesuai nama judul --}}
+    <li class="breadcrumb-item"><a class="text-decoration-none" href="{{ url('/development-journey/finish-good') }}">Aza 20 Cream</a></li> {{-- URL statis, title dinamis --}}
+    <li class="breadcrumb-item active" aria-current="page">{{ 'BPO ex Indokemika' }}</li> {{-- Dinamis sesuai nama judul --}}
   </ol>
 </nav>
 
@@ -17,7 +18,7 @@
   <div class="col-md-12">
     <div class="card">
       <div class="card-body">
-        <h6 class="card-title mb-3">{{ 'Detail' }}</h6> {{-- Dinamis sesuai nama judul --}}
+        <h6 class="card-title mb-3">{{ 'BPO ex Indokemika' }}</h6> {{-- Dinamis sesuai nama judul --}}
         <div class="accordion" id="FaqAccordion">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
@@ -95,7 +96,7 @@
       </div>
 
       <div class="card-body">
-        <h6 class="card-title">Data {{ 'Detail' }}</h6> {{-- Dinamis sesuai nama judul --}}
+        <h6 class="card-title">Data {{ 'BPO ex Indokemika' }}</h6> {{-- Dinamis sesuai nama judul --}}
         {{-- <p class="text-muted mb-3">Add class <code>.table-bordered</code></p> --}}
         <div class="table-responsive pt-3">
           <table class="table table-hover align-middle">
