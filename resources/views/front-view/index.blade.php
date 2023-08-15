@@ -34,14 +34,42 @@
 @endpush
 
 @section('content')
-    <div class="">
-        <div class="col-md-12">
+<div>
+    <div class="alert alert-warning d-flex align-items-center" role="alert">
+        🏗️ Under development
+    </div>
+</div>
+    <div class="mb-2 d-flex">
+        <div>
+            <h2 class="mb-0">Andev Dashboard</h2>
+        </div>
+        <div class="ms-auto">
+            <div class="d-flex">
+                <select class="form-select mx-2" aria-label="Default select example">
+                    <option selected>Pilih bulan...</option>
+                    <option value="1">Januari</option>
+                    <option value="2">Februari</option>
+                    <option value="3">Maret</option>
+                    <option value="4">April</option>
+                    <option value="5">Mei</option>
+                    <option value="6">Juni</option>
+                    <option value="7">Juli</option>
+                    <option value="8">Agustus</option>
+                    <option value="9">September</option>
+                    <option value="10">Oktober</option>
+                    <option value="11">November</option>
+                    <option value="12">Desember</option>
+                </select>
+                <button class="btn btn-primary text-light">Terapkan</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        {{-- Grafik 1 --}}
+        <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
-                    <h1 class="card-title">Home</h1>
-                    <div class="alert alert-warning d-flex align-items-center" role="alert">
-                        🏗️ Under development
-                    </div>
+                    <h1 class="card-title">Main 1</h1>
                     <div class="content d-flex flex-wrap justify-content-center gap-3">
                         <div class="text-center">
                             <div id="main-1" class="d-flex"></div>
@@ -51,6 +79,16 @@
                                 <a href="#" class="text-decoration-none text-muted"><span class="empty-box-yellow"></span> Finish Good</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{-- Grafik 2 --}}
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">Main 2</h1>
+                    <div class="content d-flex flex-wrap justify-content-center gap-3">
                         <div class="text-center">
                             <div id="main-2" class="d-flex"></div>
                             <div class="d-flex gap-2 justify-content-center">
@@ -59,17 +97,65 @@
                                 <a href="#" class="text-decoration-none text-muted"><span class="empty-box-yellow"></span> Finish Good</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="row mt-4">
+        {{-- Grafik 3 --}}
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">Main 1</h1>
+                    <div class="content d-flex flex-wrap justify-content-center gap-3">
                         <div class="text-center">
                             <div id="main-pie" class="d-flex"></div>
                             <div class="d-flex gap-2 justify-content-center">
-                                <a href="#">1</a>
-                                <a href="#">2</a>
-                                <a href="#">3</a>
+                                <a href="#" class="text-decoration-none text-muted"><span class="empty-box-blue"></span> Finish Good</a>
+                                <a href="#" class="text-decoration-none text-muted"><span class="empty-box-green"></span> Finish Good</a>
+                                <a href="#" class="text-decoration-none text-muted"><span class="empty-box-yellow"></span> Finish Good</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{-- Grafik 4 --}}
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">Main 2</h1>
+                    <div class="content d-flex flex-wrap justify-content-center gap-3">
                         <div class="text-center">
-                            <div id="main-stacked-line"></div>
+                            <div id="main-4" class="d-flex"></div>
+                            <div class="d-flex gap-2 justify-content-center">
+                                <a href="#" class="text-decoration-none text-muted"><span class="empty-box-blue"></span> Finish Good</a>
+                                <a href="#" class="text-decoration-none text-muted"><span class="empty-box-green"></span> Finish Good</a>
+                                <a href="#" class="text-decoration-none text-muted"><span class="empty-box-yellow"></span> Finish Good</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        {{-- Grafik 5 --}}
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">Main 1</h1>
+                    <div class="content d-flex flex-wrap justify-content-center gap-3">
+                        <div class="text-center">
+                            <div id="main-stacked-line" class="d-flex"></div>
+                            <div class="d-flex gap-2 justify-content-center">
+                                <a href="#" class="text-decoration-none text-muted"><span class="empty-box-blue"></span> Finish Good</a>
+                                <a href="#" class="text-decoration-none text-muted"><span class="empty-box-green"></span> Finish Good</a>
+                                <a href="#" class="text-decoration-none text-muted"><span class="empty-box-yellow"></span> Finish Good</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -79,6 +165,7 @@
 @endsection
 
 @push('custom-scripts')
+{{-- Main 1 --}}
 <script type="text/javascript">
     // Initialize the echarts instance based on the prepared dom
     var myChart = echarts.init(document.getElementById('main-1'), null, {
@@ -122,6 +209,7 @@
     // Display the chart using the configuration items and data just specified.
     myChart.setOption(option);
 </script>
+{{-- Main 2 --}}
 <script type="text/javascript">
     // Initialize the echarts instance based on the prepared dom
     var myChart = echarts.init(document.getElementById('main-2'), null, {
@@ -165,6 +253,51 @@
     // Display the chart using the configuration items and data just specified.
     myChart.setOption(option);
 </script>
+{{-- Main 4 --}}
+<script type="text/javascript">
+    // Initialize the echarts instance based on the prepared dom
+    var myChart = echarts.init(document.getElementById('main-4'), null, {
+        width: 600,
+        height: 400
+    });
+
+    // Specify the configuration items and data for the chart
+    var option = {
+        title: {
+            text: 'Methode refer to FI VI'
+        },
+        tooltip: {},
+        toolbox: {
+        feature: {
+        saveAsImage: {}
+        }
+    },
+        legend: {
+            // Try 'horizontal'
+            orient: 'vertical',
+            right: 0,
+            top: 'center'
+        },
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {},
+        dataset: {
+        // Provide a set of data.
+        source: [
+            ['product', '2015', '2016', '2017'],
+            ['Matcha Latte', 43.3, 85.8, 93.7],
+            ['Milk Tea', 83.1, 73.4, 55.1],
+            ['Cheese Cocoa', 86.4, 65.2, 82.5],
+            ['Walnut Brownie', 72.4, 53.9, 39.1]
+        ]
+        },
+        series: [{ type: 'bar' }, { type: 'bar' }, { type: 'bar' }]
+    };
+    // Display the chart using the configuration items and data just specified.
+    myChart.setOption(option);
+</script>
+{{-- Main Pie --}}
 <script type="text/javascript">
     var myChart = echarts.init(document.getElementById('main-pie'), null, {
         width: 600,
@@ -199,9 +332,10 @@
     };
     myChart.setOption(option);
 </script>
+{{-- Main Stacked Line --}}
 <script type="text/javascript">
     var myChart = echarts.init(document.getElementById('main-stacked-line'), null, {
-        width: 600,
+        width: 1200,
         height: 400
     });
     var option;
