@@ -46,19 +46,19 @@
         <div class="ms-auto">
             <div class="d-flex">
                 <select class="form-select mx-2" aria-label="Default select example">
-                    <option selected>Pilih bulan...</option>
-                    <option value="1">Januari</option>
-                    <option value="2">Februari</option>
-                    <option value="3">Maret</option>
-                    <option value="4">April</option>
-                    <option value="5">Mei</option>
-                    <option value="6">Juni</option>
-                    <option value="7">Juli</option>
-                    <option value="8">Agustus</option>
-                    <option value="9">September</option>
-                    <option value="10">Oktober</option>
-                    <option value="11">November</option>
-                    <option value="12">Desember</option>
+                    <option selected>Pilih tahun...</option>
+                    <option value="1">2023</option>
+                    <option value="2">2024</option>
+                    <option value="3">2025</option>
+                    <option value="4">2026</option>
+                    <option value="5">2027</option>
+                    <option value="6">2028</option>
+                    <option value="7">2029</option>
+                    <option value="8">2030</option>
+                    <option value="9">2031</option>
+                    <option value="10">2032</option>
+                    <option value="11">2033</option>
+                    <option value="12">2034</option>
                 </select>
                 <button class="btn btn-primary text-light">Terapkan</button>
             </div>
@@ -453,7 +453,7 @@ option = {
     }
   },
   legend: {
-    data: ['Evaporation', 'Precipitation', 'Limit']
+    data: ['Complience', 'Performance Instrument', 'Limit']
   },
   xAxis: [
     {
@@ -467,7 +467,7 @@ option = {
   yAxis: [
     {
       type: 'value',
-      name: 'Precipitation',
+      name: 'Performance Instrument',
       min: 0,
       max: 250,
       interval: 50,
@@ -479,16 +479,16 @@ option = {
       type: 'value',
       name: 'Limit',
       min: 0,
-      max: 25,
-      interval: 5,
+      max: 100,
+      interval: 10,
       axisLabel: {
-        formatter: '{value} °C'
+        formatter: '{value} %'
       }
     }
   ],
   series: [
     {
-      name: 'Evaporation',
+      name: 'Complience',
       type: 'bar',
       tooltip: {
         valueFormatter: function (value) {
@@ -500,7 +500,7 @@ option = {
       ]
     },
     {
-      name: 'Precipitation',
+      name: 'Performance Instrument',
       type: 'bar',
       tooltip: {
         valueFormatter: function (value) {
@@ -517,10 +517,10 @@ option = {
       yAxisIndex: 1,
       tooltip: {
         valueFormatter: function (value) {
-          return value + ' °C';
+          return value + ' %';
         }
       },
-      data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+      data: [95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95]
     }
   ]
 };
