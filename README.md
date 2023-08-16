@@ -1,10 +1,9 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://i.ibb.co/2qKD585/andev-dashboard.png" width="200" alt="Laravel Logo"></a></p>
 
-<p align="center">
+<!-- <p align="center">
 <a href="https://github.com/muchfahmiarif"><img src="https://img.shields.io/badge/Contribute-Fahmi-blue" alt="Muchammad Fahmi Arif"></a>
 <a href="https://github.com/Pucuks"><img src="https://img.shields.io/badge/Contribute-Agi-green" alt="Agi"></a>
-
-</p>
+</p> -->
 
 ## About Andev Dashboard
 
