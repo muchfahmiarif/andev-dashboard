@@ -64,15 +64,34 @@
             </div>
         </div>
     </div>
-    <div class="row">
         {{-- Grafik 1 --}}
-        <div class="col-md-6">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
                     <h1 class="card-title">Main 1</h1>
                     <div class="content d-flex flex-wrap justify-content-center gap-3">
                         <div class="text-center">
-                            <div id="main-1" class="d-flex"></div>
+                            <div id="output-analisa" class="d-flex "></div>
+                            <div class="d-flex gap-2 justify-content-center ">
+                                <a href="#" class="text-decoration-none text-muted"><span class="empty-box-blue"></span> Finish Good</a>
+                                <a href="#" class="text-decoration-none text-muted"><span class="empty-box-green"></span> Finish Good</a>
+                                <a href="#" class="text-decoration-none text-muted"><span class="empty-box-yellow"></span> Finish Good</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="row mt-4">
+    {{-- Grafik 2 --}}
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">Main 2</h1>
+                    <div class="content d-flex flex-wrap justify-content-center gap-3">
+                        <div class="text-center">
+                            <div id="output-riset-validasi" class="d-flex"></div>
                             <div class="d-flex gap-2 justify-content-center">
                                 <a href="#" class="text-decoration-none text-muted"><span class="empty-box-blue"></span> Finish Good</a>
                                 <a href="#" class="text-decoration-none text-muted"><span class="empty-box-green"></span> Finish Good</a>
@@ -83,14 +102,14 @@
                 </div>
             </div>
         </div>
-        {{-- Grafik 2 --}}
+        {{-- Grafik 3 --}}
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
                     <h1 class="card-title">Main 2</h1>
                     <div class="content d-flex flex-wrap justify-content-center gap-3">
                         <div class="text-center">
-                            <div id="main-2" class="d-flex"></div>
+                            <div id="output-lain" class="d-flex"></div>
                             <div class="d-flex gap-2 justify-content-center">
                                 <a href="#" class="text-decoration-none text-muted"><span class="empty-box-blue"></span> Finish Good</a>
                                 <a href="#" class="text-decoration-none text-muted"><span class="empty-box-green"></span> Finish Good</a>
@@ -168,7 +187,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <h1 class="card-title">Main 1</h1>
+                    <h1 class="card-title">Grafik 6</h1>
                     <div class="content d-flex flex-wrap justify-content-center gap-3">
                         <div class="text-center">
                             <div id="main-stacked-line" class="d-flex"></div>
@@ -186,95 +205,16 @@
 @endsection
 
 @push('custom-scripts')
-{{-- Main 1 --}}
-<script type="text/javascript">
-    // Initialize the echarts instance based on the prepared dom
-    var myChart = echarts.init(document.getElementById('main-1'), null, {
-        width: 600,
-        height: 400
-    });
-
-    // Specify the configuration items and data for the chart
-    var option = {
-        title: {
-            text: 'Methode refer to FI VI'
-        },
-        tooltip: {},
-        toolbox: {
-        feature: {
-        saveAsImage: {}
-        }
-    },
-        legend: {
-            // Try 'horizontal'
-            orient: 'vertical',
-            right: 0,
-            top: 'center'
-        },
-        xAxis: {
-            type: 'category'
-        },
-        yAxis: {},
-        dataset: {
-        // Provide a set of data.
-        source: [
-            ['product', '2015', '2016', '2017', '2018'],
-            ['Matcha Latte', 43.3, 85.8, 93.7,],
-            ['Milk Tea', 83.1, 73.4, 55.1,],
-            ['Cheese Cocoa', 86.4, 65.2, 82.5,],
-            ['Walnut Brownie', 72.4, 53.9, 39.1,],
-        ]
-        },
-        series: [{ type: 'bar' }, { type: 'bar' }, { type: 'bar' },]
-    };
-    // Display the chart using the configuration items and data just specified.
-    myChart.setOption(option);
+{{-- Diagram Output Analisa --}}
+<script type="text/javascript" src="{{ asset('js/diagram/output-andev-1.js') }}">
 </script>
 
-{{-- Main 2 --}}
-<script type="text/javascript">
-    // Initialize the echarts instance based on the prepared dom
-    var myChart = echarts.init(document.getElementById('main-2'), null, {
-        width: 600,
-        height: 400
-    });
-
-    // Specify the configuration items and data for the chart
-    var option = {
-        title: {
-            text: 'Methode refer to FI VI'
-        },
-        tooltip: {},
-        toolbox: {
-        feature: {
-        saveAsImage: {}
-        }
-    },
-        legend: {
-            // Try 'horizontal'
-            orient: 'vertical',
-            right: 0,
-            top: 'center'
-        },
-        xAxis: {
-            type: 'category'
-        },
-        yAxis: {},
-        dataset: {
-        // Provide a set of data.
-        source: [
-            ['product', '2015', '2016', '2017'],
-            ['Matcha Latte', 43.3, 85.8, 93.7],
-            ['Milk Tea', 83.1, 73.4, 55.1],
-            ['Cheese Cocoa', 86.4, 65.2, 82.5],
-            ['Walnut Brownie', 72.4, 53.9, 39.1]
-        ]
-        },
-        series: [{ type: 'bar' }, { type: 'bar' }, { type: 'bar' }]
-    };
-    // Display the chart using the configuration items and data just specified.
-    myChart.setOption(option);
+{{-- Diagram Riset dan Validasi --}}
+<script type="text/javascript" src="{{ asset('js/diagram/output-andev-2.js') }}">
 </script>
+
+{{-- Diagram Dokumen --}}
+<script type="text/javascript" src="{{ asset('js/diagram/output-andev-3.js') }}"></script>
 
 {{-- Main 4 --}}
 <script type="text/javascript">
