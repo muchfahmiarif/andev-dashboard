@@ -8,20 +8,10 @@
 
 ## About Andev Dashboard
 
-Andev dashboard adalah web apps yang dibuat untuk memudahkan pengguna dalam mengelola data-data yang ada di dalam database. Andev dashboard dibuat dengan menggunakan framework Laravel 9 dan bootstrap 5.
+Andev dashboard adalah web apps yang dibuat untuk memudahkan pengguna dalam mengelola data-data yang ada di dalam database. Andev dashboard dibuat dengan menggunakan framework Laravel UI versi 4 dengan laravel versi 9 dan bootstrap 5.
 
-## Task List Andev Dashboard
+## Dokumentasi
 
-- [ ] Halaman pembuka
-- [ ] Diagram schema database dapat diliat [disini](https://drawsql.app/teams/klip-undangan/diagrams/andev-dashboard)
-- [ ] Wireframe
-- [ ] Fitur login
-- [ ] 3 level user (admin, user dan guest)
-- [ ] Dokumentasi jelas dan lengkap
+Dokumentasi lengkap Andev Dashboard dapat dilihat pada link berikut [Andev Dashboard](https://docs-andev-genero.vercel.app)
 
-## Aturan Main
-Silahkan baca **[DISINI](./public/docs/README.md)**
-
-## Cara Berkontribusi
-
-Untuk dapat berkontribusi hubungi [fahmi](mailto:fahmiarif96@gmail.com) dan agi.
+[![](./public/img/docs-andev-dashboard.png)](https://docs-andev-genero.vercel.app)
