@@ -86,6 +86,10 @@ Route::group(['prefix' => 'jadwal-stabilita'], function () {
     Route::get('ss-2', function () { return view('front-view.pages.jadwal-stabilita.ss-2'); });
 });
 
+Route::group(['prefix' => 'other'], function () {
+    Route::get('compliance', function () { return view('front-view.pages.other.compliance'); });
+});
+
 Route::get('/rear-view', function() {
     return view('rear-view.index');
 });

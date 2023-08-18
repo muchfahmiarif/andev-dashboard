@@ -138,10 +138,10 @@
 
       {{-- Others Starts --}}
       <li class="nav-item nav-category">Others</li>
-      <li class="nav-item {{ Request::is(['complience']) ? 'active' : '' }}">
-        <a href="{{ url('/complience') }}" class="nav-link">
+      <li class="nav-item {{ Request::is(['compliance']) ? 'active' : '' }}">
+        <a href="{{ url('/other/compliance') }}" class="nav-link">
           <i class="link-icon" data-feather="calendar"></i>
-          <span class="link-title">Complience</span>
+          <span class="link-title">Compliance</span>
         </a>
       </li>
       <li class="nav-item {{ Request::is(['resource-analysis/*']) ? 'active' : '' }}">
