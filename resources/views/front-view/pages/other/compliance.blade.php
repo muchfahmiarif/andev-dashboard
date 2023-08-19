@@ -58,6 +58,7 @@
                             <th scope="col" class="text-center">Nama alat</th>
                             <th scope="col" class="text-center">List item yang perlu di cek</th>
                             <th scope="col" class="text-center">Status</th>
+                            <th scope="col" class="text-center">Keterangan</th>
                         </tr>
                     </thead>
                     <tbody class="table-group-divider">
@@ -68,6 +69,7 @@
                             <td>Karl Fischer</td>
                             <td>Memastikan alat masih dalam status terkualifikasi dan terkalibrasi</td>
                             <td class="text-center">✅ | ❎</td>
+                            <td>NA</td>
                         </tr>
                         <tr>
                             <td scope="row" class="text-center">2</td>
@@ -76,6 +78,7 @@
                             <td>Karl Fischer</td>
                             <td>Memastikan logsheet pemakaian karl fisher diisi setiap harinya jika digunakan</td>
                             <td class="text-center">✅ | ❎</td>
+                            <td>NA</td>
                         </tr>
                         <tr>
                             <td scope="row" class="text-center">3</td>
@@ -84,8 +87,10 @@
                             <td>Karl Fischer</td>
                             <td>Memastikan ketersedian standar "Hydranal" untuk verifikasi Karl Ficher</td>
                             <td class="text-center">✅ | ❎</td>
+                            <td>NA</td>
                         </tr>
                         <tr>
+                            <td>...</td>
                             <td>...</td>
                             <td>...</td>
                             <td>...</td>
@@ -100,6 +105,7 @@
                             <td>Dinding / Langit - langit</td>
                             <td>Memastikan area dinding dan langit-langit lab Andev bersih dan terawat</td>
                             <td class="text-center">✅ | ❎</td>
+                            <td>NA</td>
                         </tr>
                     </tbody>
                 </table>

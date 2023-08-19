@@ -138,13 +138,19 @@
 
       {{-- Others Starts --}}
       <li class="nav-item nav-category">Others</li>
-      <li class="nav-item {{ Request::is(['compliance']) ? 'active' : '' }}">
+      <li class="nav-item {{ Request::is(['other/compliance']) ? 'active' : '' }}">
         <a href="{{ url('/other/compliance') }}" class="nav-link">
           <i class="link-icon" data-feather="calendar"></i>
           <span class="link-title">Compliance</span>
         </a>
       </li>
-      <li class="nav-item {{ Request::is(['resource-analysis/*']) ? 'active' : '' }}">
+      <li class="nav-item {{ Request::is(['other/instrument-andev']) ? 'active' : '' }}">
+        <a href="{{ url('/other/instrument-andev') }}" class="nav-link">
+          <i class="link-icon" data-feather="calendar"></i>
+          <span class="link-title">Instrument Andev</span>
+        </a>
+      </li>
+      {{-- <li class="nav-item {{ Request::is(['resource-analysis/*']) ? 'active' : '' }}">
         <a class="nav-link" data-bs-toggle="collapse" href="#resource-analysis" role="button" aria-expanded="{{ Request::is(['resource-analysis/*']) ? 'true' : 'false' }}" aria-controls="resource-analysis">
           <i class="link-icon" data-feather="inbox"></i>
           <span class="link-title">Resource Analysis</span>
@@ -163,7 +169,7 @@
             </li>
           </ul>
         </div>
-      </li>
+      </li> --}}
       
       {{-- Docs Starts --}}
       <li class="nav-item nav-category">Docs</li>

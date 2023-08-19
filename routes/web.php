@@ -88,6 +88,7 @@ Route::group(['prefix' => 'jadwal-stabilita'], function () {
 
 Route::group(['prefix' => 'other'], function () {
     Route::get('compliance', function () { return view('front-view.pages.other.compliance'); });
+    Route::get('instrument-andev', function() {return view ('front-view.pages.other.instrument-andev');});
 });
 
 Route::get('/rear-view', function() {
