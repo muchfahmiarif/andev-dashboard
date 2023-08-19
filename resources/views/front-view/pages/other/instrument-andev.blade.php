@@ -152,16 +152,16 @@
                         </tr>
                         <tr>
                             <td scope="row" class="text-center">12</td>
-                            <td>HPLC Water Breeze 1525</td>
-                            <td>RD.HPLC02.07</td>
+                            <td>UHPLC Waters Acquity ARC System</td>
+                            <td>RD.HPLC06.19</td>
                             <td class="text-center">✅ | ❎</td>
                             <td class="text-center">✅ | ❎</td>
                             <td class="text-center">Kondisi alat baik</td>
                         </tr>
                         <tr>
                             <td scope="row" class="text-center">13</td>
-                            <td>HPLC Water Breeze 1525</td>
-                            <td>RD.HPLC02.07</td>
+                            <td>pH meter Ohaus AQUASEARCHER™ a-AB41PH</td>
+                            <td>RD.PHM06.23</td>
                             <td class="text-center">✅ | ❎</td>
                             <td class="text-center">✅ | ❎</td>
                             <td class="text-center">Kondisi alat baik</td>
@@ -179,11 +179,11 @@
                         </thead>
                         <tbody class="table-group-divider">
                             <tr>
-                                <td scope="row">Total Compliance</td>
-                                <td class="text-center">142</td>
+                                <td scope="row">Point</td>
+                                <td class="text-center">23</td>
                             </tr>
                             <tr>
-                                <td scope="row">% Compliance</td>
+                                <td scope="row">% Point</td>
                                 <td class="text-center">95%</td>
                             </tr>
                         </tbody>
