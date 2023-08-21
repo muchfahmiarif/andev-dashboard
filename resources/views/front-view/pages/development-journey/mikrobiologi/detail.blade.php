@@ -9,6 +9,7 @@
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a class="text-decoration-none" href="{{ url('#') }}">Development Journey</a></li>
     <li class="breadcrumb-item"><a class="text-decoration-none" href="{{ url('/development-journey/mikrobiologi') }}">Mikrobiologi</a></li>
+    <li class="breadcrumb-item"><a class="text-decoration-none" href="{{ url('/development-journey/mikrobiologi') }}">Dystatic</a></li>
     <li class="breadcrumb-item active" aria-current="page">{{ 'Detail' }}</li> {{-- Dinamis sesuai nama judul --}}
   </ol>
 </nav>
