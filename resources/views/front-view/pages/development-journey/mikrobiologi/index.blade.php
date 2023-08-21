@@ -38,7 +38,7 @@
               <li class="event" data-date="2 Days Ago">
                 <div>
                   <div class="hstack">
-                    <a class="title text-decoration-none" href="{{ url('/development-journey/mikrobiologi/detail') }}">Lorem, ipsum.</a> {{-- link detail nantinya dinamis sesuai dengan slug --}}
+                    <a class="title text-decoration-none" href="{{ url('/development-journey/mikrobiologi/detail') }}">Dystatic.</a> {{-- link detail nantinya dinamis sesuai dengan slug --}}
                     <p class="ms-auto badge bg-info">Mencari Literatur</p>
                   </div>
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure suscipit nostrum repellat, qui natus obcaecati pariatur doloribus quos voluptatibus debitis.</p>
@@ -47,7 +47,7 @@
               <li class="event" data-date="9 Month Ago">
                 <div>
                   <div class="hstack">
-                    <a class="title text-decoration-none" href="{{ url('/development-journey/mikrobiologi/detail') }}">Minoxidil ex Global Calcium</a> {{-- link detail nantinya dinamis sesuai dengan slug --}}
+                    <a class="title text-decoration-none" href="{{ url('/development-journey/mikrobiologi/detail') }}">Dystatic</a> {{-- link detail nantinya dinamis sesuai dengan slug --}}
                     <p class="ms-auto badge bg-danger">Pending</p>
                   </div>
                   <p>Perubahan prosedur kerja sesuai USP 44 dan perubahan format dokumen</p>
@@ -56,7 +56,7 @@
               <li class="event" data-date="Apr 2021">
                 <div>
                   <div class="hstack gap-3">
-                    <a class="title text-decoration-none" href="{{ url('/development-journey/mikrobiologi/detail') }}">Minoxidil</a> {{-- link detail nantinya dinamis sesuai dengan slug --}}
+                    <a class="title text-decoration-none" href="{{ url('/development-journey/mikrobiologi/detail') }}">Dystatic</a> {{-- link detail nantinya dinamis sesuai dengan slug --}}
                     <p class="ms-auto badge bg-warning">Work In Progress</p>
                   </div>
                   <p>Perubahan prosedur kerja dan perubahan alat dari HPLC menjadi UPLC</p>
@@ -65,7 +65,7 @@
               <li class="event" data-date="Apr 2019">
                 <div>
                   <div class="hstack gap-3">
-                    <a class="title text-decoration-none" href="{{ url('/development-journey/mikrobiologi/detail') }}">Minoxidil</a> {{-- link detail nantinya dinamis sesuai dengan slug --}}
+                    <a class="title text-decoration-none" href="{{ url('/development-journey/mikrobiologi/detail') }}">Dystatic</a> {{-- link detail nantinya dinamis sesuai dengan slug --}}
                     <p class="ms-auto badge bg-success">Done</p>
                   </div>
                   <p>Pertama Terbit</p>
