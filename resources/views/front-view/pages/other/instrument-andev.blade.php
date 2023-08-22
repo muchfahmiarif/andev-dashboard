@@ -65,64 +65,64 @@
                             <td scope="row" class="text-center">1</td>
                             <td>Analytical Balance Sartorius SECURA 225D-1S</td>
                             <td>RD.TBD16.16</td>
-                            <td class="text-center">✅ | ❎</td>
-                            <td class="text-center">✅ | ❎</td>
+                            <td class="text-center">✔️ | ❌</td>
+                            <td class="text-center">✔️ | ❌</td>
                             <td class="text-center">Kondisi alat baik</td>
                         </tr>
                         <tr>
                             <td scope="row" class="text-center">2</td>
                             <td>Analytical Balance Sartorius SECURA 225D-1S</td>
                             <td>RD.TBD17.19</td>
-                            <td class="text-center">✅ | ❎</td>
-                            <td class="text-center">✅ | ❎</td>
+                            <td class="text-center">✔️ | ❌</td>
+                            <td class="text-center">✔️ | ❌</td>
                             <td class="text-center">Kondisi alat baik</td>
                         </tr>
                         <tr>
                             <td scope="row" class="text-center">3</td>
                             <td>Dissolution Tester Hanson Vision Elite 8</td>
                             <td>RD.DST01.12</td>
-                            <td class="text-center">✅ | ❎</td>
-                            <td class="text-center">✅ | ❎</td>
+                            <td class="text-center">✔️ | ❌</td>
+                            <td class="text-center">✔️ | ❌</td>
                             <td class="text-center">Kondisi alat baik</td>
                         </tr>
                         <tr>
                             <td scope="row" class="text-center">4</td>
                             <td>Desintegration Tester Charles Ischi AG</td>
                             <td>RD.DSG01.15</td>
-                            <td class="text-center">✅ | ❎</td>
-                            <td class="text-center">✅ | ❎</td>
+                            <td class="text-center">✔️ | ❌</td>
+                            <td class="text-center">✔️ | ❌</td>
                             <td class="text-center">Kondisi alat baik</td>
                         </tr>
                         <tr>
                             <td scope="row" class="text-center">5</td>
                             <td>KARL FISCHER Metrohm Type 870 KF Titrino Plus</td>
                             <td>RD.TTR01.15</td>
-                            <td class="text-center">✅ | ❎</td>
-                            <td class="text-center">✅ | ❎</td>
+                            <td class="text-center">✔️ | ❌</td>
+                            <td class="text-center">✔️ | ❌</td>
                             <td class="text-center">Kondisi alat baik</td>
                         </tr>
                         <tr>
                             <td scope="row" class="text-center">6</td>
                             <td>Spectrofotometer Jasco-V650</td>
                             <td>RD.SPC01.07</td>
-                            <td class="text-center">✅ | ❎</td>
-                            <td class="text-center">✅ | ❎</td>
+                            <td class="text-center">✔️ | ❌</td>
+                            <td class="text-center">✔️ | ❌</td>
                             <td class="text-center">Kondisi alat baik</td>
                         </tr>
                         <tr>
                             <td scope="row" class="text-center">7</td>
                             <td>Furnace Carbolite CWF 12-13</td>
                             <td>RD.FNC01.15</td>
-                            <td class="text-center">✅ | ❎</td>
-                            <td class="text-center">✅ | ❎</td>
+                            <td class="text-center">✔️ | ❌</td>
+                            <td class="text-center">✔️ | ❌</td>
                             <td class="text-center">Kondisi alat baik</td>
                         </tr>
                         <tr>
                             <td scope="row" class="text-center">8</td>
                             <td>HPLC Waters Alliance 2695</td>
                             <td>RD.HPLC01.08</td>
-                            <td class="text-center">✅ | ❎</td>
-                            <td class="text-center">✅ | ❎</td>
+                            <td class="text-center">✔️ | ❌</td>
+                            <td class="text-center">✔️ | ❌</td>
                             <td class="text-center">Kondisi alat baik</td>
                         </tr>
 
@@ -130,40 +130,40 @@
                             <td scope="row" class="text-center">9</td>
                             <td>HPLC Waters Alliance E 2695</td>
                             <td>RD.HPLC03.12</td>
-                            <td class="text-center">✅ | ❎</td>
-                            <td class="text-center">✅ | ❎</td>
+                            <td class="text-center">✔️ | ❌</td>
+                            <td class="text-center">✔️ | ❌</td>
                             <td class="text-center">Kondisi alat baik</td>
                         </tr>
                         <tr>
                             <td scope="row" class="text-center">10</td>
                             <td>HPLC Waters Alliance E 2695</td>
                             <td>RD.HPLC05.16</td>
-                            <td class="text-center">✅ | ❎</td>
-                            <td class="text-center">✅ | ❎</td>
+                            <td class="text-center">✔️ | ❌</td>
+                            <td class="text-center">✔️ | ❌</td>
                             <td class="text-center">Kondisi alat baik</td>
                         </tr>
                         <tr>
                             <td scope="row" class="text-center">11</td>
                             <td>HPLC Water Breeze 1525</td>
                             <td>RD.HPLC02.07</td>
-                            <td class="text-center">✅ | ❎</td>
-                            <td class="text-center">✅ | ❎</td>
+                            <td class="text-center">✔️ | ❌</td>
+                            <td class="text-center">✔️ | ❌</td>
                             <td class="text-center">Kondisi alat baik</td>
                         </tr>
                         <tr>
                             <td scope="row" class="text-center">12</td>
                             <td>UHPLC Waters Acquity ARC System</td>
                             <td>RD.HPLC06.19</td>
-                            <td class="text-center">✅ | ❎</td>
-                            <td class="text-center">✅ | ❎</td>
+                            <td class="text-center">✔️ | ❌</td>
+                            <td class="text-center">✔️ | ❌</td>
                             <td class="text-center">Kondisi alat baik</td>
                         </tr>
                         <tr>
                             <td scope="row" class="text-center">13</td>
                             <td>pH meter Ohaus AQUASEARCHER™ a-AB41PH</td>
                             <td>RD.PHM06.23</td>
-                            <td class="text-center">✅ | ❎</td>
-                            <td class="text-center">✅ | ❎</td>
+                            <td class="text-center">✔️ | ❌</td>
+                            <td class="text-center">✔️ | ❌</td>
                             <td class="text-center">Kondisi alat baik</td>
                         </tr>
                     </tbody>
@@ -192,12 +192,12 @@
                 <h1 class="card-title mt-5">Keterangan</h1>
                 <table>
                     <tr>
-                        <td>✅</td>
+                        <td>✔️</td>
                         <td> : </td>
                         <td>Memenuhi</td>
                     </tr>
                     <tr>
-                        <td>❎</td>
+                        <td>❌</td>
                         <td> : </td>
                         <td>Tidak Memenuhi</td>
                     </tr>

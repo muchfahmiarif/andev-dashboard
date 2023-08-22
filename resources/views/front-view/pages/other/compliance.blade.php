@@ -68,7 +68,7 @@
                             <td>Daffa</td>
                             <td>Karl Fischer</td>
                             <td>Memastikan alat masih dalam status terkualifikasi dan terkalibrasi</td>
-                            <td class="text-center">✅ | ❎</td>
+                            <td class="text-center">✔️ | ❌</td>
                             <td>NA</td>
                         </tr>
                         <tr>
@@ -77,7 +77,7 @@
                             <td>Daffa</td>
                             <td>Karl Fischer</td>
                             <td>Memastikan logsheet pemakaian karl fisher diisi setiap harinya jika digunakan</td>
-                            <td class="text-center">✅ | ❎</td>
+                            <td class="text-center">✔️ | ❌</td>
                             <td>NA</td>
                         </tr>
                         <tr>
@@ -86,7 +86,7 @@
                             <td>Daffa</td>
                             <td>Karl Fischer</td>
                             <td>Memastikan ketersedian standar "Hydranal" untuk verifikasi Karl Ficher</td>
-                            <td class="text-center">✅ | ❎</td>
+                            <td class="text-center">✔️ | ❌</td>
                             <td>NA</td>
                         </tr>
                         <tr>
@@ -99,12 +99,12 @@
                             <td>...</td>
                         </tr>
                         <tr>
-                            <td scope="row" class="text-center">151</td>
+                            <td scope="row" class="text-center">155</td>
                             <td>Bangunan dan Fasilitas</td>
                             <td>NA</td>
                             <td>Dinding / Langit - langit</td>
                             <td>Memastikan area dinding dan langit-langit lab Andev bersih dan terawat</td>
-                            <td class="text-center">✅ | ❎</td>
+                            <td class="text-center">✔️ | ❌</td>
                             <td>NA</td>
                         </tr>
                     </tbody>
@@ -133,12 +133,12 @@
                 <h1 class="card-title mt-5">Keterangan</h1>
                 <table>
                     <tr>
-                        <td>✅</td>
+                        <td>✔️</td>
                         <td> : </td>
                         <td>Memenuhi</td>
                     </tr>
                     <tr>
-                        <td>❎</td>
+                        <td>❌</td>
                         <td> : </td>
                         <td>Tidak Memenuhi</td>
                     </tr>
