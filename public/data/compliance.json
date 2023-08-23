@@ -1,0 +1,1242 @@
+{
+    "Compliance": [
+        {
+            "No": "1",
+            "Area": "Ruang Timbang",
+            "PIC": "Daffa",
+            "Nama Alat": "Karl Fisher",
+            "List item yang perlu di check ": "Memastikan alat masih dalam status terkualifikasi dan terkalibrasi",
+            "Status": "✅"
+        },
+        {
+            "No": "2",
+            "Area": "Ruang Timbang",
+            "PIC": "Daffa",
+            "Nama Alat": "Karl Fisher",
+            "List item yang perlu di check ": "Memastikan logsheet pemakaian karl fisher diisi setiap harinya jika digunakan",
+            "Status": "✅"
+        },
+        {
+            "No": "3",
+            "Area": "Ruang Timbang",
+            "PIC": "Daffa",
+            "Nama Alat": "Karl Fisher",
+            "List item yang perlu di check ": "Memastikan ketersedian standar \"Hydranal\" untuk verifikasi Karl Ficher",
+            "Status": "✅"
+        },
+        {
+            "No": "4",
+            "Area": "Ruang Timbang",
+            "PIC": "Daffa",
+            "Nama Alat": "Karl Fisher",
+            "List item yang perlu di check ": "Memastikan logsheet verifikasi karl fisher diisi setiap minggunya",
+            "Status": "✅"
+        },
+        {
+            "No": "5",
+            "Area": "Ruang Timbang",
+            "PIC": "Daffa",
+            "Nama Alat": "Karl Fisher",
+            "List item yang perlu di check ": "Memastikan IK penggunaan alat karl fischer ada di dekat alat",
+            "Status": "✅"
+        },
+        {
+            "No": "6",
+            "Area": "Ruang Timbang",
+            "PIC": "Daffa",
+            "Nama Alat": "Karl Fisher",
+            "List item yang perlu di check ": "Memastikan larutan combititrant tidak ED",
+            "Status": "✅"
+        },
+        {
+            "No": "7",
+            "Area": "Ruang Timbang",
+            "PIC": "Daffa",
+            "Nama Alat": "Karl Fisher",
+            "List item yang perlu di check ": "Memastikan labeling pada botol pembuangan",
+            "Status": "✅"
+        },
+        {
+            "No": "8",
+            "Area": "Ruang Timbang",
+            "PIC": "Daffa",
+            "Nama Alat": "Karl Fisher",
+            "List item yang perlu di check ": "Menjaga kebersihan area karl fisher (tidak ada tumpahan)",
+            "Status": "✅"
+        },
+        {
+            "No": "9",
+            "Area": "Ruang Timbang",
+            "PIC": "Daffa",
+            "Nama Alat": "Karl Fisher",
+            "List item yang perlu di check ": "Mengingatkan analis yang lain agar menggunakan alat dengan benar / mengingatkan jika tidak mengisi log book",
+            "Status": "✅"
+        },
+        {
+            "No": "10",
+            "Area": "Lab Kimia",
+            "PIC": "Daffa",
+            "Nama Alat": "Lemari Asam",
+            "List item yang perlu di check ": "Menjaga kebersihan didalam kabinet lemari asam (tidak ada tumpahan dan tidak ada alat gelas bekas analisa tertinggal)",
+            "Status": "✅"
+        },
+        {
+            "No": "11",
+            "Area": "Lab Kimia",
+            "PIC": "Daffa",
+            "Nama Alat": "Lemari Asam",
+            "List item yang perlu di check ": "Memastikan alat masih dalam status terkualifikasi",
+            "Status": "✅"
+        },
+        {
+            "No": "12",
+            "Area": "Lab Kimia",
+            "PIC": "Daffa",
+            "Nama Alat": "Lemari Asam",
+            "List item yang perlu di check ": "Memastikan reagen yang ada didalam kabinet lemari asam yang masih digunakan harus diberi identitas",
+            "Status": "✅"
+        },
+        {
+            "No": "13",
+            "Area": "Lab Formulasi SS1",
+            "PIC": "Daffa",
+            "Nama Alat": "Tanur",
+            "List item yang perlu di check ": "Memastikan alat masih dalam status terkualifikasi dan terkalibrasi",
+            "Status": "✅"
+        },
+        {
+            "No": "14",
+            "Area": "Lab Formulasi SS2",
+            "PIC": "Daffa",
+            "Nama Alat": "Tanur",
+            "List item yang perlu di check ": "Memastikan logsheet pemakaian tanur diisi setiap harinya jika digunakan",
+            "Status": "✅"
+        },
+        {
+            "No": "15",
+            "Area": "Lab Formulasi SS3",
+            "PIC": "Daffa",
+            "Nama Alat": "Tanur",
+            "List item yang perlu di check ": "Memastikan IK penggunaan alat tanur ada di dekat alat",
+            "Status": "✅"
+        },
+        {
+            "No": "16",
+            "Area": "Lab Formulasi SS4",
+            "PIC": "Daffa",
+            "Nama Alat": "Tanur",
+            "List item yang perlu di check ": "Menjaga kebersihan area tanur (tidak ada tumpahan dan tidak ada alat gelas bekas analisa tertinggal)",
+            "Status": "✅"
+        },
+        {
+            "No": "17",
+            "Area": "Lab Formulasi SS5",
+            "PIC": "Daffa",
+            "Nama Alat": "Tanur",
+            "List item yang perlu di check ": "Mengingatkan analis yang lain agar menggunakan alat dengan benar / mengingatkan jika tidak mengisi log book",
+            "Status": "✅"
+        },
+        {
+            "No": "18",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Daffa",
+            "Nama Alat": "Limban sampel raw material",
+            "List item yang perlu di check ": "Memastikan box sisa sampel bahan baku diberi identitas \"sisa sampel analisa\"",
+            "Status": "✅"
+        },
+        {
+            "No": "19",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Daffa",
+            "Nama Alat": "Limban sampel raw material",
+            "List item yang perlu di check ": "Melakukan pemusnahan sisa sampel analisa setiap bulannya",
+            "Status": "✅"
+        },
+        {
+            "No": "20",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Wahyu",
+            "Nama Alat": "Sentrifuge",
+            "List item yang perlu di check ": "Memastikan alat masih dalam status terkualifikasi",
+            "Status": "✅"
+        },
+        {
+            "No": "21",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Wahyu",
+            "Nama Alat": "Sentrifuge",
+            "List item yang perlu di check ": "Memastikan logsheet pemakaian sentrifuge diisi setiap harinya jika digunakan",
+            "Status": "❎"
+        },
+        {
+            "No": "22",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Wahyu",
+            "Nama Alat": "Sentrifuge",
+            "List item yang perlu di check ": "Memastikan IK penggunaan alat sonik ada di dekat alat",
+            "Status": "✅"
+        },
+        {
+            "No": "23",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Wahyu",
+            "Nama Alat": "Sentrifuge",
+            "List item yang perlu di check ": "Menjaga kebersihan area Sentrifuge",
+            "Status": "✅"
+        },
+        {
+            "No": "24",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Wahyu",
+            "Nama Alat": "Sentrifuge",
+            "List item yang perlu di check ": "Mengingatkan analis yang lain agar menggunakan alat dengan benar / mengingatkan jika tidak mengisi log book",
+            "Status": "❎"
+        },
+        {
+            "No": "25",
+            "Area": "Ruang Timbang",
+            "PIC": "Wahyu",
+            "Nama Alat": "Alat Gelas",
+            "List item yang perlu di check ": "Melakukan pendataan stok alat gelas",
+            "Status": "✅"
+        },
+        {
+            "No": "26",
+            "Area": "Ruang Timbang",
+            "PIC": "Wahyu",
+            "Nama Alat": "Alat Gelas",
+            "List item yang perlu di check ": "Merekap pembelian alat gelas untuk dilakukan pembelian oleh pic terkait",
+            "Status": "✅"
+        },
+        {
+            "No": "27",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Wahyu",
+            "Nama Alat": "Limbah Sampel Stabilita SS1",
+            "List item yang perlu di check ": "Memastikan box sisa sampel stabilita diberi identitas \"sisa sampel analisa\"",
+            "Status": "✅"
+        },
+        {
+            "No": "28",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Wahyu",
+            "Nama Alat": "Limbah Sampel Stabilita SS2",
+            "List item yang perlu di check ": "Melakukan pemusnahan sisa sampel analisa setiap bulannya setelah project monitoring",
+            "Status": "✅"
+        },
+        {
+            "No": "29",
+            "Area": "Ruang Instrument HPLC",
+            "PIC": "Riva",
+            "Nama Alat": "Monitoring Suhu Lab Kimia",
+            "List item yang perlu di check ": "Melakukan pemantauan dan pencatatan suhu dan rh ruangan lab instrument HPLC",
+            "Status": "✅"
+        },
+        {
+            "No": "30",
+            "Area": "Ruang Instrument HPLC",
+            "PIC": "Riva",
+            "Nama Alat": "Monitoring Suhu Lab Kimia",
+            "List item yang perlu di check ": "Memastikan thermohygro ruangan lab instrument HPLC sudah terkalibrasi (on site tidak boleh dipindah)",
+            "Status": "✅"
+        },
+        {
+            "No": "31",
+            "Area": "Ruang Instrument HPLC",
+            "PIC": "Riva",
+            "Nama Alat": "Monitoring Suhu Lab Kimia",
+            "List item yang perlu di check ": "Melakukan pemantauan dan pencatatan suhu dan rh ruangan timbangan",
+            "Status": "✅"
+        },
+        {
+            "No": "32",
+            "Area": "Ruang Timbang",
+            "PIC": "Riva",
+            "Nama Alat": "Monitoring Suhu Lab Kimia",
+            "List item yang perlu di check ": "Memastikan thermohygro ruangan timbangan sudah terkalibrasi (on site tidak boleh dipindah)",
+            "Status": "✅"
+        },
+        {
+            "No": "33",
+            "Area": "Ruang Timbang",
+            "PIC": "Riva",
+            "Nama Alat": "Monitoring Suhu Lab Kimia",
+            "List item yang perlu di check ": "Melakukan pemantauan dan pencatatan suhu desikator WS",
+            "Status": "✅"
+        },
+        {
+            "No": "34",
+            "Area": "Ruang Timbang",
+            "PIC": "Riva",
+            "Nama Alat": "Monitoring Suhu Lab Kimia",
+            "List item yang perlu di check ": "Memastikan thermohygro desikator WS sudah terkalibrasi (on site tidak boleh dipindah)",
+            "Status": "✅"
+        },
+        {
+            "No": "35",
+            "Area": "Ruang Timbang",
+            "PIC": "Riva",
+            "Nama Alat": "Monitoring Suhu Lab Kimia",
+            "List item yang perlu di check ": "Melakukan pemantauan dan pencatatan suhu dan rh ruangan lab spektrofotometri",
+            "Status": "✅"
+        },
+        {
+            "No": "36",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Riva",
+            "Nama Alat": "Monitoring Suhu Lab Kimia",
+            "List item yang perlu di check ": "Memastikan thermohygro ruangan lab spektrofotometri sudah terkalibrasi (on site tidak boleh dipindah)",
+            "Status": "✅"
+        },
+        {
+            "No": "37",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Riva",
+            "Nama Alat": "Monitoring Suhu Lab Kimia",
+            "List item yang perlu di check ": "Melakukan pemantauan dan pencatatan suhu kulkas dan freezer",
+            "Status": "✅"
+        },
+        {
+            "No": "38",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Riva",
+            "Nama Alat": "Monitoring Suhu Lab Kimia",
+            "List item yang perlu di check ": "Memastikan thermometer kulkas sudah terkalibrasi (on site tidak boleh dipindah)",
+            "Status": "✅"
+        },
+        {
+            "No": "39",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Riva",
+            "Nama Alat": "Monitoring Suhu Lab Kimia",
+            "List item yang perlu di check ": "Menjaga kebersihan alat dan area kulkas dan freezer",
+            "Status": "✅"
+        },
+        {
+            "No": "40",
+            "Area": "Lab Kimia",
+            "PIC": "Riva",
+            "Nama Alat": "Disintegration Tester",
+            "List item yang perlu di check ": "Memastikan alat masih dalam status terkualifikasi",
+            "Status": "✅"
+        },
+        {
+            "No": "41",
+            "Area": "Lab Kimia",
+            "PIC": "Riva",
+            "Nama Alat": "Disintegration Tester",
+            "List item yang perlu di check ": "Memastikan beaker glass ok tidak retak/bompel",
+            "Status": "✅"
+        },
+        {
+            "No": "42",
+            "Area": "Lab Kimia",
+            "PIC": "Riva",
+            "Nama Alat": "Disintegration Tester",
+            "List item yang perlu di check ": "Memastikan autobasket tidak pecah/retak/bompel",
+            "Status": "✅"
+        },
+        {
+            "No": "43",
+            "Area": "Lab Kimia",
+            "PIC": "Riva",
+            "Nama Alat": "Disintegration Tester",
+            "List item yang perlu di check ": "Memastikan IK penggunaan alat disolusi tester ada di dekat alat",
+            "Status": "✅"
+        },
+        {
+            "No": "44",
+            "Area": "Lab Kimia",
+            "PIC": "Riva",
+            "Nama Alat": "Disintegration Tester",
+            "List item yang perlu di check ": "Memastikan waterbath disintegration tester tidak berjamur",
+            "Status": "✅"
+        },
+        {
+            "No": "45",
+            "Area": "Lab Kimia",
+            "PIC": "Riva",
+            "Nama Alat": "Disintegration Tester",
+            "List item yang perlu di check ": "Menjaga kebersihan area disintegration tester",
+            "Status": "✅"
+        },
+        {
+            "No": "46",
+            "Area": "Lab Kimia",
+            "PIC": "Riva",
+            "Nama Alat": "Disintegration Tester",
+            "List item yang perlu di check ": "Mengingatkan analis yang lain agar menggunakan alat dengan benar / mengingatkan jika tidak mengisi log book",
+            "Status": "✅"
+        },
+        {
+            "No": "47",
+            "Area": "Lab Kimia",
+            "PIC": "Riva",
+            "Nama Alat": "Alat Dissolusi Tester Hanson",
+            "List item yang perlu di check ": "Memastikan alat masih dalam status terkualifikasi dan terkalibrasi",
+            "Status": "✅"
+        },
+        {
+            "No": "48",
+            "Area": "Lab Kimia",
+            "PIC": "Riva",
+            "Nama Alat": "Alat Dissolusi Tester Hanson",
+            "List item yang perlu di check ": "Memastikan vessel disolusi ok tidak retak/bompel",
+            "Status": "✅"
+        },
+        {
+            "No": "49",
+            "Area": "Lab Kimia",
+            "PIC": "Riva",
+            "Nama Alat": "Alat Dissolusi Tester Hanson",
+            "List item yang perlu di check ": "Memastikan IK penggunaan alat disolusi tester ada di dekat alat",
+            "Status": "✅"
+        },
+        {
+            "No": "50",
+            "Area": "Lab Kimia",
+            "PIC": "Riva",
+            "Nama Alat": "Alat Dissolusi Tester Hanson",
+            "List item yang perlu di check ": "Memastikan chamber disolusi tidak berjamur",
+            "Status": "✅"
+        },
+        {
+            "No": "51",
+            "Area": "Lab Kimia",
+            "PIC": "Riva",
+            "Nama Alat": "Alat Dissolusi Tester Hanson",
+            "List item yang perlu di check ": "Menjaga kebersihan area disolusi tester",
+            "Status": "✅"
+        },
+        {
+            "No": "52",
+            "Area": "Lab Kimia",
+            "PIC": "Riva",
+            "Nama Alat": "Alat Dissolusi Tester Hanson",
+            "List item yang perlu di check ": "Mengingatkan analis yang lain agar menggunakan alat dengan benar / mengingatkan jika tidak mengisi log book",
+            "Status": "✅"
+        },
+        {
+            "No": "53",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Riva",
+            "Nama Alat": "Limbah Sampel Stabilita Solid dan SS2",
+            "List item yang perlu di check ": "Memastikan box sisa sampel bahan baku diberi identitas \"sisa sampel analisa\"",
+            "Status": "✅"
+        },
+        {
+            "No": "54",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Riva",
+            "Nama Alat": "Limbah Sampel Stabilita Solid dan SS3",
+            "List item yang perlu di check ": "Melakukan pemusnahan sisa sampel analisa setiap bulannya setelah project monitoring",
+            "Status": "✅"
+        },
+        {
+            "No": "55",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Rijal",
+            "Nama Alat": "Spektro Jasco",
+            "List item yang perlu di check ": "Memastikan alat masih dalam status terkualifikasi dan terkalibrasi",
+            "Status": "✅"
+        },
+        {
+            "No": "56",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Rijal",
+            "Nama Alat": "Spektro Jasco",
+            "List item yang perlu di check ": "Memastikan log book pemakaian alat terisi tiap harinya jika digunakan",
+            "Status": "✅"
+        },
+        {
+            "No": "57",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Rijal",
+            "Nama Alat": "Spektro Jasco",
+            "List item yang perlu di check ": "Memastikan IK penggunaan alat spektro jasco ada di dekat alat",
+            "Status": "✅"
+        },
+        {
+            "No": "58",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Rijal",
+            "Nama Alat": "Spektro Jasco",
+            "List item yang perlu di check ": "Menjaga kebersihan area spektro jasco",
+            "Status": "✅"
+        },
+        {
+            "No": "59",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Rijal",
+            "Nama Alat": "Spektro Jasco",
+            "List item yang perlu di check ": "Mengingatkan analis yang lain agar menggunakan alat dengan benar / mengingatkan jika tidak mengisi log book",
+            "Status": "✅"
+        },
+        {
+            "No": "60",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Rijal",
+            "Nama Alat": "Limbang Sampel Finish Good Eksternal",
+            "List item yang perlu di check ": "Memastikan box sisa sampel finish good external diberi identitas \"sisa sampel analisa\"",
+            "Status": "✅"
+        },
+        {
+            "No": "61",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Rijal",
+            "Nama Alat": "Limbang Sampel Finish Good Eksternal",
+            "List item yang perlu di check ": "Melakukan pemusnahan sisa sampel analisa setiap bulannya",
+            "Status": "✅"
+        },
+        {
+            "No": "62",
+            "Area": "Ruang Timbang",
+            "PIC": "Rijal",
+            "Nama Alat": "Working Standard dan Reference Standard",
+            "List item yang perlu di check ": "Melakukan stok opname WS dan RS",
+            "Status": "✅"
+        },
+        {
+            "No": "63",
+            "Area": "Ruang Timbang",
+            "PIC": "Rijal",
+            "Nama Alat": "Working Standard dan Reference Standard",
+            "List item yang perlu di check ": "Melakukan pemantauan penyimpanan WS dan RS (Stock dan On going dipisah)",
+            "Status": "✅"
+        },
+        {
+            "No": "64",
+            "Area": "Ruang Timbang",
+            "PIC": "Rijal",
+            "Nama Alat": "Working Standard dan Reference Standard",
+            "List item yang perlu di check ": "Monitoring database working standard",
+            "Status": "✅"
+        },
+        {
+            "No": "65",
+            "Area": "Ruang Timbang",
+            "PIC": "Rijal",
+            "Nama Alat": "Working Standard dan Reference Standard",
+            "List item yang perlu di check ": "Memastikan RS dan WS tidak ada yang ED",
+            "Status": "✅"
+        },
+        {
+            "No": "66",
+            "Area": "Ruang Timbang",
+            "PIC": "Rijal",
+            "Nama Alat": "Working Standard dan Reference Standard",
+            "List item yang perlu di check ": "Memastikan batch RS yang digunakan masih VALID",
+            "Status": "✅"
+        },
+        {
+            "No": "67",
+            "Area": "Ruang Timbang",
+            "PIC": "Rijal",
+            "Nama Alat": "Desikator Working Standard",
+            "List item yang perlu di check ": "Memastikan IK penggunaan desikator WS ada di dekat alat",
+            "Status": "✅"
+        },
+        {
+            "No": "68",
+            "Area": "Ruang Timbang",
+            "PIC": "Rijal",
+            "Nama Alat": "Desikator Working Standard",
+            "List item yang perlu di check ": "Melakukan pemantauan silica gel di lemari penyimpan RS dan WS",
+            "Status": "✅"
+        },
+        {
+            "No": "69",
+            "Area": "Ruang Timbang",
+            "PIC": "Rijal",
+            "Nama Alat": "Desikator Working Standard",
+            "List item yang perlu di check ": "Menjaga kebersihan alat Desikator",
+            "Status": "✅"
+        },
+        {
+            "No": "70",
+            "Area": "Lab Kimia",
+            "PIC": "Lutfhi",
+            "Nama Alat": "Rak Penyimpanan Reagent",
+            "List item yang perlu di check ": "Memastikan tidak ada reagen yang double di rak reagen (jika ada, stok simpan dilemari stok)",
+            "Status": "✅"
+        },
+        {
+            "No": "71",
+            "Area": "Lab Kimia",
+            "PIC": "Lutfhi",
+            "Nama Alat": "Rak Penyimpanan Reagent",
+            "List item yang perlu di check ": "Membuat labeling penerimaan reagen",
+            "Status": "✅"
+        },
+        {
+            "No": "72",
+            "Area": "Lab Kimia",
+            "PIC": "Lutfhi",
+            "Nama Alat": "Rak Penyimpanan Reagent",
+            "List item yang perlu di check ": "Mapping reagen untuk mempermudah pencarian",
+            "Status": "✅"
+        },
+        {
+            "No": "73",
+            "Area": "Lab Kimia",
+            "PIC": "Lutfhi",
+            "Nama Alat": "Rak Penyimpanan Reagent",
+            "List item yang perlu di check ": "Menjaga kebersihan rak reagen (tidak berdebu)",
+            "Status": "✅"
+        },
+        {
+            "No": "74",
+            "Area": "Lab Kimia",
+            "PIC": "Lutfhi",
+            "Nama Alat": "Rak Penyimpanan Reagent",
+            "List item yang perlu di check ": "Memastikan labeling larutan volumetrik tidak ED",
+            "Status": "✅"
+        },
+        {
+            "No": "75",
+            "Area": "Lab Kimia",
+            "PIC": "Lutfhi",
+            "Nama Alat": "Reagent Padat",
+            "List item yang perlu di check ": "Melakukan pendataan stok reagen padat",
+            "Status": "✅"
+        },
+        {
+            "No": "76",
+            "Area": "Lab Kimia",
+            "PIC": "Lutfhi",
+            "Nama Alat": "Reagent Padat",
+            "List item yang perlu di check ": "Merekap pembelian reagen padat untuk dilakukan pembelian oleh pic terkait",
+            "Status": "✅"
+        },
+        {
+            "No": "77",
+            "Area": "Lab Kimia",
+            "PIC": "Lutfhi",
+            "Nama Alat": "Alat Sonik",
+            "List item yang perlu di check ": "Memastikan alat masih dalam status terkualifikasi",
+            "Status": "✅"
+        },
+        {
+            "No": "78",
+            "Area": "Lab Kimia",
+            "PIC": "Lutfhi",
+            "Nama Alat": "Alat Sonik",
+            "List item yang perlu di check ": "Memastikan air di dalam chamber sonik tidak kotor",
+            "Status": "✅"
+        },
+        {
+            "No": "79",
+            "Area": "Lab Kimia",
+            "PIC": "Lutfhi",
+            "Nama Alat": "Alat Sonik",
+            "List item yang perlu di check ": "Memastikan IK penggunaan sonikator ada di dekat alat",
+            "Status": "✅"
+        },
+        {
+            "No": "80",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Lutfhi",
+            "Nama Alat": "Limbah Sampel Raw Material",
+            "List item yang perlu di check ": "Memastikan box sisa sampel bahan baku diberi identitas \"sisa sampel analisa\"",
+            "Status": "✅"
+        },
+        {
+            "No": "81",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Lutfhi",
+            "Nama Alat": "Limbah Sampel Raw Material",
+            "List item yang perlu di check ": "Melakukan pemusnahan sisa sampel analisa setiap bulannya",
+            "Status": "✅"
+        },
+        {
+            "No": "82",
+            "Area": "Ruang Timbang",
+            "PIC": "Abay",
+            "Nama Alat": "Timbangan 1",
+            "List item yang perlu di check ": "Memastikan alat masih dalam status terkualifikasi dan terkalibrasi",
+            "Status": "✅"
+        },
+        {
+            "No": "83",
+            "Area": "Ruang Timbang",
+            "PIC": "Abay",
+            "Nama Alat": "Timbangan 1",
+            "List item yang perlu di check ": "Memastikan log book pemakaian alat terisi tiap harinya jika digunakan",
+            "Status": "✅"
+        },
+        {
+            "No": "84",
+            "Area": "Ruang Timbang",
+            "PIC": "Abay",
+            "Nama Alat": "Timbangan 1",
+            "List item yang perlu di check ": "Memastikan log book verifikasi alat terisi setiap harinya",
+            "Status": "✅"
+        },
+        {
+            "No": "85",
+            "Area": "Ruang Timbang",
+            "PIC": "Abay",
+            "Nama Alat": "Timbangan 1",
+            "List item yang perlu di check ": "Memastikan IK penggunaan timbangan ada di dekat alat",
+            "Status": "✅"
+        },
+        {
+            "No": "86",
+            "Area": "Ruang Timbang",
+            "PIC": "Abay",
+            "Nama Alat": "Timbangan 1",
+            "List item yang perlu di check ": "Memastikan water pass alat timbang harus ditengah",
+            "Status": "✅"
+        },
+        {
+            "No": "87",
+            "Area": "Ruang Timbang",
+            "PIC": "Abay",
+            "Nama Alat": "Timbangan 1",
+            "List item yang perlu di check ": "Memastikan tidak ada reagen/sampel habis pakai tertinggal di area timbang",
+            "Status": "✅"
+        },
+        {
+            "No": "88",
+            "Area": "Ruang Timbang",
+            "PIC": "Abay",
+            "Nama Alat": "Timbangan 1",
+            "List item yang perlu di check ": "Memastikan tidak ada printout penimbangan yang berserakan",
+            "Status": "✅"
+        },
+        {
+            "No": "89",
+            "Area": "Ruang Timbang",
+            "PIC": "Abay",
+            "Nama Alat": "Timbangan 1",
+            "List item yang perlu di check ": "Menjaga kebersihan alat dan area Timbangan 1",
+            "Status": "✅"
+        },
+        {
+            "No": "90",
+            "Area": "Ruang Timbang",
+            "PIC": "Abay",
+            "Nama Alat": "Timbangan 1",
+            "List item yang perlu di check ": "Mengingatkan analis yang lain agar menggunakan alat dengan benar / mengingatkan jika tidak mengisi log book",
+            "Status": "✅"
+        },
+        {
+            "No": "91",
+            "Area": "Ruang Timbang",
+            "PIC": "Abay",
+            "Nama Alat": "Timbangan 2",
+            "List item yang perlu di check ": "Memastikan alat masih dalam status terkualifikasi dan terkalibrasi",
+            "Status": "✅"
+        },
+        {
+            "No": "92",
+            "Area": "Ruang Timbang",
+            "PIC": "Abay",
+            "Nama Alat": "Timbangan 2",
+            "List item yang perlu di check ": "Memastikan log book pemakaian alat terisi tiap harinya jika digunakan",
+            "Status": "✅"
+        },
+        {
+            "No": "93",
+            "Area": "Ruang Timbang",
+            "PIC": "Abay",
+            "Nama Alat": "Timbangan 2",
+            "List item yang perlu di check ": "Memastikan log book verifikasi alat terisi setiap harinya",
+            "Status": "✅"
+        },
+        {
+            "No": "94",
+            "Area": "Ruang Timbang",
+            "PIC": "Abay",
+            "Nama Alat": "Timbangan 2",
+            "List item yang perlu di check ": "Memastikan IK penggunaan timbangan ada di dekat alat",
+            "Status": "✅"
+        },
+        {
+            "No": "95",
+            "Area": "Ruang Timbang",
+            "PIC": "Abay",
+            "Nama Alat": "Timbangan 2",
+            "List item yang perlu di check ": "memastikan water pass alat timbang harus ditengah",
+            "Status": "✅"
+        },
+        {
+            "No": "96",
+            "Area": "Ruang Timbang",
+            "PIC": "Abay",
+            "Nama Alat": "Timbangan 2",
+            "List item yang perlu di check ": "Memastikan tidak ada reagen/sampel habis pakai tertinggal di area timbang",
+            "Status": "✅"
+        },
+        {
+            "No": "97",
+            "Area": "Ruang Timbang",
+            "PIC": "Abay",
+            "Nama Alat": "Timbangan 2",
+            "List item yang perlu di check ": "Memastikan tidak ada printout penimbangan yang berserakan",
+            "Status": "✅"
+        },
+        {
+            "No": "98",
+            "Area": "Ruang Timbang",
+            "PIC": "Abay",
+            "Nama Alat": "Timbangan 2",
+            "List item yang perlu di check ": "Menjaga kebersihan alat dan area timbangan 2",
+            "Status": "✅"
+        },
+        {
+            "No": "99",
+            "Area": "Ruang Timbang",
+            "PIC": "Abay",
+            "Nama Alat": "Timbangan 2",
+            "List item yang perlu di check ": "Mengingatkan analis yang lain agar menggunakan alat dengan benar / mengingatkan jika tidak mengisi log book",
+            "Status": "✅"
+        },
+        {
+            "No": "100",
+            "Area": "Lab Kimia",
+            "PIC": "Abay",
+            "Nama Alat": "Reagent Cair",
+            "List item yang perlu di check ": "Melakukan pendataan stok reagen cair",
+            "Status": "✅"
+        },
+        {
+            "No": "101",
+            "Area": "Lab Kimia",
+            "PIC": "Abay",
+            "Nama Alat": "Reagent Cair",
+            "List item yang perlu di check ": "Merekap pembelian reagen cair untuk dilakukan pembelian oleh pic terkait",
+            "Status": "✅"
+        },
+        {
+            "No": "102",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Abay",
+            "Nama Alat": "Limbah Sampel Finish Good Internal",
+            "List item yang perlu di check ": "Memastikan box sisa sampel finish good external diberi identitas \"sisa sampel analisa\"",
+            "Status": "✅"
+        },
+        {
+            "No": "103",
+            "Area": "Ruang Instrument Spektrofotometri",
+            "PIC": "Abay",
+            "Nama Alat": "Limbah Sampel Finish Good Internal",
+            "List item yang perlu di check ": "Melakukan pemusnahan sisa sampel analisa setiap bulannya",
+            "Status": "✅"
+        },
+        {
+            "No": "104",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Monitoring Suhu Lab Mikrobiologi",
+            "List item yang perlu di check ": "Monitoring pemantauan suhu ruang BSC",
+            "Status": "✅"
+        },
+        {
+            "No": "105",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Monitoring Suhu Lab Mikrobiologi",
+            "List item yang perlu di check ": "Memastikan thermohygro sudah terkalibrasi (on site tidak boleh dipindah)",
+            "Status": "✅"
+        },
+        {
+            "No": "106",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Monitoring Suhu Lab Mikrobiologi",
+            "List item yang perlu di check ": "Monitoring pemantauan perbedaan tekanan ruang BSC",
+            "Status": "✅"
+        },
+        {
+            "No": "107",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Monitoring Suhu Lab Mikrobiologi",
+            "List item yang perlu di check ": "Memastikan magnehelic sudah terkalibrasi ",
+            "Status": "✅"
+        },
+        {
+            "No": "108",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Cooler Penyimpanan Mikroba",
+            "List item yang perlu di check ": "Melakukan pendataan stock opname bakteri",
+            "Status": "✅"
+        },
+        {
+            "No": "109",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Cooler Penyimpanan Mikroba",
+            "List item yang perlu di check ": "Memastikan alat masih dalam status terkualifikasi dan terkalibrasi",
+            "Status": "✅"
+        },
+        {
+            "No": "110",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Cooler Penyimpanan Mikroba",
+            "List item yang perlu di check ": "Memastikan IK penggunaan cooler ada di dekat alat",
+            "Status": "✅"
+        },
+        {
+            "No": "111",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Cooler Penyimpanan Mikroba",
+            "List item yang perlu di check ": "Memastikan logsheet pemantauan cooler diisi setiap harinya",
+            "Status": "✅"
+        },
+        {
+            "No": "112",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Cooler Penyimpanan Mikroba",
+            "List item yang perlu di check ": "Memastikan isi cooler mikroba tidak boleh disatukan dengan media",
+            "Status": "✅"
+        },
+        {
+            "No": "113",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Cooler Penyimpanan Mikroba",
+            "List item yang perlu di check ": "Memastikan labelling pada reagen yang disimpan di cooler tidak ada yang ED",
+            "Status": "✅"
+        },
+        {
+            "No": "114",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Cooler Penyimpanan Mikroba",
+            "List item yang perlu di check ": "Menjaga kebersihan alat dan area cooler",
+            "Status": "✅"
+        },
+        {
+            "No": "115",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Inkubator ",
+            "List item yang perlu di check ": "Memastikan alat masih dalam status terkualifikasi dan terkalibrasi",
+            "Status": "✅"
+        },
+        {
+            "No": "116",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Inkubator ",
+            "List item yang perlu di check ": "Memastikan IK penggunaan inkubator ada di dekat alat",
+            "Status": "✅"
+        },
+        {
+            "No": "117",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Inkubator ",
+            "List item yang perlu di check ": "Memastikan logsheet penggunaan inkubator diisi setiap harinya jika digunakan",
+            "Status": "✅"
+        },
+        {
+            "No": "118",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Inkubator ",
+            "List item yang perlu di check ": "Melakukan pemantauan dan pencatatan suhu inkubator",
+            "Status": "✅"
+        },
+        {
+            "No": "119",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Inkubator ",
+            "List item yang perlu di check ": "Menjaga kebersihan alat dan area inkubator",
+            "Status": "✅"
+        },
+        {
+            "No": "120",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Oven ",
+            "List item yang perlu di check ": "Memastikan alat masih dalam status terkualifikasi dan terkalibrasi",
+            "Status": "✅"
+        },
+        {
+            "No": "121",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Oven ",
+            "List item yang perlu di check ": "Memastikan IK penggunaan oven ada di dekat alat",
+            "Status": "✅"
+        },
+        {
+            "No": "122",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Oven ",
+            "List item yang perlu di check ": "Memastikan logsheet penggunaan oven diisi setiap harinya jika digunakan",
+            "Status": "✅"
+        },
+        {
+            "No": "123",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Oven ",
+            "List item yang perlu di check ": "Menjaga kebersihan alat dan area oven",
+            "Status": "✅"
+        },
+        {
+            "No": "124",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Consumable Andev",
+            "List item yang perlu di check ": "Melakukan pendataan stock kebutuhan andev setiap bulan",
+            "Status": "✅"
+        },
+        {
+            "No": "125",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Consumable Andev",
+            "List item yang perlu di check ": "Merekap pembelian consumable andev setiap bulan untuk dilakukan pembelian oleh pic terkait",
+            "Status": "✅"
+        },
+        {
+            "No": "126",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Timbangan Mikrobiologi",
+            "List item yang perlu di check ": "Memastikan alat masih dalam status terkualifikasi dan terkalibrasi",
+            "Status": "✅"
+        },
+        {
+            "No": "127",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Timbangan Mikrobiologi",
+            "List item yang perlu di check ": "Memastikan logsheet penggunaan timbangan diisi setiap harinya jika digunakan",
+            "Status": "✅"
+        },
+        {
+            "No": "128",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Timbangan Mikrobiologi",
+            "List item yang perlu di check ": "Mengingatkan analis yang lain agar menggunakan alat dengan benar / mengingatkan jika tidak mengisi log book",
+            "Status": "✅"
+        },
+        {
+            "No": "129",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Timbangan Mikrobiologi",
+            "List item yang perlu di check ": "Memastikan log book verifikasi alat terisi setiap harinya",
+            "Status": "✅"
+        },
+        {
+            "No": "130",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Timbangan Mikrobiologi",
+            "List item yang perlu di check ": "Memastikan IK penggunaan timbangan ada di dekat alat",
+            "Status": "✅"
+        },
+        {
+            "No": "131",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Timbangan Mikrobiologi",
+            "List item yang perlu di check ": "Memastikan water pass alat timbang harus ditengah",
+            "Status": "✅"
+        },
+        {
+            "No": "132",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Timbangan Mikrobiologi",
+            "List item yang perlu di check ": "Memastikan tidak ada reagen/sampel habis pakai tertinggal di area timbang",
+            "Status": "✅"
+        },
+        {
+            "No": "133",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Timbangan Mikrobiologi",
+            "List item yang perlu di check ": "Menjaga kebersihan alat dan area timbangan mikrobiologi",
+            "Status": "✅"
+        },
+        {
+            "No": "134",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "BSC",
+            "List item yang perlu di check ": "Memastikan alat masih dalam status terkualifikasi dan terkalibrasi",
+            "Status": "✅"
+        },
+        {
+            "No": "135",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "BSC",
+            "List item yang perlu di check ": "Memastikan IK penggunaan BSC ada di dekat alat",
+            "Status": "✅"
+        },
+        {
+            "No": "136",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "BSC",
+            "List item yang perlu di check ": "Memastikan logsheet penggunaan BSC diisi setiap harinya jika digunakan",
+            "Status": "✅"
+        },
+        {
+            "No": "137",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "BSC",
+            "List item yang perlu di check ": "Menjaga kebersihan alat dan area BSC",
+            "Status": "✅"
+        },
+        {
+            "No": "138",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "BSC",
+            "List item yang perlu di check ": "Memastikan logsheet pengamatan angka lempeng total diisi jika digunakan",
+            "Status": "✅"
+        },
+        {
+            "No": "139",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "BSC",
+            "List item yang perlu di check ": "Memastikan logsheet penurunan kultur mikroba diisi jika digunakan",
+            "Status": "✅"
+        },
+        {
+            "No": "140",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Autoclave",
+            "List item yang perlu di check ": "Memastikan alat masih dalam status terkualifikasi dan terkalibrasi",
+            "Status": "✅"
+        },
+        {
+            "No": "141",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Autoclave",
+            "List item yang perlu di check ": "Memastikan proses sterilisasi dan destruksi harus terpisah",
+            "Status": "✅"
+        },
+        {
+            "No": "142",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Autoclave",
+            "List item yang perlu di check ": "Memastikan logsheet pemakaian autoclave sterilisasi diisi setiap harinya jika digunakan",
+            "Status": "✅"
+        },
+        {
+            "No": "143",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Autoclave",
+            "List item yang perlu di check ": "Memastikan logsheet pemakaian autoclave destruksi diisi setiap harinya jika digunakan",
+            "Status": "✅"
+        },
+        {
+            "No": "144",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Autoclave",
+            "List item yang perlu di check ": "Memastikan IK penggunaan autoclave ada di dekat alat",
+            "Status": "✅"
+        },
+        {
+            "No": "145",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Autoclave",
+            "List item yang perlu di check ": "Menjaga kebersihan autoclave ",
+            "Status": "✅"
+        },
+        {
+            "No": "146",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Area penyimpanan media kering",
+            "List item yang perlu di check ": "Melakukan pendataan stock opname media",
+            "Status": "✅"
+        },
+        {
+            "No": "147",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Area penyimpanan media kering",
+            "List item yang perlu di check ": "Melakukan pemantauan dan pencatatan suhu lemari penyimpanan media",
+            "Status": "✅"
+        },
+        {
+            "No": "148",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Area penyimpanan media kering",
+            "List item yang perlu di check ": "Memastikan thermohygro dilemari penyimpanan media sudah terkalibrasi (on site tidak boleh dipindah)",
+            "Status": "❎"
+        },
+        {
+            "No": "149",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Area penyimpanan media kering",
+            "List item yang perlu di check ": "Memastikan media yang akan digunakan sudah tertempel label GPT",
+            "Status": "✅"
+        },
+        {
+            "No": "150",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Area penyimpanan media kering",
+            "List item yang perlu di check ": "Memastikan form GPT dari setiap batch lengkap",
+            "Status": "✅"
+        },
+        {
+            "No": "151",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Area penyimpanan media kering",
+            "List item yang perlu di check ": "Menjaga kebersihan lemari penyimpanan media kering ",
+            "Status": "✅"
+        },
+        {
+            "No": "152",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Area sisa sampel analisa ",
+            "List item yang perlu di check ": "Memastikan sampel dimusnahkan apabila sudah tidak digunakan",
+            "Status": "✅"
+        },
+        {
+            "No": "153",
+            "Area": "Lab Mikrobiologi",
+            "PIC": "Shiddiq",
+            "Nama Alat": "Area sisa sampel analisa ",
+            "List item yang perlu di check ": "Memastikan box sisa sampel diberi identitas \"sisa sampel analisa\"",
+            "Status": "✅"
+        },
+        {
+            "No": "154",
+            "Area": "Bangunan dan Fasilitas",
+            "Nama Alat": "AC",
+            "List item yang perlu di check ": "Memastikan area diffuser AC Central di lab Andev bersih dan terawat",
+            "Status": "✅"
+        },
+        {
+            "No": "155",
+            "Area": "Bangunan dan Fasilitas",
+            "Nama Alat": "Dinding/Langit-langit",
+            "List item yang perlu di check ": "Memastikan area dinding dan langit-langit lab Andev bersih dan terawat",
+            "Status": "✅"
+        }
+    ]
+}

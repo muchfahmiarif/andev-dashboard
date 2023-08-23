@@ -1,0 +1,108 @@
+{
+    "Instrument Andev": [
+        {
+            "No": "1",
+            "Alat Instrument": "Analytical Balance Sartorius SECURA 225D-1S ",
+            "No Asset": "RD.TBD16.16",
+            "Kalibrasi": "ѵ",
+            "Performa": "ѵ",
+            "Keterangan": "-"
+        },
+        {
+            "No": "2",
+            "Alat Instrument": "Analytical Balance Sartorius SECURA 225D-1S ",
+            "No Asset": "RD.TBD17.19",
+            "Kalibrasi": "ѵ",
+            "Performa": "ѵ",
+            "Keterangan": "-"
+        },
+        {
+            "No": "3",
+            "Alat Instrument": "Dissolution Tester Hanson Vision Elite 8",
+            "No Asset": "RD.DST01.12",
+            "Kalibrasi": "ѵ",
+            "Performa": "ѵ",
+            "Keterangan": "-"
+        },
+        {
+            "No": "4",
+            "Alat Instrument": "Desintegration Tester Charles Ischi AG",
+            "No Asset": "RD.DSG01.15",
+            "Kalibrasi": "ѵ",
+            "Performa": "ѵ",
+            "Keterangan": "-"
+        },
+        {
+            "No": "5",
+            "Alat Instrument": "KARL FISCHER Metrohm Type 870 KF Titrino Plus",
+            "No Asset": "RD.TTR01.15",
+            "Kalibrasi": "ѵ",
+            "Performa": "ѵ",
+            "Keterangan": "-"
+        },
+        {
+            "No": "6",
+            "Alat Instrument": "Spectrofotometer Jasco-V650",
+            "No Asset": "RD.SPC01.07",
+            "Kalibrasi": "ѵ",
+            "Performa": "ѵ",
+            "Keterangan": "-"
+        },
+        {
+            "No": "7",
+            "Alat Instrument": "Furnace Carbolite CWF 12-13",
+            "No Asset": "RD.FNC01.15",
+            "Kalibrasi": "ѵ",
+            "Performa": "ѵ",
+            "Keterangan": "-"
+        },
+        {
+            "No": "8",
+            "Alat Instrument": "HPLC Waters Alliance 2695",
+            "No Asset": "RD.HPLC01.08",
+            "Kalibrasi": "ѵ",
+            "Performa": "ѵ",
+            "Keterangan": "-"
+        },
+        {
+            "No": "9",
+            "Alat Instrument": "HPLC Waters Alliance E 2695",
+            "No Asset": "RD.HPLC03.12",
+            "Kalibrasi": "ѵ",
+            "Performa": "ѵ",
+            "Keterangan": "-"
+        },
+        {
+            "No": "10",
+            "Alat Instrument": "HPLC Waters Alliance E 2695",
+            "No Asset": "RD.HPLC05.16",
+            "Kalibrasi": "ѵ",
+            "Performa": "ѵ",
+            "Keterangan": "-"
+        },
+        {
+            "No": "11",
+            "Alat Instrument": "HPLC Water Breeze 1525",
+            "No Asset": "RD.HPLC02.07",
+            "Kalibrasi": "ѵ",
+            "Performa": "ѵ",
+            "Keterangan": "-"
+        },
+        {
+            "No": "12",
+            "Alat Instrument": "UHPLC Waters Acquity ARC System",
+            "No Asset": "RD.HPLC06.19",
+            "Kalibrasi": "ѵ",
+            "Performa": "ѵ",
+            "Keterangan": "-"
+        },
+        {
+            "No": "13",
+            "Alat Instrument": "pH meter Ohaus AQUASEARCHER™ a-AB41PH",
+            "No Asset": "RD.PHM06.23",
+            "Kalibrasi": "ѵ",
+            "Performa": "ѵ",
+            "Keterangan": "-"
+        }
+    ]
+}
