@@ -95,6 +95,24 @@ Route::get('/rear-view', function() {
     return view('rear-view.index');
 });
 
+Route::group(['prefix' => 'rear-view/development-journey'], function() {
+    Route::get('finish-good', function() { return view('rear-view.pages.development-journey.finish-good'); });
+    Route::get('finish-good/detail', function() { return view('rear-view.pages.development-journey.finish-good.detail'); });
+    Route::get('raw-material', function() { return view('rear-view.pages.development-journey.raw-material'); });
+    Route::get('raw-material/detail', function() { return view('rear-view.pages.development-journey.raw-material.detail'); });
+    Route::get('mikrobiologi', function() { return view('rear-view.pages.development-journey.mikrobiologi'); });
+    Route::get('mikrobiologi/detail', function() { return view('rear-view.pages.development-journey.mikrobiologi.detail'); });
+    Route::get('eksternal', function() { return view('rear-view.pages.development-journey.eksternal'); });
+    Route::get('eksternal/detail', function() { return view('rear-view.pages.development-journey.eksternal.detail'); });
+});
+
+Route::group(['prefix' => 'rear-view/rpv-riv'], function() {
+    Route::get('finish-good', function() { return view('rear-view.pages.rpv-riv.finish-good'); });
+    Route::get('raw-material', function() { return view('rear-view.pages.rpv-riv.raw-material'); });
+    Route::get('mikrobiologi', function() { return view('rear-view.pages.rpv-riv.mikrobiologi'); });
+    Route::get('eksternal', function() { return view('rear-view.pages.rpv-riv.eksternal'); });
+});
+
 Route::group(['prefix' => 'rear-view/report-analysis'], function () {
     Route::get('finish-good', function () { return view('rear-view.pages.report-analysis.finish-good'); });
     Route::get('raw-material', function () { return view('rear-view.pages.report-analysis.raw-material'); });

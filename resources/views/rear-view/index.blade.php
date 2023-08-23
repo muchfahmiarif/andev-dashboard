@@ -5,7 +5,16 @@
 @endpush
 
 @section('content')
-  <h1>Hello World</h1>
+<div class="">
+  <div>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+  </div>
+</div>
 @endsection
 
 @push('plugin-scripts')

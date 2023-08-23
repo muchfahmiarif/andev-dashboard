@@ -24,24 +24,24 @@
       {{-- Group Development Starts--}}
       <li class="nav-item nav-category">Core Part</li>
       <li class="nav-item {{ Request::is('rear-view/development-journey*') ? 'active' : '' }}">
-        <a class="nav-link" data-bs-toggle="collapse" href="#development-journey" role="button" aria-expanded="{{ Request::is(['development-journey/*']) ? 'true' : 'false' }}" aria-controls="development-journey">
+        <a class="nav-link" data-bs-toggle="collapse" href="#development-journey" role="button" aria-expanded="{{ Request::is(['rear-view/development-journey/*']) ? 'true' : 'false' }}" aria-controls="development-journey">
           <i class="link-icon" data-feather="bookmark"></i>
           <span class="link-title">Development Journey</span>
           <i class="link-arrow" data-feather="chevron-down"></i>
         </a>
-        <div class="collapse {{ Request::is(['development-journey/*']) ? 'show' : ''}}" id="development-journey">
+        <div class="collapse {{ Request::is(['rear-view/development-journey/*']) ? 'show' : ''}}" id="development-journey">
           <ul class="nav sub-menu">
             <li class="nav-item">
-              <a href="{{ url('/development-journey/raw-material') }}" class="nav-link {{ Request::is(['development-journey/raw-material']) ? 'active' : '' }}">Raw Material</a>
+              <a href="{{ url('/rear-view/development-journey/eksternal') }}" class="nav-link {{ Request::is(['rear-view/development-journey/eksternal']) ? 'active' : '' }}">Eksternal</a>
             </li>
             <li class="nav-item">
-              <a href="{{ url('/development-journey/finish-good') }}" class="nav-link {{ Request::is(['development-journey/finish-good']) ? 'active' : '' }}">Finish Good</a>
+              <a href="{{ url('/rear-view/development-journey/finish-good') }}" class="nav-link {{ Request::is(['rear-view/development-journey/finish-good']) ? 'active' : '' }}">Finish Good</a>
             </li>
             <li class="nav-item">
-              <a href="{{ url('/development-journey/mikrobiologi') }}" class="nav-link {{ Request::is(['development-journey/mikrobiologi']) ? 'active' : '' }}">Mikrobiologi</a>
+              <a href="{{ url('/rear-view/development-journey/mikrobiologi') }}" class="nav-link {{ Request::is(['rear-view/development-journey/mikrobiologi']) ? 'active' : '' }}">Mikrobiologi</a>
             </li>
             <li class="nav-item">
-              <a href="{{ url('/development-journey/stabilita') }}" class="nav-link {{ Request::is(['development-journey/stabilita']) ? 'active' : '' }}">Stabilita</a>
+              <a href="{{ url('/rear-view/development-journey/raw-material') }}" class="nav-link {{ Request::is(['rear-view/development-journey/raw-material']) ? 'active' : '' }}">Raw Material</a>
             </li>
           </ul>
         </div>
@@ -52,19 +52,19 @@
           <span class="link-title">RPV - RIV</span>
           <i class="link-arrow" data-feather="chevron-down"></i>
         </a>
-        <div class="collapse {{ Request::is(['rpv-riv/*']) ? 'show' : '' }}" id="rpv-riv">
+        <div class="collapse {{ Request::is(['rear-view/rpv-riv/*']) ? 'show' : '' }}" id="rpv-riv">
           <ul class="nav sub-menu">
             <li class="nav-item">
-              <a href="{{ url('/rpv-riv/raw-material') }}" class="nav-link {{ Request::is(['rpv-riv/raw-material']) ? 'active' : '' }}">Raw Material</a>
+              <a href="{{ url('/rear-view/rpv-riv/eksternal') }}" class="nav-link {{ Request::is(['rear-view/rpv-riv/eksternal']) ? 'active' : '' }}">Eksternal</a>
             </li>
             <li class="nav-item">
-              <a href="{{ url('/rpv-riv/finish-good') }}" class="nav-link {{ Request::is(['rpv-riv/finish-good']) ? 'active' : '' }}">Finish Good</a>
+              <a href="{{ url('/rear-view/rpv-riv/finish-good') }}" class="nav-link {{ Request::is(['rear-view/rpv-riv/finish-good']) ? 'active' : '' }}">Finish Good</a>
             </li>
             <li class="nav-item">
-              <a href="{{ url('/rpv-riv/mikrobiologi') }}" class="nav-link {{ Request::is(['rpv-riv/mikrobiologi']) ? 'active' : '' }}">Mikrobiologi</a>
+              <a href="{{ url('/rear-view/rpv-riv/mikrobiologi') }}" class="nav-link {{ Request::is(['rear-view/rpv-riv/mikrobiologi']) ? 'active' : '' }}">Mikrobiologi</a>
             </li>
             <li class="nav-item">
-              <a href="{{ url('/rpv-riv/stabilita') }}" class="nav-link {{ Request::is(['rpv-riv/stabilita']) ? 'active' : '' }}">Stabilita</a>
+              <a href="{{ url('/rear-view/rpv-riv/raw-material') }}" class="nav-link {{ Request::is(['rear-view/rpv-riv/raw-material']) ? 'active' : '' }}">Raw Material</a>
             </li>
           </ul>
         </div>

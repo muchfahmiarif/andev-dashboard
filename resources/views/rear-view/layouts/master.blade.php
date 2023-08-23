@@ -36,24 +36,24 @@
   @stack('plugin-style')
 
   {{-- Common CSS --}}
-  <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
-  
+  <link href="{{ asset('css/app-rear-view.css') }}" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ asset('css/background-image.css') }}">
   @stack('style')
 
   {{-- Script --}}
   @vite(['resources/js/app.js'])
 </head>
-<body data-base-url="{{url('/')}}" class="sidebar-dark">
+<body data-base-url="{{url('/')}}" class="sidebar-dark ">
   
   <script src="{{ asset('/js/spinner.js') }}"></script>
 
-  <div class="main-wrapper" id="app">
+  <div class="main-wrapper " id="app">
     @include('rear-view.layouts.sidebar')
-    <div class="page-wrapper">
+    <div class="page-wrapper ">
       @include('rear-view.layouts.header')
-      <div class="page-content">
-        @yield('content')
-      </div>
+        <div class="page-content ">
+          @yield('content')
+        </div>
       @include('rear-view.layouts.footer')
     </div>
   </div>
