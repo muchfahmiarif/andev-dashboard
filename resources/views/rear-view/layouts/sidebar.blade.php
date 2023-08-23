@@ -79,16 +79,16 @@
           <span class="link-title">Report Analysis</span>
           <i class="link-arrow" data-feather="chevron-down"></i>
         </a>
-        <div class="collapse {{ Request::is(['report-analysis/*']) ? 'show' : '' }}" id="report-analysis">
+        <div class="collapse {{ Request::is(['rear-view/report-analysis/*']) ? 'show' : '' }}" id="report-analysis">
           <ul class="nav sub-menu">
-            <li class="nav-item">
-              <a href="{{ url('/rear-view/report-analysis/raw-material') }}" class="nav-link {{ Request::is(['rear-view/report-analysis/raw-material']) ? 'active' : '' }}">Raw Material</a>
-            </li>
             <li class="nav-item">
               <a href="{{ url('/rear-view/report-analysis/finish-good') }}" class="nav-link {{ Request::is(['rear-view/report-analysis/finish-good']) ? 'active' : '' }}">Finish Good</a>
             </li>
             <li class="nav-item">
               <a href="{{ url('/rear-view/report-analysis/mikrobiologi') }}" class="nav-link {{ Request::is(['rear-view/report-analysis/mikrobiologi']) ? 'active' : '' }}">Mikrobiologi</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ url('/rear-view/report-analysis/raw-material') }}" class="nav-link {{ Request::is(['rear-view/report-analysis/raw-material']) ? 'active' : '' }}">Raw Material</a>
             </li>
             <li class="nav-item">
               <a href="{{ url('/rear-view/report-analysis/stabilita') }}" class="nav-link {{ Request::is(['rear-view/report-analysis/stabilita']) ? 'active' : '' }}">Stabilita</a>
@@ -102,16 +102,16 @@
           <span class="link-title">Lembar Kerja Analis</span>
           <i class="link-arrow" data-feather="chevron-down"></i>
         </a>
-        <div class="collapse {{ Request::is(['lka/*']) ? 'show' : '' }}" id="lka">
+        <div class="collapse {{ Request::is(['rear-view/lka/*']) ? 'show' : '' }}" id="lka">
           <ul class="nav sub-menu">
-            <li class="nav-item">
-              <a href="{{ url('/rear-view/lka/raw-material') }}" class="nav-link {{ Request::is(['rear-view/lka/raw-material']) ? 'active' : '' }}">Raw Material</a>
-            </li>
             <li class="nav-item">
               <a href="{{ url('/rear-view/lka/finish-good') }}" class="nav-link {{ Request::is(['rear-view/lka/finish-good']) ? 'active' : '' }}">Finish Good</a>
             </li>
             <li class="nav-item">
               <a href="{{ url('/rear-view/lka/mikrobiologi') }}" class="nav-link {{ Request::is(['rear-view/lka/mikrobiologi']) ? 'active' : '' }}">Mikrobiologi</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ url('/rear-view/lka/raw-material') }}" class="nav-link {{ Request::is(['rear-view/lka/raw-material']) ? 'active' : '' }}">Raw Material</a>
             </li>
             <li class="nav-item">
               <a href="{{ url('/rear-view/lka/stabilita') }}" class="nav-link {{ Request::is(['rear-view/lka/stabilita']) ? 'active' : '' }}">Stabilita</a>
@@ -140,13 +140,19 @@
 
       {{-- Others Starts --}}
       <li class="nav-item nav-category">Others</li>
-      <li class="nav-item {{ Request::is(['rear-view/complience']) ? 'active' : '' }}">
-        <a href="{{ url('/complience') }}" class="nav-link">
+      <li class="nav-item {{ Request::is(['rear-view/other/compliance']) ? 'active' : '' }}">
+        <a href="{{ url('rear-view/other/compliance') }}" class="nav-link">
           <i class="link-icon" data-feather="calendar"></i>
-          <span class="link-title">Complience</span>
+          <span class="link-title">Compliance</span>
         </a>
       </li>
-      <li class="nav-item {{ Request::is(['resource-analysis/*']) ? 'active' : '' }}">
+      <li class="nav-item {{ Request::is(['rear-view/other/instrument-andev']) ? 'active' : '' }}">
+        <a href="{{ url('rear-view/other/instrument-andev') }}" class="nav-link">
+          <i class="link-icon" data-feather="calendar"></i>
+          <span class="link-title">Insutrment Andev</span>
+        </a>
+      </li>
+      {{-- <li class="nav-item {{ Request::is(['resource-analysis/*']) ? 'active' : '' }}">
         <a class="nav-link" data-bs-toggle="collapse" href="#resource-analysis" role="button" aria-expanded="{{ Request::is(['resource-analysis/*']) ? 'true' : 'false' }}" aria-controls="resource-analysis">
           <i class="link-icon" data-feather="inbox"></i>
           <span class="link-title">Resource Analysis</span>
@@ -165,7 +171,7 @@
             </li>
           </ul>
         </div>
-      </li>
+      </li> --}}
       
       {{-- Docs Starts --}}
       <li class="nav-item nav-category">Docs</li>

@@ -131,3 +131,8 @@ Route::group(['prefix' => 'rear-view/jadwal-stabilita'], function () {
     Route::get('ss-1', function () { return view('rear-view.pages.jadwal-stabilita.ss-1'); });
     Route::get('ss-2', function () { return view('rear-view.pages.jadwal-stabilita.ss-2'); });
 });
+
+Route::group(['prefix' => 'rear-view/other'], function () {
+    Route::get('compliance', function () { return view('rear-view.pages.other.compliance'); });
+    Route::get('instrument-andev', function() {return view ('rear-view.pages.other.instrument-andev');});
+});
