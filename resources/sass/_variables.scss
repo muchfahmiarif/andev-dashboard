@@ -53,3 +53,20 @@ $card-border-color: #f2f4f9 !default;
 $card-cap-padding-y: 0.875rem !default;
 $card-cap-padding-x: $card-spacer-x !default;
 $card-cap-bg: rgba($black, 0.01) !default;
+
+// Margin
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer * 0.25,
+    2: $spacer * 0.5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    10: $spacer * 10,
+    12: $spacer * 12,
+    14: $spacer * 14,
+    16: $spacer * 16,
+    20: $spacer * 20,
+    24: $spacer * 24,
+);

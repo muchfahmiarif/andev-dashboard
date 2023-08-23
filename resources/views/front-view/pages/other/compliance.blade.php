@@ -1,7 +1,7 @@
 @extends('front-view.layouts.master')
 
 @push('plugin-style')
-
+    <link rel="stylesheet" href="{{ asset('css/data-table/scroller.bootstrap5.min.css') }}">
 @endpush
 
 @section('content')
@@ -49,66 +49,79 @@
         <div class="card-body">
             <h1 class="card-title">Data Compliance</h1>
             <div class="content">
-                <table class="table table-hober border-primary">
-                    <thead>
-                        <tr>
-                            <th scope="col" class="text-center">No</th>
-                            <th scope="col" class="text-center">Area</th>
-                            <th scope="col" class="text-center">PIC</th>
-                            <th scope="col" class="text-center">Nama alat</th>
-                            <th scope="col" class="text-center">List item yang perlu di cek</th>
-                            <th scope="col" class="text-center">Status</th>
-                            <th scope="col" class="text-center">Keterangan</th>
-                        </tr>
-                    </thead>
-                    <tbody class="table-group-divider">
-                        <tr>
-                            <td scope="row" class="text-center">1</td>
-                            <td>Ruang Timbang</td>
-                            <td>Daffa</td>
-                            <td>Karl Fischer</td>
-                            <td>Memastikan alat masih dalam status terkualifikasi dan terkalibrasi</td>
-                            <td class="text-center">✔️ | ❌</td>
-                            <td>NA</td>
-                        </tr>
-                        <tr>
-                            <td scope="row" class="text-center">2</td>
-                            <td>Ruang Timbang</td>
-                            <td>Daffa</td>
-                            <td>Karl Fischer</td>
-                            <td>Memastikan logsheet pemakaian karl fisher diisi setiap harinya jika digunakan</td>
-                            <td class="text-center">✔️ | ❌</td>
-                            <td>NA</td>
-                        </tr>
-                        <tr>
-                            <td scope="row" class="text-center">3</td>
-                            <td>Ruang Timbang</td>
-                            <td>Daffa</td>
-                            <td>Karl Fischer</td>
-                            <td>Memastikan ketersedian standar "Hydranal" untuk verifikasi Karl Ficher</td>
-                            <td class="text-center">✔️ | ❌</td>
-                            <td>NA</td>
-                        </tr>
-                        <tr>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                        </tr>
-                        <tr>
-                            <td scope="row" class="text-center">155</td>
-                            <td>Bangunan dan Fasilitas</td>
-                            <td>NA</td>
-                            <td>Dinding / Langit - langit</td>
-                            <td>Memastikan area dinding dan langit-langit lab Andev bersih dan terawat</td>
-                            <td class="text-center">✔️ | ❌</td>
-                            <td>NA</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="mx-5">
+                    <table id="example" class="table table-hover align-midle ">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-center">No</th>
+                                <th scope="col" class="text-center">Area</th>
+                                <th scope="col" class="text-center">PIC</th>
+                                <th scope="col" class="text-center">Nama alat</th>
+                                <th scope="col" class="text-center">List item yang perlu di cek</th>
+                                <th scope="col" class="text-center">Status</th>
+                                <th scope="col" class="text-center">Keterangan</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <td scope="row" class="text-center">1</td>
+                                <td>Ruang Timbang</td>
+                                <td>Daffa</td>
+                                <td>Karl Fischer</td>
+                                <td>Memastikan alat masih dalam status terkualifikasi dan terkalibrasi</td>
+                                <td class="text-center">✔️ | ❌</td>
+                                <td>NA</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="text-center">2</td>
+                                <td>Ruang Timbang</td>
+                                <td>Daffa</td>
+                                <td>Karl Fischer</td>
+                                <td>Memastikan logsheet pemakaian karl fisher diisi setiap harinya jika digunakan</td>
+                                <td class="text-center">✔️ | ❌</td>
+                                <td>NA</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="text-center">3</td>
+                                <td>Ruang Timbang</td>
+                                <td>Daffa</td>
+                                <td>Karl Fischer</td>
+                                <td>Memastikan ketersedian standar "Hydranal" untuk verifikasi Karl Ficher</td>
+                                <td class="text-center">✔️ | ❌</td>
+                                <td>NA</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="text-center">12</td>
+                                <td>Lab Kimia</td>
+                                <td>Daffa</td>
+                                <td>Lemari Asam</td>
+                                <td>Memastikan reagen yang ada didalam kabinet lemari asam yang masih digunakan harus diberi identitas</td>
+                                <td class="text-center">✔️ | ❌</td>
+                                <td>NA</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="text-center">155</td>
+                                <td>Bangunan dan Fasilitas</td>
+                                <td>NA</td>
+                                <td>Dinding / Langit - langit</td>
+                                <td>Memastikan area dinding dan langit-langit lab Andev bersih dan terawat</td>
+                                <td class="text-center">✔️ | ❌</td>
+                                <td>NA</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="col" class="text-center">No</th>
+                                <th scope="col" class="text-center">Area</th>
+                                <th scope="col" class="text-center">PIC</th>
+                                <th scope="col" class="text-center">Nama alat</th>
+                                <th scope="col" class="text-center">List item yang perlu di cek</th>
+                                <th scope="col" class="text-center">Status</th>
+                                <th scope="col" class="text-center">Keterangan</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
                 <h1 class="card-title mt-5">Kesimpulan</h1>
                 <div class="col-md-2">
                     <table class="table table-hober border-primary">
@@ -149,9 +162,20 @@
 @endsection
 
 @push('plugin-scripts')
-
+    <script src="{{ asset('plugin/data-tables/dataTables.scroller.min.js') }}"></script>
+    <script src="{{ asset('plugin/data-tables/jquery-3.5.1.js') }}"></script>
+    <script src="{{ asset('plugin/data-tables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugin/data-tables/dataTables.bootstrap5.min.js') }}"></script>
+    <script src="{{ asset('plugin/data-tables/button/dataTables.buttons.min.js') }}"></script>
+    <script src="{{ asset('plugin/data-tables/button/buttons.bootstrap5.min.js') }}"></script>
+    <script src="{{ asset('plugin/data-tables/button/jszip.min.js') }}"></script>
+    <script src="{{ asset('plugin/data-tables/button/pdfmake.min.js') }}"></script>
+    <script src="{{ asset('plugin/data-tables/button/vfs_fonts.js') }}"></script>
+    <script src="{{ asset('plugin/data-tables/button/buttons.html5.min.js') }}"></script>
+    <script src="{{ asset('plugin/data-tables/button/buttons.print.min.js') }}"></script>
+    <script src="{{ asset('plugin/data-tables/button/buttons.colVis.min.js') }}"></script>
 @endpush
 
 @push('custom-scripts')
-
+    <script src="{{ asset('js/dataTable.js') }}"></script>
 @endpush
