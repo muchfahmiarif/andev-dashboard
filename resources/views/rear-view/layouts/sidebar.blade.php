@@ -176,7 +176,7 @@
       {{-- Docs Starts --}}
       <li class="nav-item nav-category">Docs</li>
       <li class="nav-item">
-        <a href="https://www.nobleui.com/laravel/documentation/docs.html" target="_blank" class="nav-link">
+        <a href="https://docs-andev-genero.vercel.app" target="_blank" class="nav-link">
           <i class="link-icon" data-feather="hash"></i>
           <span class="link-title">Documentation</span>
         </a>

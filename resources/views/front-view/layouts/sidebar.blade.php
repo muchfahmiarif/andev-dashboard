@@ -80,13 +80,13 @@
         <div class="collapse {{ Request::is(['report-analysis/*']) ? 'show' : '' }}" id="report-analysis">
           <ul class="nav sub-menu">
             <li class="nav-item">
-              <a href="{{ url('/report-analysis/raw-material') }}" class="nav-link {{ Request::is(['report-analysis/raw-material']) ? 'active' : '' }}">Raw Material</a>
-            </li>
-            <li class="nav-item">
               <a href="{{ url('/report-analysis/finish-good') }}" class="nav-link {{ Request::is(['report-analysis/finish-good']) ? 'active' : '' }}">Finish Good</a>
             </li>
             <li class="nav-item">
               <a href="{{ url('/report-analysis/mikrobiologi') }}" class="nav-link {{ Request::is(['report-analysis/mikrobiologi']) ? 'active' : '' }}">Mikrobiologi</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ url('/report-analysis/raw-material') }}" class="nav-link {{ Request::is(['report-analysis/raw-material']) ? 'active' : '' }}">Raw Material</a>
             </li>
             <li class="nav-item">
               <a href="{{ url('/report-analysis/stabilita') }}" class="nav-link {{ Request::is(['report-analysis/stabilita']) ? 'active' : '' }}">Stabilita</a>
@@ -103,13 +103,13 @@
         <div class="collapse {{ Request::is(['lka/*']) ? 'show' : '' }}" id="lka">
           <ul class="nav sub-menu">
             <li class="nav-item">
-              <a href="{{ url('/lka/raw-material') }}" class="nav-link {{ Request::is(['lka/raw-material']) ? 'active' : '' }}">Raw Material</a>
-            </li>
-            <li class="nav-item">
               <a href="{{ url('/lka/finish-good') }}" class="nav-link {{ Request::is(['lka/finish-good']) ? 'active' : '' }}">Finish Good</a>
             </li>
             <li class="nav-item">
               <a href="{{ url('/lka/mikrobiologi') }}" class="nav-link {{ Request::is(['lka/mikrobiologi']) ? 'active' : '' }}">Mikrobiologi</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ url('/lka/raw-material') }}" class="nav-link {{ Request::is(['lka/raw-material']) ? 'active' : '' }}">Raw Material</a>
             </li>
             <li class="nav-item">
               <a href="{{ url('/lka/stabilita') }}" class="nav-link {{ Request::is(['lka/stabilita']) ? 'active' : '' }}">Stabilita</a>
