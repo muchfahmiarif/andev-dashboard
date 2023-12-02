@@ -34,6 +34,7 @@
           <div class="card-body">
             <div class="tab-content" id="nav-tabContent">
               <div class="tab-pane fade active show" id="nav-bpo" role="tabpanel" aria-labelledby="nav-bpo-tab">
+                
                 {{-- BPO --}}
                 <div id="content">
                   <ul class="timeline">
@@ -77,6 +78,7 @@
                 </div>
               </div>
               <div class="tab-pane fade" id="nav-adapalane" role="tabpanel" aria-labelledby="nav-adapalane-tab">
+
                 {{-- Adapalene --}}
                 <div id="content">
                   <ul class="timeline">

@@ -67,6 +67,13 @@ Route::group(['prefix' => 'rpv-riv'], function() {
     Route::get('eksternal', function() { return view('front-view.pages.rpv-riv.eksternal'); });
 });
 
+Route::group(['prefix' => 'documents'], function() {
+    Route::get('finish-good', function() { return view('front-view.pages.documents.finish-good'); });
+    Route::get('raw-material', function() { return view('front-view.pages.documents.raw-material'); });
+    Route::get('mikrobiologi', function() { return view('front-view.pages.documents.mikrobiologi'); });
+    Route::get('eksternal', function() { return view('front-view.pages.documents.eksternal'); });
+});
+
 Route::group(['prefix' => 'report-analysis'], function () {
     Route::get('finish-good', function () { return view('front-view.pages.report-analysis.finish-good'); });
     Route::get('raw-material', function () { return view('front-view.pages.report-analysis.raw-material'); });

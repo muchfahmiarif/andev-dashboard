@@ -50,7 +50,7 @@
       <nav class="hidden gap-12 lg:flex">
         <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700 {{ Request::is(['/']) ? 'text-indigo-500' : '' }}" target="_self">Home</a>
         <a href="{{ url('rear-view') }}" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700 " target="_self">Input Data</a>
-        <a href="{{ url('https://fahmiarif.site') }}" class="text-lg font-semibold text-gray-600 hover:animate-text hover:bg-gradient-to-r from-teal-500 hover:via-purple-500 hover:to-orange-500 hover:bg-clip-text hover:text-transparent  active:text-indigo-700" target="_blank">Stock WS / RS</a>
+        {{-- <a href="{{ url('https://fahmiarif.site') }}" class="text-lg font-semibold text-gray-600 hover:animate-text hover:bg-gradient-to-r from-teal-500 hover:via-purple-500 hover:to-orange-500 hover:bg-clip-text hover:text-transparent  active:text-indigo-700" target="_blank">Stock WS / RS</a> --}}
         <a href="{{ url('about') }}" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700 {{ Request::is(['about']) ? 'text-indigo-500' : '' }}" target="_self">About</a>
       </nav>
       <!-- nav - end -->
@@ -118,18 +118,18 @@
           </div>
 
           <div class="group cursor-pointer inline-block text-center relative">
-            <a href="https://www.linkedin.com/in/muchfahmiarif/" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+            <a href="https://www.linkedin.com/company/pt-genero-pharmaceuticals/" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
               <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
               </svg>
             </a>
             <div class="opacity-0 w-[7.5rem] bg-indigo-800 text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover:opacity-100 bottom-full -left-1/2 -ml-10 px-3 pointer-events-none mb-1">
-              Linkedin Fahmi
+              Linkedin Genero
               <svg class="absolute text-indigo-800 h-2 w-full left-0 top-full" x="0px" y="0px" viewBox="0 0 255 255" xml:space="preserve"><polygon class="fill-current" points="0,0 127.5,127.5 255,0"/></svg>
             </div>
           </div>
 
-          <div class="group cursor-pointer inline-block text-center relative">
+          {{-- <div class="group cursor-pointer inline-block text-center relative">
             <a href="https://www.linkedin.com/in/muhammad-aglia-dwitama-8170b9163/" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
               <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
@@ -139,7 +139,7 @@
               LinkedIn Aglia
               <svg class="absolute text-indigo-800 h-2 w-full left-0 top-full" x="0px" y="0px" viewBox="0 0 255 255" xml:space="preserve"><polygon class="fill-current" points="0,0 127.5,127.5 255,0"/></svg>
             </div>
-          </div>
+          </div> --}}
           
           <div class="group cursor-pointer inline-block text-center relative">
             <a href="{{ url('https://github.com/muchfahmiarif/andev-dashboard') }}" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">

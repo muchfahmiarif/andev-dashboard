@@ -14,7 +14,7 @@
       <li class="nav-item nav-category">Main</li>
       <li class="nav-item {{ Request::is(['home']) ? 'active' : '' }}"> 
         <a href="{{ url('home') }}" class="nav-link">
-          <i class="link-icon" data-feather="box"></i>
+          <i class="link-icon" data-feather="trello"></i>
           <span class="link-title">Home</span>
         </a>
       </li>
@@ -23,7 +23,7 @@
       <li class="nav-item nav-category">Core Part</li>
       <li class="nav-item {{ Request::is('development-journey*') ? 'active' : '' }}">
         <a class="nav-link" data-bs-toggle="collapse" href="#development-journey" role="button" aria-expanded="{{ Request::is(['development-journey/*']) ? 'true' : 'false' }}" aria-controls="development-journey">
-          <i class="link-icon" data-feather="bookmark"></i>
+          <i class="link-icon" data-feather="command"></i>
           <span class="link-title">Development Journey</span>
           <i class="link-arrow" data-feather="chevron-down"></i>
         </a>
@@ -67,13 +67,36 @@
           </ul>
         </div>
       </li>
+      <li class="nav-item {{ Request::is(['documents/*']) ? 'active' : '' }}">
+        <a class="nav-link" data-bs-toggle="collapse" href="#documents" role="button" aria-expanded="{{ Request::is(['documents/*']) ? 'true' : 'false' }}" aria-controls="documents">
+          <i class="link-icon" data-feather="book"></i>
+          <span class="link-title">Documents</span>
+          <i class="link-arrow" data-feather="chevron-down"></i>
+        </a>
+        <div class="collapse {{ Request::is(['documents/*']) ? 'show' : '' }}" id="documents">
+          <ul class="nav sub-menu">
+            <li class="nav-item">
+              <a href="{{ url('/documents/eksternal') }}" class="nav-link {{ Request::is(['documents/eksternal']) ? 'active' : '' }}">Eksternal</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ url('/documents/finish-good') }}" class="nav-link {{ Request::is(['documents/finish-good']) ? 'active' : '' }}">Finish Good</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ url('/documents/mikrobiologi') }}" class="nav-link {{ Request::is(['documents/mikrobiologi']) ? 'active' : '' }}">Mikrobiologi</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ url('/documents/raw-material') }}" class="nav-link {{ Request::is(['documents/raw-material']) ? 'active' : '' }}">Raw Material</a>
+            </li>
+          </ul>
+        </div>
+      </li>
       {{-- Group Development Ends --}}
 
       {{-- Data Report Starts --}}
       <li class="nav-item nav-category">Data Report</li>
       <li class="nav-item {{ Request::is(['report-analysis/*']) ? 'active' : '' }}">
         <a class="nav-link" data-bs-toggle="collapse" href="#report-analysis" role="button" aria-expanded="{{ Request::is(['report-analysis/*']) ? 'true' : 'false' }}" aria-controls="report-analysis">
-          <i class="link-icon" data-feather="mail"></i>
+          <i class="link-icon" data-feather="clipboard"></i>
           <span class="link-title">Report Analysis</span>
           <i class="link-arrow" data-feather="chevron-down"></i>
         </a>
@@ -96,7 +119,7 @@
       </li>
       <li class="nav-item {{ Request::is(['lka/*']) ? 'active' : '' }}">
         <a class="nav-link" data-bs-toggle="collapse" href="#lka" role="button" aria-expanded="{{ Request::is(['lka/*']) ? 'true' : 'false' }}" aria-controls="lka">
-          <i class="link-icon" data-feather="mail"></i>
+          <i class="link-icon" data-feather="tablet"></i>
           <span class="link-title">Lembar Kerja Analis</span>
           <i class="link-arrow" data-feather="chevron-down"></i>
         </a>
@@ -119,7 +142,7 @@
       </li>
       <li class="nav-item {{ Request::is(['jadwal-stabilita/*']) ? 'active' : '' }}">
         <a class="nav-link" data-bs-toggle="collapse" href="#jadwal-stabilita" role="button" aria-expanded="{{ Request::is(['jadwal-stabilita/*']) ? 'true' : 'false' }}" aria-controls="jadwal-stabilita">
-          <i class="link-icon" data-feather="mail"></i>
+          <i class="link-icon" data-feather="calendar"></i>
           <span class="link-title">Jadwal Stabilita</span>
           <i class="link-arrow" data-feather="chevron-down"></i>
         </a>
@@ -140,13 +163,13 @@
       <li class="nav-item nav-category">Others</li>
       <li class="nav-item {{ Request::is(['other/compliance']) ? 'active' : '' }}">
         <a href="{{ url('/other/compliance') }}" class="nav-link">
-          <i class="link-icon" data-feather="calendar"></i>
+          <i class="link-icon" data-feather="user-check"></i>
           <span class="link-title">Compliance</span>
         </a>
       </li>
       <li class="nav-item {{ Request::is(['other/instrument-andev']) ? 'active' : '' }}">
         <a href="{{ url('/other/instrument-andev') }}" class="nav-link">
-          <i class="link-icon" data-feather="calendar"></i>
+          <i class="link-icon" data-feather="tool"></i>
           <span class="link-title">Instrument Andev</span>
         </a>
       </li>
@@ -175,7 +198,7 @@
       <li class="nav-item nav-category">Docs</li>
       <li class="nav-item">
         <a href="https://docs-andev-genero.vercel.app" target="_blank" class="nav-link">
-          <i class="link-icon" data-feather="hash"></i>
+          <i class="link-icon" data-feather="code"></i>
           <span class="link-title">Documentation</span>
         </a>
       </li>
