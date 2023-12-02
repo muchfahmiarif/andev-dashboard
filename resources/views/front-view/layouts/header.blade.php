@@ -55,10 +55,14 @@
               </a>
             </li>
             <li class="dropdown-item ">
-              <button class=" ms-0 text-decoration-none pe-7 py-2 border-0 btn btn-link">
+              <button class=" ms-0 text-decoration-none pe-7 py-2 border-0 btn btn-link" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">
                 <i class="me-2 icon-md" data-feather="log-out"></i>
                 <span>Log Out</span>
               </button>
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                <input type="hidden" name="redirect" value="{{ url()->current() }}">
+                  @csrf
+              </form>
             </li>
           </ul>
         </div>

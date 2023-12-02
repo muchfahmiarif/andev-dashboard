@@ -49,16 +49,18 @@ Route::get('/documentation', function() {
     return view('front-view.pages.docs');
 });
 
-Route::group(['prefix' => 'development-journey'], function() {
-    Route::get('finish-good', function() { return view('front-view.pages.development-journey.finish-good.index'); });
-    Route::get('finish-good/detail', function() { return view('front-view.pages.development-journey.finish-good.detail'); });
-    Route::get('raw-material', function() { return view('front-view.pages.development-journey.raw-material.index'); });
-    Route::get('raw-material/detail', function() { return view('front-view.pages.development-journey.raw-material.detail'); });
-    Route::get('mikrobiologi', function() { return view('front-view.pages.development-journey.mikrobiologi.index'); });
-    Route::get('mikrobiologi/detail', function() { return view('front-view.pages.development-journey.mikrobiologi.detail'); });
-    Route::get('eksternal', function() { return view('front-view.pages.development-journey.eksternal.index'); });
-    Route::get('eksternal/detail', function() { return view('front-view.pages.development-journey.eksternal.detail'); });
-});
+// Route::middleware(['auth'])->group(function() {
+    Route::group(['prefix' => 'development-journey'], function() {
+        Route::get('finish-good', function() { return view('front-view.pages.development-journey.finish-good.index'); });
+        Route::get('finish-good/detail', function() { return view('front-view.pages.development-journey.finish-good.detail'); });
+        Route::get('raw-material', function() { return view('front-view.pages.development-journey.raw-material.index'); });
+        Route::get('raw-material/detail', function() { return view('front-view.pages.development-journey.raw-material.detail'); });
+        Route::get('mikrobiologi', function() { return view('front-view.pages.development-journey.mikrobiologi.index'); });
+        Route::get('mikrobiologi/detail', function() { return view('front-view.pages.development-journey.mikrobiologi.detail'); });
+        Route::get('eksternal', function() { return view('front-view.pages.development-journey.eksternal.index'); });
+        Route::get('eksternal/detail', function() { return view('front-view.pages.development-journey.eksternal.detail'); });
+    });
+// });
 
 Route::group(['prefix' => 'rpv-riv'], function() {
     Route::get('finish-good', function() { return view('front-view.pages.rpv-riv.finish-good'); });
