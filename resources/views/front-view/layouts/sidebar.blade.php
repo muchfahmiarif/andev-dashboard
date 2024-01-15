@@ -20,7 +20,7 @@
       </li>
 
       {{-- Group Development Starts--}}
-      <li class="nav-item nav-category">Core Part</li>
+      {{-- <li class="nav-item nav-category">Core Part</li>
       <li class="nav-item {{ Request::is('development-journey*') ? 'active' : '' }}">
         <a class="nav-link" data-bs-toggle="collapse" href="#development-journey" role="button" aria-expanded="{{ Request::is(['development-journey/*']) ? 'true' : 'false' }}" aria-controls="development-journey">
           <i class="link-icon" data-feather="command"></i>
@@ -66,30 +66,7 @@
             </li>
           </ul>
         </div>
-      </li>
-      <li class="nav-item {{ Request::is(['documents/*']) ? 'active' : '' }}">
-        <a class="nav-link" data-bs-toggle="collapse" href="#documents" role="button" aria-expanded="{{ Request::is(['documents/*']) ? 'true' : 'false' }}" aria-controls="documents">
-          <i class="link-icon" data-feather="book"></i>
-          <span class="link-title">Documents</span>
-          <i class="link-arrow" data-feather="chevron-down"></i>
-        </a>
-        <div class="collapse {{ Request::is(['documents/*']) ? 'show' : '' }}" id="documents">
-          <ul class="nav sub-menu">
-            <li class="nav-item">
-              <a href="{{ url('/documents/eksternal') }}" class="nav-link {{ Request::is(['documents/eksternal']) ? 'active' : '' }}">Eksternal</a>
-            </li>
-            <li class="nav-item">
-              <a href="{{ url('/documents/finish-good') }}" class="nav-link {{ Request::is(['documents/finish-good']) ? 'active' : '' }}">Finish Good</a>
-            </li>
-            <li class="nav-item">
-              <a href="{{ url('/documents/mikrobiologi') }}" class="nav-link {{ Request::is(['documents/mikrobiologi']) ? 'active' : '' }}">Mikrobiologi</a>
-            </li>
-            <li class="nav-item">
-              <a href="{{ url('/documents/raw-material') }}" class="nav-link {{ Request::is(['documents/raw-material']) ? 'active' : '' }}">Raw Material</a>
-            </li>
-          </ul>
-        </div>
-      </li>
+      </li> --}}
       {{-- Group Development Ends --}}
 
       {{-- Data Report Starts --}}
@@ -117,6 +94,11 @@
           </ul>
         </div>
       </li>
+      
+      {{-- Report Data Ends --}}
+
+      {{-- Others Starts --}}
+      <li class="nav-item nav-category">Master Data</li>
       <li class="nav-item {{ Request::is(['lka/*']) ? 'active' : '' }}">
         <a class="nav-link" data-bs-toggle="collapse" href="#lka" role="button" aria-expanded="{{ Request::is(['lka/*']) ? 'true' : 'false' }}" aria-controls="lka">
           <i class="link-icon" data-feather="tablet"></i>
@@ -140,7 +122,7 @@
           </ul>
         </div>
       </li>
-      <li class="nav-item {{ Request::is(['jadwal-stabilita/*']) ? 'active' : '' }}">
+      {{-- <li class="nav-item {{ Request::is(['jadwal-stabilita/*']) ? 'active' : '' }}">
         <a class="nav-link" data-bs-toggle="collapse" href="#jadwal-stabilita" role="button" aria-expanded="{{ Request::is(['jadwal-stabilita/*']) ? 'true' : 'false' }}" aria-controls="jadwal-stabilita">
           <i class="link-icon" data-feather="calendar"></i>
           <span class="link-title">Jadwal Stabilita</span>
@@ -156,11 +138,7 @@
             </li>
           </ul>
         </div>
-      </li>
-      {{-- Report Data Ends --}}
-
-      {{-- Others Starts --}}
-      <li class="nav-item nav-category">Others</li>
+      </li> --}}
       <li class="nav-item {{ Request::is(['other/compliance']) ? 'active' : '' }}">
         <a href="{{ url('/other/compliance') }}" class="nav-link">
           <i class="link-icon" data-feather="user-check"></i>
