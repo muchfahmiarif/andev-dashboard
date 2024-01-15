@@ -106,7 +106,11 @@
                                     <option value="false">❌</option>
                                   </select>
                                 </td>
-                                <td class="text-center">Kondisi alat baik</td>
+                                <td class="text-center">Kondisi alat baik
+                                  <button class="btn-sm">
+                                    <i class="link-icon" data-feather="edit-3"></i>
+                                  </button>
+                                </td>
                             </tr>
                             <tr>
                                 <td scope="row" class="text-center">3</td>
@@ -126,7 +130,11 @@
                                     <option value="false">❌</option>
                                   </select>
                                 </td>
-                                <td class="text-center">Kondisi alat baik</td>
+                                <td class="text-center">Kondisi alat baik
+                                  <button class="btn-sm">
+                                  <i class="link-icon" data-feather="edit-3"></i>
+                                </button>
+                                </td>
                             </tr>
                             <tr>
                                 <td scope="row" class="text-center">4</td>
@@ -146,7 +154,11 @@
                                     <option value="false">❌</option>
                                   </select>
                                 </td>
-                                <td class="text-center">Kondisi alat baik</td>
+                                <td class="text-center">Kondisi alat baik
+                                  <button class="btn-sm">
+                                  <i class="link-icon" data-feather="edit-3"></i>
+                                </button>
+                                </td>
                             </tr>
                             <tr>
                                 <td scope="row" class="text-center">5</td>
@@ -166,7 +178,11 @@
                                     <option value="false">❌</option>
                                   </select>
                                 </td>
-                                <td class="text-center">Kondisi alat baik</td>
+                                <td class="text-center">Kondisi alat baik
+                                  <button class="btn-sm">
+                                  <i class="link-icon" data-feather="edit-3"></i>
+                                </button>
+                                </td>
                             </tr>
                             <tr>
                                 <td scope="row" class="text-center">6</td>
@@ -186,7 +202,11 @@
                                     <option value="false">❌</option>
                                   </select>
                                 </td>
-                                <td class="text-center">Kondisi alat baik</td>
+                                <td class="text-center">Kondisi alat baik
+                                  <button class="btn-sm">
+                                  <i class="link-icon" data-feather="edit-3"></i>
+                                </button>
+                                </td>
                             </tr>
                             <tr>
                                 <td scope="row" class="text-center">7</td>
@@ -206,7 +226,11 @@
                                     <option value="false">❌</option>
                                   </select>
                                 </td>
-                                <td class="text-center">Kondisi alat baik</td>
+                                <td class="text-center">Kondisi alat baik
+                                  <button class="btn-sm">
+                                  <i class="link-icon" data-feather="edit-3"></i>
+                                </button>
+                                </td>
                             </tr>
                             <tr>
                                 <td scope="row" class="text-center">8</td>
@@ -226,7 +250,11 @@
                                     <option value="false">❌</option>
                                   </select>
                                 </td>
-                                <td class="text-center">Kondisi alat baik</td>
+                                <td class="text-center">Kondisi alat baik
+                                  <button class="btn-sm">
+                                  <i class="link-icon" data-feather="edit-3"></i>
+                                </button>
+                                </td>
                             </tr>
     
                             <tr>
@@ -247,7 +275,11 @@
                                     <option value="false">❌</option>
                                   </select>
                                 </td>
-                                <td class="text-center">Kondisi alat baik</td>
+                                <td class="text-center">Kondisi alat baik
+                                  <button class="btn-sm">
+                                  <i class="link-icon" data-feather="edit-3"></i>
+                                </button>
+                                </td>
                             </tr>
                             <tr>
                                 <td scope="row" class="text-center">10</td>
@@ -267,7 +299,11 @@
                                     <option value="false">❌</option>
                                   </select>
                                 </td>
-                                <td class="text-center">Kondisi alat baik</td>
+                                <td class="text-center">Kondisi alat baik
+                                  <button class="btn-sm">
+                                  <i class="link-icon" data-feather="edit-3"></i>
+                                </button>
+                                </td>
                             </tr>
                             <tr>
                                 <td scope="row" class="text-center">11</td>
@@ -287,7 +323,11 @@
                                     <option value="false">❌</option>
                                   </select>
                                 </td>
-                                <td class="text-center">Kondisi alat baik</td>
+                                <td class="text-center">Kondisi alat baik
+                                  <button class="btn-sm">
+                                  <i class="link-icon" data-feather="edit-3"></i>
+                                </button>
+                                </td>
                             </tr>
                             <tr>
                                 <td scope="row" class="text-center">12</td>
@@ -307,7 +347,11 @@
                                     <option value="false">❌</option>
                                   </select>
                                 </td>
-                                <td class="text-center">Kondisi alat baik</td>
+                                <td class="text-center">Kondisi alat baik
+                                  <button class="btn-sm">
+                                  <i class="link-icon" data-feather="edit-3"></i>
+                                </button>
+                                </td>
                             </tr>
                             <tr>
                                 <td scope="row" class="text-center">13</td>
@@ -327,7 +371,11 @@
                                     <option value="false">❌</option>
                                   </select>
                                 </td>
-                                <td class="text-center">Kondisi alat baik</td>
+                                <td class="text-center">Kondisi alat baik
+                                  <button class="btn-sm">
+                                  <i class="link-icon" data-feather="edit-3"></i>
+                                </button>
+                                </td>
                             </tr>
                         </tbody>
                         <tfoot>

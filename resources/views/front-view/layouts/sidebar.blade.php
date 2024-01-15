@@ -67,7 +67,7 @@
           </ul>
         </div>
       </li>
-      <li class="nav-item {{ Request::is(['documents/*']) ? 'active' : '' }}">
+      {{-- <li class="nav-item {{ Request::is(['documents/*']) ? 'active' : '' }}">
         <a class="nav-link" data-bs-toggle="collapse" href="#documents" role="button" aria-expanded="{{ Request::is(['documents/*']) ? 'true' : 'false' }}" aria-controls="documents">
           <i class="link-icon" data-feather="book"></i>
           <span class="link-title">Documents</span>
@@ -89,7 +89,7 @@
             </li>
           </ul>
         </div>
-      </li>
+      </li> --}}
       {{-- Group Development Ends --}}
 
       {{-- Data Report Starts --}}

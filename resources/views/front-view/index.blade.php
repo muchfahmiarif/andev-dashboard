@@ -69,7 +69,7 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-body">
-                <h1 class="card-title">Main 1</h1>
+                <h1 class="card-title">Grafik 1</h1>
                 <div class="content d-flex flex-wrap justify-content-center gap-3">
                     <div class="text-center">
                         <div id="output-analisa" class="d-flex "></div>
@@ -89,7 +89,7 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
-                    <h1 class="card-title">Main 2</h1>
+                    <h1 class="card-title">Grafik 2</h1>
                     <div class="content d-flex flex-wrap justify-content-center gap-3">
                         <div class="text-center">
                             <div id="output-riset-validasi" class="d-flex"></div>
@@ -107,7 +107,7 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
-                    <h1 class="card-title">Main 2</h1>
+                    <h1 class="card-title">Grafik 3</h1>
                     <div class="content d-flex flex-wrap justify-content-center gap-3">
                         <div class="text-center">
                             <div id="output-lain" class="d-flex"></div>
@@ -128,7 +128,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <h1 class="card-title">Complience</h1>
+                    <h1 class="card-title">Grafik 4</h1>
                     <div class="content d-flex flex-wrap justify-content-center gap-3">
                         <div class="text-center">
                             <div id="main-complience" class="d-flex"></div>
