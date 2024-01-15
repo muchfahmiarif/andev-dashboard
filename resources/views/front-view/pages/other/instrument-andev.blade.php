@@ -12,7 +12,7 @@
         <div class="ms-auto">
             <div class="d-flex">
                 <select class="form-select mx-2" aria-label="Default select example">
-                    <option selected>Pilih bulan...</option>
+                    <option value="" disabled hidden selected>Pilih bulan...</option>
                     <option value="1">Januari</option>
                     <option value="2">Februari</option>
                     <option value="3">Maret</option>
@@ -27,7 +27,7 @@
                     <option value="12">Desember</option>
                 </select>
                 <select class="form-select mx-2" aria-label="Default select example">
-                    <option selected>Pilih tahun...</option>
+                    <option value="" hidden hidden selected>Pilih tahun...</option>
                     <option value="1">2023</option>
                     <option value="2">2024</option>
                     <option value="3">2025</option>

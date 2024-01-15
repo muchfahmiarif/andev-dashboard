@@ -34,11 +34,11 @@
 @endpush
 
 @section('content')
-<div>
+{{-- <div>
     <div class="alert alert-warning d-flex align-items-center" role="alert">
         🏗️ Under development
     </div>
-</div>
+</div> --}}
     <div class="mb-2 d-flex">
         <div>
             <h2 class="mb-0">Andev Dashboard</h2>

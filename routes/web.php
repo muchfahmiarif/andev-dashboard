@@ -27,6 +27,10 @@ Route::get('/hello', function () {
     return view('welcome');
 });
 
+Route::get('/blank', function () {
+    return view('blank');
+});
+
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -49,7 +53,11 @@ Route::get('/documentation', function() {
     return view('front-view.pages.docs');
 });
 
-// Route::middleware(['auth'])->group(function() {
+Route::get('/role', function() {
+    return view('role');
+});
+
+Route::middleware(['auth'])->group(function() {
     Route::group(['prefix' => 'development-journey'], function() {
         Route::get('finish-good', function() { return view('front-view.pages.development-journey.finish-good.index'); });
         Route::get('finish-good/detail', function() { return view('front-view.pages.development-journey.finish-good.detail'); });
@@ -60,7 +68,7 @@ Route::get('/documentation', function() {
         Route::get('eksternal', function() { return view('front-view.pages.development-journey.eksternal.index'); });
         Route::get('eksternal/detail', function() { return view('front-view.pages.development-journey.eksternal.detail'); });
     });
-// });
+});
 
 Route::group(['prefix' => 'rpv-riv'], function() {
     Route::get('finish-good', function() { return view('front-view.pages.rpv-riv.finish-good'); });
