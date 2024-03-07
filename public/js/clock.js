@@ -5,7 +5,7 @@ let isLoaded = false; // Flag to track if data has been loaded
 
 function getTime() {
     if (!isLoaded) {
-        const url = "http://worldtimeapi.org/api/timezone/Asia/Jakarta";
+        const url = "https://worldtimeapi.org/api/timezone/Asia/Jakarta";
         fetch(url)
             .then((response) => response.json())
             .then((data) => {

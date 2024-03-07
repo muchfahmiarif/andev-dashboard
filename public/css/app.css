@@ -22366,15 +22366,12 @@ div.fc .btn-group-lg > .btn-icon-text.fc-button-primary .btn-icon-append {
     font-weight: 500;
     font-size: 12px;
     text-transform: uppercase;
-    color: #7987a1;
+    color: #000000;
 }
 .table thead th i {
     margin-left: 0.325rem;
 }
-.table th,
-.table td {
-    white-space: nowrap;
-}
+
 .table td img {
     width: 36px;
     height: 36px;

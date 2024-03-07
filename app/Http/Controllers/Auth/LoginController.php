@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
@@ -39,15 +38,8 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    public function logout(Request $request) {
-        // Store the previous url
-        session()->put('url.intended', url()->previous());
-
-        // Perform the logout
-        auth()->logout();
-
-        // Redirect to the previous url
-        return redirect()->back();
-        
+    public function username()
+    {
+        return 'username';
     }
 }

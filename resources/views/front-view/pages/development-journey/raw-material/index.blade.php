@@ -1,89 +1,318 @@
 @extends('front-view.layouts.master')
 
 @push('plugin-style')
-  
+  <link rel="stylesheet" href="{{ asset('css/data-table/scroller.bootstrap5.min.css') }}">
 @endpush
-
+@section('custom-css')
+    <link rel="stylesheet" href="/plugin/toastr/toastr.min.css">
+    <link rel="stylesheet" href="/plugin/select2/css/select2.min.css">
+    <link rel="stylesheet" href="/plugin/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+@endsection
 @section('content')
-<nav class="hstack gap-3">
-  <div class="ms-auto">
+<div class="row py-2">
+  <div class="col-md-6">
+    <nav class="page-breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><p  href="{{ url('#') }}"> <a style="color:#000000" href="/development-journey/raw_material">Raw Material</a> /<b> {{ Request::get('nama_item') }}</b></p></li>
+          </ol>
+        </nav>
   </div>
-  <div class="col-lg-2 text-center ">
+  <div class="col-md-6">
     <label for="formFile" class="form-label">Nama Bahan Baku</label>
-    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-    <datalist id="datalistOptions">
-      <option value="Tretinoin">
-      <option value="Fusidic Acid">
-      <option value="Minoxidil">
-      <option value="Mometasone Furoate">
-    </datalist>
-    {{-- <select class="form-select" aria-label="Default select example">
-      <option value="1">Tretinoin</option>
-      <option value="2">Fusidic Acid</option>
-      <option value="3">Minoxidil</option>
-      <option value="3">Mometasone Furoate</option>
-    </select> --}}
-    <a href="#" class="btn btn-primary btn-sm text-white mt-2 d-block">Terapkan Item</a>
-  </div>
-</nav>
-
-<div class="mt-3">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="card">
-        <div class="card-body">
-          <h6 class="card-title">Timeline</h6>
-          <div id="content">
-            <ul class="timeline">
-              <li class="event" data-date="2 Days Ago">
-                <div>
-                  <div class="hstack">
-                    <a class="title text-decoration-none" href="{{ url('/development-journey/raw-material/detail') }}">Lorem, ipsum.</a> {{-- link detail nantinya dinamis sesuai dengan slug --}}
-                    <p class="ms-auto badge bg-info">Mencari Literatur</p>
-                  </div>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure suscipit nostrum repellat, qui natus obcaecati pariatur doloribus quos voluptatibus debitis.</p>
-                </div>
-              </li>
-              <li class="event" data-date="9 Month Ago">
-                <div>
-                  <div class="hstack">
-                    <a class="title text-decoration-none" href="{{ url('/development-journey/raw-material/detail') }}">Minoxidil ex Global Calcium</a> {{-- link detail nantinya dinamis sesuai dengan slug --}}
-                    <p class="ms-auto badge bg-danger">Pending</p>
-                  </div>
-                  <p>Perubahan prosedur kerja sesuai USP 44 dan perubahan format dokumen</p>
-                </div>
-              </li>
-              <li class="event" data-date="Apr 2021">
-                <div>
-                  <div class="hstack gap-3">
-                    <a class="title text-decoration-none" href="{{ url('/development-journey/raw-material/detail') }}">Minoxidil</a> {{-- link detail nantinya dinamis sesuai dengan slug --}}
-                    <p class="ms-auto badge bg-warning">Work In Progress</p>
-                  </div>
-                  <p>Perubahan prosedur kerja dan perubahan alat dari HPLC menjadi UPLC</p>
-                </div>
-              </li>
-              <li class="event" data-date="Apr 2019">
-                <div>
-                  <div class="hstack gap-3">
-                    <a class="title text-decoration-none" href="{{ url('/development-journey/raw-material/detail') }}">Minoxidil</a> {{-- link detail nantinya dinamis sesuai dengan slug --}}
-                    <p class="ms-auto badge bg-success">Done</p>
-                  </div>
-                  <p>Pertama Terbit</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+    <form id="nama_product" method="GET" action="{{ route('rm_timeline') }}">
+      <div class="input-group col-2 mx-auto text-center" >
+          <select class="form-control select2" style="width: 20px;" id="nama_item" name="nama_item" >
+            <option selected disabled >.:: List Bahan Baku ::.</option>
+            @foreach ($selectProduct as $data)
+            <option value="{{ $data->nama_item }}">{{ $data->nama_item }}</option>
+          @endforeach
+          </select>
       </div>
-    </div>
+  </form>
   </div>
 </div>
+@php
+    $nama_item = Request::get('nama_item');
+@endphp
+@if ($nama_item == NULL)
+<div class="m-2">
+  <div class="card text-center">
+    <div class="card-body">
+      <div class="container" style="display: flex; ">
+        <div>
+          <a title="Tambah Data" type="button"  class="btn btn-secondary btn-sm text-white" data-bs-toggle="modal"
+          data-bs-target="#create" style="width: 300px; text-align: center; margin-right: 10px;"><i class="fas fa-plus"></i> Tambah Bahan Baku</a>
+        </a>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+@elseif(isset($addJourney) && $addJourney->zat_aktif == NULL)
+<div class="m-2">
+  <div class="card text-center">
+    <div class="card-body">
+      <div class="container" style="text-align: center; ">
+        <div>
+          <a title="Tambah Data" type="button"  class="btn btn-secondary btn-sm text-white" data-bs-toggle="modal"
+          data-bs-target="#update_zatAktif{{ $addJourney->id_devlop }}"  style="width: 300px; text-align: center; margin-right: 10px;"><i class="fas fa-plus"></i> Tambah Zat Aktif</a>
+          </a>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+
+<div class="modal fade"  id="update_zatAktif{{ $addJourney->id_devlop }}">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h4 id="modal-title" class="modal-title">{{ __('Tambah Zat Aktif') }}</h4>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <form role="form" id="approve-form" action="{{ route('addZatAktif') }}" method="post">
+                  @csrf
+                  <input type="hidden" name="id" id="id" value="{{ $addJourney->id_devlop }}">
+                  <input type="hidden" name="jenis_journey" id="jenis_journey" value="Raw Material">
+                  <input type="hidden" name="nama_item" id="nama_item" value="{{ Request::get('nama_item') }}">
+                  <div class="form-group row">
+                    <label for="zat_aktif" class="col-sm-4 col-form-label">{{ __('Nama Zat Aktif') }}</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="zat_aktif" name="zat_aktif"  value="{{ old('zat_aktif') }}">
+                    </div>
+                  </div>
+                  <br>
+                  <div class="d-flex justify-content-end">
+                      <button id="button-save" type="submit" class="btn btn-primary text-white">Tambahkan</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+@elseif(isset($addJourney) && $addJourney->zat_aktif != NULL)
+<div class="m-2">
+  <div class="card">
+    <div class="card-body">
+      <div class="container">
+        <div>
+          <a title="Tambah Data" type="button"  class="btn btn-secondary btn-sm text-white" data-bs-toggle="modal"
+         data-bs-target="#create_zatAktif"  style="width: 300px; text-align: center; margin-right: 10px;"><i class="fas fa-plus"></i> Tambah Zat Aktif</a>
+          </a>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+
+@elseif (empty($addJourney))
+    <script>
+        window.location.href = '{{ route('dev_logbook_ex') }}';
+    </script>
+@endif
+
+
+
+
+@if ( Request::get('nama_item') != NULL )
+  @foreach($products as $key => $d)
+  @if ( $d->zat_aktif != NULL )
+    <div class="m-3">
+      <div class="card text-center">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <div>
+              <b>LIST ZAT AKTIF</b>
+          </div>
+          <div>
+              <a title="Delete Data" type="button" class="btn btn-danger btn-sm text-white" data-bs-toggle="modal"
+                  data-bs-target="#delete{{ $d->id_devlop }}">
+                  <i class="fas fa-trash"></i>
+              </a>
+          </div>
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">{{ $d->zat_aktif }}</h5>
+          <p class="card-text" >Nama Bahan Baku : {{ $d->nama_item }} </p>
+          <a onclick="window.location.href='raw_material/raw_material_timeline?nama_item={{ $d->nama_item }}&category={{ $d->zat_aktif }}'" class="btn btn-primary text-white">Lihat Timeline</a>
+        </div>
+      </div>  
+    </div>
+    @else
+    
+    @endif
+    <div class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" id="delete{{ $d->id_devlop }}">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Action</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  @if (count($products) > 0)
+                  <form role="form" id="delete" action="{{ route('delete_product') }}" method="post">
+                      @csrf
+                      @method('delete')
+                      <input type="hidden" name="id_delete" id="id_delete" value="{{ $d->id_devlop }}">
+                      <input type="hidden" name="nama_item" id="nama_item" value="{{ $d->nama_item }}">
+                      <div>
+                          <p>Anda yakin ingin menghapus Zat Aktif <b>{{ $d->zat_aktif }}</b> ?</p>
+                      </div>
+                      <div class="modal-footer justify-content-between">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">{{ __('Batal') }}</button>
+                          <button id="button-save" type="submit" class="btn btn-danger text-white">{{ __('Ya, hapus') }}</button>
+                      </div>
+                  </form>
+              </div>
+                          @else
+                              <div class="text-center">
+                                  <p>{{ __('No data.') }}</p>
+                              </div>
+                          @endif
+              </div>
+          </div>
+      </div>
+    @endforeach
+  @else
+        <div class="m-3">
+          <div class="card text-center">
+            <div class="card-body">
+              <div class="container" style="display: flex; justify-content: center;">
+                <div>
+                  <h6>Silakan Melakukan Pemilihan Bahan Baku</h6>
+                </a>
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+  @endif
+    
+   
+  <div class="modal fade" id="create">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 id="modal-title" class="modal-title">{{ __('Tambah Product') }}</h4>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form role="form" id="approve-form" action="{{ route('addProduct') }}" method="post">
+                    @csrf
+                    <input type="hidden" name="id_devlop" id="id_devlop">
+                    <input type="hidden" name="user_id" id="user_id">
+                    <input type="hidden" name="jenis_journey" id="jenis_journey" value="Raw Material">
+                    <div class="form-group row">
+                      <label for="nama_item" class="col-sm-4 col-form-label">{{ __('Nama Bahan Baku') }}</label>
+                      <div class="col-sm-8">
+                          <input type="text" class="form-control" id="nama_item" name="nama_item"  value="{{ old('nama_item') }}" required="">
+                      </div>
+                  </div>
+                    <br>
+                    <div class="d-flex justify-content-end">
+                        <button id="button-save" type="submit" class="btn btn-primary text-white">Tambahkan</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade"  id="create_zatAktif">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h4 id="modal-title" class="modal-title">{{ __('Tambah Zat Aktif') }}</h4>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <form role="form" id="approve-form" action="{{ route('addZatAktif') }}" method="post">
+                  @csrf
+                  <input type="hidden" name="id_devlop" id="id_devlop">
+                  <input type="hidden" name="jenis_journey" id="jenis_journey" value="Raw Material">
+                  <input type="hidden" name="nama_item" id="nama_item" value="{{ Request::get('nama_item') }}">
+                  <div class="form-group row">
+                    <label for="zat_aktif" class="col-sm-4 col-form-label">{{ __('Nama Zat Aktif') }}</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="zat_aktif" name="zat_aktif"  value="{{ old('zat_aktif') }}">
+                    </div>
+                  </div>
+                  <br>
+                  <div class="d-flex justify-content-end">
+                      <button id="button-save" type="submit" class="btn btn-primary text-white">Tambahkan</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+  
+  
 @endsection
+@section('custom-js')
+<script src="/plugin/select2/js/select2.full.min.js"></script>
+<script src="/plugin/toastr/toastr.min.js"></script>
 
-@push('plugin-scripts')
+<script>
+    $(document).ready(function() {
+        // Initialize Select2 for single select
+        $('.select2').select2({
+            theme: 'bootstrap4'
+        });
 
-@endpush
+        // Initialize Select2 for multiple select
+        $('.multiple').select2();
 
-@push('custom-scripts')
-
-@endpush
+        // Submit form when sorting option changes
+        $('#sort').on('change', function() {
+            $("#sorting").submit();
+        });
+        
+        $('#nama_item').on('change', function() {
+            $("#nama_product").submit();
+        });
+    });
+        </script>
+        <script>
+        @if(Session::has('success'))
+            toastr.options = {
+                "closeButton" : true,
+                   "progressBar" : true
+            }
+              toastr.success("{{ session('success') }}");
+        @endif
+    
+        @if(Session::has('error'))
+            toastr.options = {
+                "closeButton" : true,
+                "progressBar" : true
+            }
+              toastr.error("{{ session('error') }}");
+        @endif
+    
+        @if(Session::has('info'))
+            toastr.options = {
+                "closeButton" : true,
+                "progressBar" : true
+            }
+              toastr.info("{{ session('info') }}");
+        @endif
+    
+        @if(Session::has('warning'))
+            toastr.options = {
+                "closeButton" : true,
+                "progressBar" : true
+            }
+              toastr.warning("{{ session('warning') }}");
+        @endif
+    </script>
+@endsection

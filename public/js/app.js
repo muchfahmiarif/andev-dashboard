@@ -148,13 +148,3 @@ navItems.forEach(function (navItem) {
     });
 });
 
-window.addEventListener("scroll", function () {
-    if (window.matchMedia("(min-width: 992px)").matches) {
-        var header = document.querySelector(".horizontal-menu");
-        if (window.pageYOffset >= 60) {
-            header.classList.add("fixed-on-scroll");
-        } else {
-            header.classList.remove("fixed-on-scroll");
-        }
-    }
-});
