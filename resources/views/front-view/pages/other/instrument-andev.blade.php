@@ -16,34 +16,33 @@
 @endsection
 @section('content')
 <div class="row py-2">
-  <div class="col-md-5">
-    <h4>
-      <span class="text-muted fw-light">Tables /</span> Performance Instrument Andev
-    </h4>
-  </div>
-  
-  <div class="col-md-7">
-    <form method="GET" action="{{ route('logbook_instrument') }}">
-        <div class="input-group col-2 mx-auto">
-            <input class="form-control py-2 border-right-0 border" type="search" placeholder="Type something..." name="q" id="example-search-input" value="{{ request()->input('q') }}">
-            <select class="form-control select2" style="width: 20px;" id="searchby" name="searchby">
-                <option value="0" {{ request()->input('searchby') == 0 ? 'selected' : '' }}>Search By</option>
-                <option value="1" {{ request()->input('searchby') == 1 ? 'selected' : '' }}>Area</option>
-                <option value="2" {{ request()->input('searchby') == 2 ? 'selected' : '' }}>PIC</option>
-                <option value="3" {{ request()->input('searchby') == 3 ? 'selected' : '' }}>Nama Alat</option>
-                <option value="4" {{ request()->input('searchby') == 4 ? 'selected' : '' }}>List Item Check</option>
-                <option value="5" {{ request()->input('searchby') == 5 ? 'selected' : '' }}>Status( Ya/Tidak )</option>
-                <option value="6" {{ request()->input('searchby') == 6 ? 'selected' : '' }}>Keterangan</option>
-            </select>
-            <input type="hidden" name="category" value="{{ Request::get('category') }}">
-            <button class="btn btn-outline-primary" type="submit">
-                <i class='bx bx-search-alt'></i>
-            </button>
-        </div>
-    </form>
+    <div class="col-md-5">
+        <h4>
+            <span class="text-muted fw-light">Tables /</span> Performance Instrument Andev
+        </h4>
+    </div>
+    <div class="col-md-7">
+        <form method="GET" action="{{ route('logbook_instrument') }}">
+            <div class="input-group col-2 mx-auto">
+                <input class="form-control py-2 border-right-0 border" type="search" placeholder="Type something..." name="q" id="example-search-input" value="{{ request()->input('q') }}">
+                <select class="form-control select2" style="width: 20px;" id="searchby" name="searchby">
+                    <option value="0" {{ request()->input('searchby') == 0 ? 'selected' : '' }}>Search By</option>
+                    <option value="1" {{ request()->input('searchby') == 1 ? 'selected' : '' }}>Area</option>
+                    <option value="2" {{ request()->input('searchby') == 2 ? 'selected' : '' }}>PIC</option>
+                    <option value="3" {{ request()->input('searchby') == 3 ? 'selected' : '' }}>Nama Alat</option>
+                    <option value="4" {{ request()->input('searchby') == 4 ? 'selected' : '' }}>List Item Check</option>
+                    <option value="5" {{ request()->input('searchby') == 5 ? 'selected' : '' }}>Status( Ya/Tidak )</option>
+                    <option value="6" {{ request()->input('searchby') == 6 ? 'selected' : '' }}>Keterangan</option>
+                </select>
+                <input type="hidden" name="category" value="{{ Request::get('category') }}">
+                <button class="btn btn-outline-primary" type="submit">
+                    <i class='bx bx-search-alt'></i>
+                </button>
+            </div>
+        </form>
+    </div>
 </div>
-</div>
- 
+
 <div class="card">
     <div class="card-header">
         <div class="container" style="display: flex; justify-content: space-between;">

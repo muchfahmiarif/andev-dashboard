@@ -39,7 +39,6 @@ Route::get('/hello', function () {
     return view('welcome');
 }); 
 
-
 Route::get('fullcalender', [FullCalendarController::class, 'index']);
 Route::post('fullcalenderAjax', [FullCalendarController::class, 'ajax']);
 
@@ -47,7 +46,7 @@ Auth::routes(['register' => false, 'reset' => false, 'verify' => false]);
 Route::get('/login', [LoginBasic::class, 'index'])->name('login');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::middleware(['auth'])->group(function() {
-  Route::group(['prefix' => 'development-journey'], function() {
+    Route::group(['prefix' => 'development-journey'], function() {
         Route::get('/eksternal',  [DevelopJourneyController::class, 'dev_logbook_ex'])->name('dev_logbook_ex');
         Route::get('/eksternal/eksternal_timeline',  [DevelopJourneyController::class, 'eksternal_timeline'])->name('eksternal_timeline');
         Route::get('/eksternal/eksternal_timeline/detail', [DevelopJourneyController::class, 'external_timeline_detail'])->name('external_timeline_detail');
@@ -67,7 +66,7 @@ Route::middleware(['auth'])->group(function() {
         Route::delete('/delete_product',  [DevelopJourneyController::class, 'delete_product'])->name('delete_product');
         Route::delete('/delete_document',  [DevelopJourneyController::class, 'delete_document'])->name('delete_document');
         Route::delete('/delete_Timeline',  [DevelopJourneyController::class, 'delete_Timeline'])->name('delete_Timeline');
-           Route::post('/updateTimeline1',  [DevelopJourneyController::class, 'updateTimeline1'])->name('updateTimeline1');
+        Route::post('/updateTimeline1',  [DevelopJourneyController::class, 'updateTimeline1'])->name('updateTimeline1');
         
     });
 });

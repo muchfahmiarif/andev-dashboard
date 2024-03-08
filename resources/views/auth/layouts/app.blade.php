@@ -12,7 +12,8 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
     <!-- Scripts -->
     @vite(['resources/js/app.js'])
 </head>

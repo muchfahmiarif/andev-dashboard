@@ -8,27 +8,26 @@
     <link rel="stylesheet" href="/plugin/select2-bootstrap4-theme/select2-bootstrap4.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
     <style>
-   
-    .fc-event {
-       background-color: rgb(162, 219, 255);
-  border-color: rgb(162, 219, 255);
-  font-weight: bold;
-  height: 25px; /* menentukan tinggi event */
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 5px;
-    }
+      .fc-event {
+        background-color: rgb(162, 219, 255);
+        border-color: rgb(162, 219, 255);
+        font-weight: bold;
+        height: 25px; /* menentukan tinggi event */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 5px;
+      }
     </style>
+
 @endsection
 @section('content')
-<div class="row">
+  <div class="row">
     <div class="col-lg-12 mb-4 order-0">
       <div class="card">
         <div class="d-flex align-items-end row">
           <div class="col-sm-7">
             <div class="card-body">
-             
               <h5 class="card-title text-info">Welcome , {{ Auth::user()->name }}! 🎉</h5>
               <p class="mb-4">Kindly review your tasks.</p>
   

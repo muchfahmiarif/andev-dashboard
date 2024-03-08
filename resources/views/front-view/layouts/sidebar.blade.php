@@ -67,7 +67,6 @@
           </ul>
         </div>
       </li>
-      
       {{-- Group Development Ends --}}
 
       {{-- Data Report Starts --}}

@@ -24,12 +24,12 @@
     <div class="card">
       <div class="card-body">
         <div class="card-header d-flex justify-content-between align-items-center">
-            <h6 class="card-title mb-3">Description</h6> 
-            <a title="Tambah Data" type="button" class="btn btn-secondary btn-sm text-white" data-bs-toggle="modal" data-bs-target="#update_timeline"><i class="fas fa-edit"></i></a>
-      </div>
+          <h6 class="card-title mb-3">Description</h6> 
+          <a title="Tambah Data" type="button" class="btn btn-secondary btn-sm text-white" data-bs-toggle="modal" data-bs-target="#update_timeline"><i class="fas fa-edit"></i></a>
+        </div>
         <div class="card">
           <div class="card-body">
-           {!! htmlspecialchars_decode($body->body) !!}
+            {!! htmlspecialchars_decode($body->body) !!}
           </div>
         </div>
       </div>
