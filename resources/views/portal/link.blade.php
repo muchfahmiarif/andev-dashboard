@@ -15,6 +15,42 @@
         <!-- person - start -->
         <div class="flex flex-col items-center">
           <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-100 shadow-lg md:mb-4 md:h-32 md:w-32">
+            <a href="https://forms.gle/4FG2UAnrGDEutvL19" target="_blank">
+              <img src="{{ asset('assets/img/illustrations/daily-activity.svg') }}" loading="lazy" alt="Daily Activity" class="h-full w-full object-cover object-center" />
+            </a>
+          </div>
+  
+          <div>
+            <a href="https://forms.gle/4FG2UAnrGDEutvL19" target="_blank">
+              <div class="text-center font-bold text-indigo-500 md:text-lg">Update Activity Andev</div>
+            </a>
+            <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Report</p>
+  
+            <!-- social - start -->
+            <div class="flex justify-center">
+              <div class="flex gap-4">
+                <a href="https://forms.gle/4FG2UAnrGDEutvL19" target="_blank" class="group flex text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                  <span class="">visit</span>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='22'
+                    height='22'
+                    viewBox='0 0 24 24'
+                    class='group-hover:translate-x-2 group-hover:text-blue1 duration-200 flex self-center'
+                    fill='currentColor'>
+                    <path d='m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z'></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- social - end -->
+          </div>
+        </div>
+        <!-- person - end -->
+
+        <!-- person - start -->
+        <div class="flex flex-col items-center">
+          <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-100 shadow-lg md:mb-4 md:h-32 md:w-32">
             <a href="http://192.168.3.253/workingstandar" target="_blank">
               <img src="{{ asset('assets/img/illustrations/database-ws-rs.svg') }}" loading="lazy" alt="Photo by Radu Florin" class="h-full w-full object-cover object-center" />
             </a>
@@ -88,7 +124,7 @@
         <div class="flex flex-col items-center">
           <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-100 shadow-lg md:mb-4 md:h-32 md:w-32">
             <a href="https://www.usp.org/" target="_blank">
-              <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&q=75&fit=crop&w=256" loading="lazy" alt="Photo by Ayo Ogunseinde" class="h-full w-full object-cover object-center" />
+              <img src="{{ asset('assets/img/illustrations/usp.svg') }}" loading="lazy" alt="US Pharmacopeia" class="h-full w-full object-cover object-center" />
             </a>
           </div>
   
@@ -124,7 +160,7 @@
         <div class="flex flex-col items-center">
           <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-100 shadow-lg md:mb-4 md:h-32 md:w-32">
             <a href="https://www.sigmaaldrich.com/ID/en" target="_blank">
-              <img src="https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?auto=format&q=75&fit=crop&w=256" loading="lazy" alt="Photo by Midas Hofstra" class="h-full w-full object-cover object-center" />
+              <img src="{{ asset('assets/img/illustrations/sigma-aldrich.svg') }}" loading="lazy" alt="Sigma Aldrich" class="h-full w-full object-cover object-center" />
             </a>
           </div>
   
@@ -160,7 +196,7 @@
         <div class="flex flex-col items-center">
           <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-100 shadow-lg md:mb-4 md:h-32 md:w-32">
             <a href="https://192.168.3.7:10443/printadminweb" target="_blank">
-              <img src="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?auto=format&q=75&fit=crop&w=256" loading="lazy" alt="Photo by Elizeu Dias" class="h-full w-full object-cover object-center" />
+              <img src="{{ asset('assets/img/illustrations/epson-admin-print.svg') }}" loading="lazy" alt="Epson Admin Print" class="h-full w-full object-cover object-center" />
             </a>
           </div>
   
@@ -196,7 +232,7 @@
         <div class="flex flex-col items-center">
           <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-100 shadow-lg md:mb-4 md:h-32 md:w-32">
             <a href="https://apps.usp.org/app/USPNF/pvtCalculationTool/" target="_blank">
-              <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&q=75&fit=crop&w=256" loading="lazy" alt="Photo by Matheus Ferrero" class="h-full w-full object-cover object-center" />
+              <img src="{{ asset('assets/img/illustrations/pvt-disolusi.svg') }}" loading="lazy" alt="Perhitungan PVT Disolusi" class="h-full w-full object-cover object-center" />
             </a>
           </div>
   
@@ -231,17 +267,21 @@
         <!-- person - start -->
         <div class="flex flex-col items-center">
           <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-100 shadow-lg md:mb-4 md:h-32 md:w-32">
-            <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&q=75&fit=crop&w=256" loading="lazy" alt="Photo by Leilani Angel" class="h-full w-full object-cover object-center" />
+            <a href="https://helpdesk.aryanoble.co.id/" target="_blank">
+              <img src="{{ asset('assets/img/illustrations/arya-noble.svg') }}" loading="lazy" alt="Photo by Leilani Angel" class="h-full w-full object-cover object-center" />
+            </a>
           </div>
   
           <div>
-            <div class="text-center font-bold text-indigo-500 md:text-lg">Rahul Williams</div>
-            <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Creative Director</p>
+            <a href="https://helpdesk.aryanoble.co.id/" target="_blank">
+              <div class="text-center font-bold text-indigo-500 md:text-lg">E-Ticket</div>
+            </a>
+            <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Support System</p>
   
             <!-- social - start -->
             <div class="flex justify-center">
               <div class="flex gap-4">
-                <a href="http://192.168.3.253/workingstandar" target="_blank" class="group flex text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                <a href="https://helpdesk.aryanoble.co.id/" target="_blank" class="group flex text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
                   <span class="">visit</span>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -263,17 +303,21 @@
         <!-- person - start -->
         <div class="flex flex-col items-center">
           <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-100 shadow-lg md:mb-4 md:h-32 md:w-32">
-            <img src="https://images.unsplash.com/photo-1562904403-a5106bef8319?auto=format&q=75&fit=crop&w=256" loading="lazy" alt="Photo by Jernej Graj" class="h-full w-full object-cover object-center" />
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfaqiasHuNu14W9eg1FikjlHGRkTSaIx-UPfk8DIANMGz1QHg/viewform" target="_blank">
+              <img src="{{ asset('assets/img/illustrations/borrow-asset-ga.svg') }}" loading="lazy" alt="Peminjaman Asset GA" class="h-full w-full object-cover object-center" />
+            </a>
           </div>
   
           <div>
-            <div class="text-center font-bold text-indigo-500 md:text-lg">Ari Ferris</div>
-            <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Marketing Analyst</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfaqiasHuNu14W9eg1FikjlHGRkTSaIx-UPfk8DIANMGz1QHg/viewform" target="_blank">
+              <div class="text-center font-bold text-indigo-500 md:text-lg">Peminjaman Asset GA</div>
+            </a>
+            <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Items</p>
   
             <!-- social - start -->
             <div class="flex justify-center">
               <div class="flex gap-4">
-                <a href="http://192.168.3.253/workingstandar" target="_blank" class="group flex text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfaqiasHuNu14W9eg1FikjlHGRkTSaIx-UPfk8DIANMGz1QHg/viewform" target="_blank" class="group flex text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
                   <span class="">visit</span>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'

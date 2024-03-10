@@ -28,7 +28,7 @@
     <details class="group [&_summary::-webkit-details-marker]:hidden " open>
       <summary class="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-200 group-open:bg-violet-300 duration-500 ">
         <h2 class="font-medium text-gray-900 select-none">
-          Siapa saja yang membuat produk ini?
+          Apa itu Andev Dashboard?
         </h2>
 
         <svg
@@ -48,7 +48,7 @@
       </summary>
 
       <p class="px-4 mt-4 leading-relaxed text-gray-700 whitespace-pre-line bg-gray-50 rounded-lg">
-        Team andev lah yang membuat produk ini, dengan bantuan dari tim dari IT Genero.
+        Alat berbasis web canggih yang dibuat untuk mengoptimalkan kinerja, penyimpanan data, dan efektivitas aplikasi web secara keseluruhan, dasbor ini berfungsi sebagai pusat kontrol terpusat bagi user untuk memantau, menganalisis, dan memastikan berkelanjutan proyek - proyek yang sedang di handle.
     </details>
 
     <details class="group [&_summary::-webkit-details-marker]:hidden">
