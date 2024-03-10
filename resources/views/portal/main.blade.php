@@ -84,7 +84,7 @@
   @stack('css')
 </head>
 <body class="flex flex-col h-screen">
-  <header class="bg-white shadow">
+  <header class="bg-white/90 shadow sticky top-0">
 		<div class="flex items-center justify-between py-4 md:py-8 mx-auto container">
       <!-- logo - start -->
       <a href="#">
@@ -97,6 +97,7 @@
         <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700 {{ Request::is(['/']) ? 'text-indigo-500' : '' }}" target="_self">Home</a>
       
         {{-- <a href="{{ url('https://fahmiarif.site') }}" class="text-lg font-semibold text-gray-600 hover:animate-text hover:bg-gradient-to-r from-teal-500 hover:via-purple-500 hover:to-orange-500 hover:bg-clip-text hover:text-transparent  active:text-indigo-700" target="_blank">Stock WS / RS</a> --}}
+        <a href="{{ url('link') }}" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700 {{ Request::is(['link']) ? 'text-indigo-500' : '' }}" target="_self">Link</a>
         <a href="{{ url('about') }}" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700 {{ Request::is(['about']) ? 'text-indigo-500' : '' }}" target="_self">About</a>
       </nav>
       <!-- nav - end -->

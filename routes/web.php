@@ -30,9 +30,11 @@ use App\Http\Controllers\authentications\AccountSettingsAccount;
 Route::get('/', function () {
     return view('portal.home');
 });
-
 Route::get('/about', function () {
     return view('portal.about');
+});
+Route::get('/link', function () {
+    return view('portal.link');
 });
 
 Route::get('/hello', function () {
