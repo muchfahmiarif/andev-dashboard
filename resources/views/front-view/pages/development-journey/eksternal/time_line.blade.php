@@ -71,7 +71,7 @@
               <li class="event" data-date="{{ $data_date }}">
                 <div>
                   <div class="hstack">
-                    <a style="cursor: default;" class="title text-decoration-none" onclick="window.location.href='eksternal_timeline/detail?nama_item={{ $d->nama_item }}&category={{ $d->zat_aktif }}&time_line={{ $d->time_line }}'">{{ $d->time_line }}</a> 
+                    <a style="cursor: pointer;" class="title text-decoration-none" onclick="window.location.href='eksternal_timeline/detail?nama_item={{ $d->nama_item }}&category={{ $d->zat_aktif }}&time_line={{ $d->time_line }}'">{{ $d->time_line }}</a> 
                     @if ( $d->status == 'Mencari Litelatur' )
                         <a href="" style="text-decoration: none; cursor: default;" class="ms-auto badge bg-info text-decoration-none">{{ $d->status }}</a>
                     @elseif ( $d->status == 'Pending' )
@@ -140,7 +140,7 @@
                                 <input type="hidden" name="nama_item" id="nama_item" value="{{ Request::get('nama_item') }}">
                                 <input type="hidden" name="zat_aktif" id="zat_aktif" value="{{ Request::get('category') }}">
                                 <div class="form-group row">
-                                  <label for="time_line" class="col-sm-4 col-form-label">{{ __('Tittle Timeline') }}</label>
+                                  <label for="time_line" class="col-sm-4 col-form-label">{{ __('Title Timeline') }}</label>
                                   <div class="col-sm-8">
                                       <input type="text" class="form-control" id="time_line" name="time_line" value="{{ $d->time_line  }}" required>
                                   </div>
@@ -201,7 +201,7 @@
                     <input type="hidden" name="nama_item" id="nama_item" value="{{ Request::get('nama_item') }}">
                     <input type="hidden" name="zat_aktif" id="zat_aktif" value="{{ Request::get('category') }}">
                     <div class="form-group row">
-                      <label for="time_line" class="col-sm-4 col-form-label">{{ __('Tittle Timeline') }}</label>
+                      <label for="time_line" class="col-sm-4 col-form-label">{{ __('Title Timeline') }}</label>
                       <div class="col-sm-8">
                           <input type="text" class="form-control" id="time_line" name="time_line" required>
                       </div>
@@ -210,7 +210,7 @@
                     <div class="form-group row">
                       <label for="body" class="col-sm-4 col-form-label">{{ __('Deskripsi') }}</label>
                       <div class="col-sm-8">
-                            <input id="input-body" type="hidden"  name="body" required>
+                            <input id="input-body" style="opacity: 0; width: 0; position: absolute; top: 37%; left: 36%" name="body" required="required">
                             <trix-editor input="input-body"></trix-editor>
                       </div>
                     </div>
