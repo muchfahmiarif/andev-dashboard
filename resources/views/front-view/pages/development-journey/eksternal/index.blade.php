@@ -134,7 +134,7 @@
           </div>
       </div>
         <div class="card-body">
-          <h5 class="card-title">{{ $d->zat_aktif }}</h5>
+          <h5 onclick="window.location.href='eksternal/eksternal_timeline?nama_item={{ $d->nama_item }}&category={{ $d->zat_aktif }}'" style="cursor: pointer" class="card-title">{{ $d->zat_aktif }}</h5>
           <p class="card-text" >Nama Product : {{ $d->nama_item }} </p>
           <a onclick="window.location.href='eksternal/eksternal_timeline?nama_item={{ $d->nama_item }}&category={{ $d->zat_aktif }}'" class="btn btn-primary text-white">Lihat Timeline</a>
         </div>
