@@ -335,6 +335,78 @@
           </div>
         </div>
         <!-- person - end -->
+
+        <!-- person - start -->
+        <div class="flex flex-col items-center">
+          <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-100 shadow-lg md:mb-4 md:h-32 md:w-32">
+            <a href="https://infalabs.pom.go.id" target="_blank">
+              <img src="{{ asset('assets/img/illustrations/badan-pom.svg') }}" loading="lazy" alt="Peminjaman Asset GA" class="h-full w-full object-cover object-center" />
+            </a>
+          </div>
+  
+          <div>
+            <a href="https://infalabs.pom.go.id" target="_blank">
+              <div class="text-center font-bold text-indigo-500 md:text-lg">INFALABS</div>
+            </a>
+            <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">CoA</p>
+  
+            <!-- social - start -->
+            <div class="flex justify-center">
+              <div class="flex gap-4">
+                <a href="https://infalabs.pom.go.id" target="_blank" class="group flex text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                  <span class="">visit</span>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='22'
+                    height='22'
+                    viewBox='0 0 24 24'
+                    class='group-hover:translate-x-2 group-hover:text-blue1 duration-200 flex self-center'
+                    fill='currentColor'>
+                    <path d='m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z'></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- social - end -->
+          </div>
+        </div>
+        <!-- person - end -->
+
+        <!-- person - start -->
+        <div class="flex flex-col items-center">
+          <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-100 shadow-lg md:mb-4 md:h-32 md:w-32">
+            <a href="https://standarobat.pom.go.id/" target="_blank">
+              <img src="{{ asset('assets/img/illustrations/badan-pom.svg') }}" loading="lazy" alt="Peminjaman Asset GA" class="h-full w-full object-cover object-center" />
+            </a>
+          </div>
+  
+          <div>
+            <a href="https://standarobat.pom.go.id/" target="_blank">
+              <div class="text-center font-bold text-indigo-500 md:text-lg">SISOBAT</div>
+            </a>
+            <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Event, Learning</p>
+  
+            <!-- social - start -->
+            <div class="flex justify-center">
+              <div class="flex gap-4">
+                <a href="https://standarobat.pom.go.id/" target="_blank" class="group flex text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                  <span class="">visit</span>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='22'
+                    height='22'
+                    viewBox='0 0 24 24'
+                    class='group-hover:translate-x-2 group-hover:text-blue1 duration-200 flex self-center'
+                    fill='currentColor'>
+                    <path d='m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z'></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- social - end -->
+          </div>
+        </div>
+        <!-- person - end -->
       </div>
     </div>
   </div>
