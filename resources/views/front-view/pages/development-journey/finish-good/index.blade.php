@@ -81,7 +81,7 @@
                   <div class="form-group row">
                     <label for="zat_aktif" class="col-sm-4 col-form-label">{{ __('Nama Zat Aktif') }}</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" id="zat_aktif" name="zat_aktif"  value="{{ old('zat_aktif') }}">
+                        <input type="text" class="form-control" id="zat_aktif" name="zat_aktif"  value="{{ old('zat_aktif') }}" required>
                     </div>
                   </div>
                   <br>
@@ -134,7 +134,7 @@
           </div>
       </div>
         <div class="card-body">
-          <h5 class="card-title">{{ $d->zat_aktif }}</h5>
+          <h5 class="card-title" style="cursor: pointer" onclick="window.location.href='finish_good/finish_good_timeline?nama_item={{ $d->nama_item }}&category={{ $d->zat_aktif }}'">{{ $d->zat_aktif }}</h5>
           <p class="card-text" >Nama Product : {{ $d->nama_item }} </p>
           <a onclick="window.location.href='finish_good/finish_good_timeline?nama_item={{ $d->nama_item }}&category={{ $d->zat_aktif }}'" class="btn btn-primary text-white">Lihat Timeline</a>
         </div>
