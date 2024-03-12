@@ -210,7 +210,7 @@
                     <div class="form-group row">
                       <label for="body" class="col-sm-4 col-form-label">{{ __('Deskripsi') }}</label>
                       <div class="col-sm-8">
-                            <input id="input-body" type="hidden"  name="body" required>
+                            <input id="input-body" name="body" style="opacity: 0; width: 0; position: absolute; top: 37%; left: 36%" name="body" required="required">
                             <trix-editor input="input-body"></trix-editor>
                       </div>
                     </div>
