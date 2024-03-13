@@ -27,7 +27,7 @@
                 <div class="form-group row">
                     <label for="contact_person" class="col-sm-4 col-form-label">{{ __('Category') }}</label>
                       <div class="col-sm-8">
-                          <select class="form-control select2" style="width: 100%;" id="jenis_kegiatan"
+                          <select class="form-control select2" style="width: 100%;" id="jenis_kegiatan" required
                               name="jenis_kegiatan">
                               @if(isset($RPVRIV))
                               <option value="" disabled selected>Option Report</option>
@@ -52,14 +52,14 @@
                 <div class="form-group row">
                     <label for="nama_item" class="col-sm-4 col-form-label">{{ __('Nama Item') }}</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" id="nama_item" name="nama_item"  value="{{ $RPVRIV->nama_item ?? old('nama_item') }}"  > 
+                        <input type="text" class="form-control" id="nama_item" name="nama_item"  value="{{ $RPVRIV->nama_item ?? old('nama_item') }}" required> 
                     </div>
                 </div>
                 <br>
                 <div class="form-group row">
                       <label for="pic" class="col-sm-4 col-form-label">{{ __('PIC') }}</label>
                       <div class="col-sm-8">
-                          <select class="form-control select2" style="width: 100%;" id="pic"
+                          <select class="form-control select2" style="width: 100%;" id="pic" required
                               name="pic">
                               @if(isset($RPVRIV))
                                 <option value="Rifan" {{ $RPVRIV->pic == 'Rifan' ? 'selected' : '' }}>Rifan</option>
@@ -85,7 +85,7 @@
                 <div class="form-group row">
                     <label for="rencana" class="col-sm-4 col-form-label">Rencana</label>
                     <div class="col-sm-8">
-                        <select class="form-control multiple" name="rencana[]" multiple="multiple" >
+                        <select class="form-control multiple" name="rencana[]" multiple="multiple" required>
                             @if(isset($RPVRIV))
                             <option value="1" {{ in_array("1", explode(",",  $RPVRIV->rencana)) ? 'selected' : '' }}>January</option>
                             <option value="2"  {{ in_array("2", explode(",",  $RPVRIV->rencana)) ? 'selected' : '' }}>Febuary</option>
@@ -120,7 +120,7 @@
                 <div class="form-group row">
                     <label for="aktual" class="col-sm-4 col-form-label">Aktual</label>
                     <div class="col-sm-8">
-                        <select class="form-control multiple" name="aktual[]" multiple="multiple" >
+                        <select class="form-control multiple" name="aktual[]" multiple="multiple" required>
                             @if(isset($RPVRIV))
                             <option value="1" {{ in_array("1", explode(",",  $RPVRIV->aktual)) ? 'selected' : '' }}>January</option>
                             <option value="2"  {{ in_array("2", explode(",",  $RPVRIV->aktual)) ? 'selected' : '' }}>Febuary</option>
