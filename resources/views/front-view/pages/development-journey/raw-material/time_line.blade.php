@@ -71,7 +71,7 @@
               <li class="event" data-date="{{ $data_date }}">
                 <div>
                   <div class="hstack">
-                    <a style="cursor: pointer;" class="title text-decoration-none" onclick="window.location.href='eksternal_timeline/detail?nama_item={{ $d->nama_item }}&category={{ $d->zat_aktif }}&time_line={{ $d->time_line }}'">{{ $d->time_line }}</a> 
+                    <a style="cursor: pointer;" class="title text-decoration-none" onclick="window.location.href='raw_material_timeline/detail?nama_item={{ $d->nama_item }}&category={{ $d->zat_aktif }}&time_line={{ $d->time_line }}'">{{ $d->time_line }}</a> 
                     @if ( $d->status == 'Mencari Litelatur' )
                         <h5 style="text-decoration: none; cursor: default;" class="ms-auto badge bg-info text-decoration-none">{{ $d->status }}</h5>
                     @elseif ( $d->status == 'Pending' )
