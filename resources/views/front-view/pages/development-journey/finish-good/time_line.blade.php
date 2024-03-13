@@ -71,15 +71,15 @@
               <li class="event" data-date="{{ $data_date }}">
                 <div>
                   <div class="hstack">
-                    <a style="cursor: default;" class="title text-decoration-none" onclick="window.location.href='eksternal_timeline/detail?nama_item={{ $d->nama_item }}&category={{ $d->zat_aktif }}&time_line={{ $d->time_line }}'">{{ $d->time_line }}</a> 
+                    <a style="cursor: pointer;" class="title text-decoration-none" onclick="window.location.href='eksternal_timeline/detail?nama_item={{ $d->nama_item }}&category={{ $d->zat_aktif }}&time_line={{ $d->time_line }}'">{{ $d->time_line }}</a> 
                        @if ( $d->status == 'Mencari Litelatur' )
-                        <a href="" style="text-decoration: none; cursor: default;" class="ms-auto badge bg-info text-decoration-none">{{ $d->status }}</a>
+                        <h5 style="text-decoration: none; cursor: default;" class="ms-auto badge bg-info text-decoration-none">{{ $d->status }}</h5>
                     @elseif ( $d->status == 'Pending' )
-                      <a href="" style="text-decoration: none; cursor: default;" class="ms-auto badge bg-danger text-decoration-none">{{ $d->status }}</a>
+                      <h5 style="text-decoration: none; cursor: default;" class="ms-auto badge bg-danger text-decoration-none">{{ $d->status }}</h5>
                     @elseif  ( $d->status == 'Done' )
-                       <a href="" style="text-decoration: none; cursor: default;" class="ms-auto badge bg-success text-decoration-none">{{ $d->status }}</a>
+                       <h5 style="text-decoration: none; cursor: default;" class="ms-auto badge bg-success text-decoration-none">{{ $d->status }}</h5>
                     @elseif  ( $d->status == 'Work In Progress' )
-                       <a href="" style="text-decoration: none; cursor: default;" class="ms-auto badge bg-warning text-decoration-none">{{ $d->status }}</a>
+                       <h5 style="text-decoration: none; cursor: default;" class="ms-auto badge bg-warning text-decoration-none">{{ $d->status }}</h5>
                     @endif
                   </div>
                  <p> {!! htmlspecialchars_decode($d->body) !!}</p>
