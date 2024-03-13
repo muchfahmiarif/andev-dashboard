@@ -319,13 +319,13 @@ public function mikro_timeline(Request $req)
 
     public function addZatAktif(Request $request)
     {   
-        // $scar = Develop_Journey::find($request->id);
-        // if ($request->id != NULL) {
-        //     $data = [
-        //         'zat_aktif' => $request->zat_aktif,
-        //     ];
-        //     $scar->update($data);
-        //     } else {
+        $scar = Develop_Journey::find($request->id);
+        if ($request->id != NULL) {
+            $data = [
+                'zat_aktif' => $request->zat_aktif,
+            ];
+            $scar->update($data);
+            } else {
                 $scar = Develop_Journey::create([
                     'id_devlop' => $request->id_devlop,
                     'user_id' => Auth::user()->id,
@@ -334,7 +334,7 @@ public function mikro_timeline(Request $req)
                     'zat_aktif' => $request->zat_aktif,
                 ]);
                 
-            // }
+            }
     
         if ($scar) {
             return redirect()->back()->with('success', 'Data berhasil Ditambahkan !');
