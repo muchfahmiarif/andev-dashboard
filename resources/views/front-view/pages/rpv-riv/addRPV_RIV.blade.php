@@ -167,7 +167,7 @@
                 </div>
                 <br>
                 <div class="d-flex justify-content-end">
-                    <a  type="button" class="btn btn-secondary text-white" style="margin-right:10px;">{{ __('Batal') }}</a><br>
+                    <a href='javascript:history.back()'" type="button" class="btn btn-secondary text-white" style="margin-right:10px;">{{ __('Batal') }}</a><br>
                     <button id="button-save" type="submit" class="btn btn-primary text-white">Tambahkan</button>
                     
                 </div>
