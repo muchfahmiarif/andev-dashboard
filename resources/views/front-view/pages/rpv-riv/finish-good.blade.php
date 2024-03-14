@@ -107,7 +107,7 @@
                       <th>Dec</th>
                       <th>Keterangan</th>
                       <th>Status</th>
-                      <th>Verifikasi</th>
+                      {{-- <th>Verifikasi</th> --}}
                       <th>Action</th>
                   </tr>
               </thead>
@@ -130,10 +130,10 @@
                             'aktual' => $d->aktual,
                             'keterangan' => $d->keterangan,
                             'status' => $d->status,
-                            'verifikasi_1' => $d->verifikasi_1,
-                            'date_verifikasi_1' => $d->date_verifikasi_1,
-                            'verifikasi_2' => $d->verifikasi_2,
-                            'date_verifikasi_2' => $d->date_verifikasi_2,
+                            // 'verifikasi_1' => $d->verifikasi_1,
+                            // 'date_verifikasi_1' => $d->date_verifikasi_1,
+                            // 'verifikasi_2' => $d->verifikasi_2,
+                            // 'date_verifikasi_2' => $d->date_verifikasi_2,
                         ];
                     @endphp
                   <td rowspan="2" class="text-center align-middle">{{ $startNumber++ }}</td>
@@ -155,7 +155,7 @@
                    @php
                       $rencana = explode(",", $data['rencana']);
                       $aktual = explode(",", $data['aktual']);
-                       
+                      
                       sort($rencana);
                       sort($aktual);
                       $status = 'Effective';
@@ -174,15 +174,15 @@
                         }
                 @endphp
               <td rowspan="2" class="text-center align-middle">{{ $status }}</td>
-                  <td rowspan="2" class="text-center align-middle"> @isset($data['verifikasi_1']) <i title="{{ $data['verifikasi_1'] }} Date : {{ $data['date_verifikasi_1'] }}" class="bx bxs-check-square" style="color:green;  font-size: 24px;"></i> @endisset @isset($data['verifikasi_2']) <i title="{{ $data['verifikasi_2'] }} Date : {{ $data['date_verifikasi_2'] }}" class="bx bxs-check-square" style="color:green;  font-size: 24px;"></i> @endisset </td>
+                  {{-- <td rowspan="2" class="text-center align-middle"> @isset($data['verifikasi_1']) <i title="{{ $data['verifikasi_1'] }} Date : {{ $data['date_verifikasi_1'] }}" class="bx bxs-check-square" style="color:green;  font-size: 24px;"></i> @endisset @isset($data['verifikasi_2']) <i title="{{ $data['verifikasi_2'] }} Date : {{ $data['date_verifikasi_2'] }}" class="bx bxs-check-square" style="color:green;  font-size: 24px;"></i> @endisset </td> --}}
                   <td rowspan="2" style="min-width: 100px;"class="text-center align-middle ">
-                    @if  ($data['verifikasi_1'] != NULL && $data['verifikasi_2'] != NULL ) 
+                    {{-- @if  ($data['verifikasi_1'] != NULL && $data['verifikasi_2'] != NULL ) 
                     @elseif($data['verifikasi_1'] == NULL )
                       <a title="Verifikasi 1" type="button"  class="btn btn-primary btn-sm text-white" data-bs-toggle="modal"  data-bs-target="#approve1{{ $d->id_kegiatan }}"><i class="fas fa-user"></i></a>
                     @elseif  ($data['verifikasi_2'] != NULL )
                       <a title="Verifikasi 2" type="button"  class="btn btn-primary btn-sm text-white" data-bs-toggle="modal"  data-bs-target="#approve2{{ $d->id_kegiatan }}"><i class="fas fa-user"></i></a>
-                    @endif
-                   
+                    @endif --}}
+                  
                     <a title="Edit Data" type="button"  class="btn btn-secondary btn-sm text-white" onclick="window.location.href='/rpv-riv/ShowFormRPVRIV?id={{ $d->id_kegiatan }}'"><i class="fas fa-edit"></i></a>
                     <a title="Edit Data" type="button"  class="btn btn-danger btn-sm text-white" data-bs-toggle="modal"  data-bs-target="#delete{{ $d->id_kegiatan }}"><i class="fas fa-trash"></i></a>
                   </td>
@@ -222,12 +222,11 @@
                                 </div>
                             </form>
                           </div>
-                          
-                                      @else
-                                          <div class="text-center">
-                                              <p>{{ __('No data.') }}</p>
-                                          </div>
-                                      @endif
+                              @else
+                                  <div class="text-center">
+                                      <p>{{ __('No data.') }}</p>
+                                  </div>
+                              @endif
                           </div>
                           
                       </div>
