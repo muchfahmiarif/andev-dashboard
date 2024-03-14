@@ -294,7 +294,7 @@
   <div class="modal-dialog modal-lg">
       <div class="modal-content">
           <div class="modal-header">
-              <h4 id="modal-title" class="modal-title">{{ __('Tambah Zat Aktif') }}</h4>
+              <h4 id="modal-title" class="modal-title">{{ __('Tambah Data') }}</h4>
               <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
               </button>
@@ -310,14 +310,14 @@
                     <div class="form-group row">
                       <label for="judul" class="col-sm-4 col-form-label">{{ __('Judul') }}</label>
                       <div class="col-sm-8">
-                          <input type="text" class="form-control" id="judul" name="judul">
+                          <input type="text" class="form-control" id="judul" name="judul" required>
                       </div>
                     </div>
                     <br>
                     <div class="form-group row">
                       <label for="deskripsi" class="col-sm-4 col-form-label">{{ __('Deskripsi') }}</label>
                       <div class="col-sm-8">
-                          <textarea type="text" class="form-control" id="deskripsi" name="deskripsi"></textarea>
+                          <textarea type="text" class="form-control" id="deskripsi" name="deskripsi" required></textarea>
                       </div>
                     </div>
                     <br>
@@ -325,7 +325,7 @@
                       <label for="status" class="col-sm-4 col-form-label">{{ __('Status') }}</label>
                         <div class="col-sm-8">
                             <select class="form-control" style="width: 100%;" id="status"
-                                name="status">
+                                name="status" required>
                                 <option value="" disabled selected>Status</option>
                                 <option value="Not yet">Not yet</option>
                                 <option value="Work In Progress">Work In Progress</option>
@@ -347,7 +347,7 @@
                       <div class="form-group row">
                         <label for="nama_document" class="col-sm-4 col-form-label">{{ __('Nama Document') }}</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" id="nama_document" name="nama_document">
+                            <input type="text" class="form-control" id="nama_document" name="nama_document" required>
                         </div>
                       </div>
                       <br>
