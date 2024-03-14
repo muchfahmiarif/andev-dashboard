@@ -293,7 +293,7 @@
   <div class="modal-dialog modal-lg">
       <div class="modal-content">
           <div class="modal-header">
-              <h4 id="modal-title" class="modal-title">{{ __('Tambah Zat Aktif') }}</h4>
+              <h4 id="modal-title" class="modal-title">{{ __('Tambah Data') }}</h4>
               <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
               </button>
@@ -302,21 +302,21 @@
               <form role="form" id="approve-form" action="{{ route('addDocument') }}" method="post" enctype="multipart/form-data">
                   @csrf
                   <input type="hidden" name="id" id="id" >
-                    <input type="hidden" name="jenis_journey" id="jenis_journey" value="External">
+                    <input type="hidden" name="jenis_journey" id="jenis_journey" value="Finish Good">
                     <input type="hidden" name="nama_item" id="nama_item" value="{{ Request::get('nama_item') }}">
                     <input type="hidden" name="zat_aktif" id="zat_aktif" value="{{ Request::get('category') }}">
                     <input type="hidden" name="time_line" id="time_line" value="{{ Request::get('time_line') }}">
                     <div class="form-group row">
                       <label for="judul" class="col-sm-4 col-form-label">{{ __('Judul') }}</label>
                       <div class="col-sm-8">
-                          <input type="text" class="form-control" id="judul" name="judul">
+                          <input type="text" class="form-control" id="judul" name="judul" required>
                       </div>
                     </div>
                     <br>
                     <div class="form-group row">
                       <label for="deskripsi" class="col-sm-4 col-form-label">{{ __('Deskripsi') }}</label>
                       <div class="col-sm-8">
-                          <textarea type="text" class="form-control" id="deskripsi" name="deskripsi"></textarea>
+                          <textarea type="text" class="form-control" id="deskripsi" name="deskripsi" required></textarea>
                       </div>
                     </div>
                     <br>
@@ -324,7 +324,7 @@
                       <label for="status" class="col-sm-4 col-form-label">{{ __('Status') }}</label>
                         <div class="col-sm-8">
                             <select class="form-control" style="width: 100%;" id="status"
-                                name="status">
+                                name="status" required>
                                 <option value="" disabled selected>Status</option>
                                 <option value="Not yet">Not yet</option>
                                 <option value="Work In Progress">Work In Progress</option>
