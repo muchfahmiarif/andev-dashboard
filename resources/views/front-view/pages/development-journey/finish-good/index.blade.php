@@ -241,7 +241,7 @@
                   <div class="form-group row">
                     <label for="zat_aktif" class="col-sm-4 col-form-label">{{ __('Nama Zat Aktif') }}</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" id="zat_aktif" name="zat_aktif"  value="{{ old('zat_aktif') }}">
+                        <input type="text" class="form-control" id="zat_aktif" name="zat_aktif"  value="{{ old('zat_aktif') }}" required>
                     </div>
                   </div>
                   <br>
