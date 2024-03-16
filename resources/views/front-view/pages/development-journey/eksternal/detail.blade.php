@@ -50,22 +50,22 @@
                   Tanggal
                 </th>
                 <th>
+                  Nama Dokumen
+                </th>
+                {{-- <th>
                   Judul
                 </th>
                 <th>
                   Deskripsi
-                </th>
+                </th> --}}
                 <th>
                   Status
                 </th>
                 <th>
-                  Nama Dokumen
+                  Download
                 </th>
                 <th>
                   Keterangan
-                </th>
-                <th>
-                  Download
                 </th>
                 <th>
                   Action
@@ -83,15 +83,15 @@
                   @php
                       $data = [
                           'pid' => $d->id_dev_doc,
-                          'pjudul' => $d->judul,
+                          'pnama_document' => $d->nama_document,
+                          // 'pjudul' => $d->judul,
                           'pnama_item' => $d->nama_item,
-                          'pdeskripsi' => $d->deskripsi,
+                          // 'pdeskripsi' => $d->deskripsi,
                           'pzat_aktif' => $d->zat_aktif,
                           'ptime_line' => $d->time_line,
-                          'pnama_document' => $d->nama_document,
                           'pstatus' => $d->status,
-                          'pketerangan' => $d->keterangan,
                           'pfile' => $d->file,
+                          'pketerangan' => $d->keterangan,
                           'created_at' => $d->created_at,
                           'updated_at' => $d->updated_at,
                       ];
@@ -101,29 +101,29 @@
                 <td style="min-width: 100px"class="text-center align-middle ">
                     {{ Carbon\Carbon::parse($data['created_at'])->translatedFormat('j M Y') }}
                 </td>
-                <td style="min-width: 100px"class="align-middle ">
+                <td style="min-width: 50px"class="text-center align-middle ">
+                    {{ $data['pnama_document'] }}
+                </td>
+                {{-- <td style="min-width: 100px"class="align-middle ">
                     {{ $data['pjudul'] }}
                 </td>
                 <td style="min-width: 100px"class="text-center align-middle ">
                   {{ $data['pdeskripsi'] }}
-                </td>
+                </td> --}}
                 <td style="min-width: 100px"class="text-center align-middle ">
                   @if ($data['pstatus'] == 'Work In Progress') 
-                    <a title="Tambah Data" type="button"  class="btn btn-warning btn-sm text-white" > {{ $data['pstatus'] }}</a>
+                    <h5 title="Tambah Data" class="btn btn-warning btn-sm text-white" > {{ $data['pstatus'] }}</h5>
                   @elseif ($data['pstatus'] == 'Not yet') 
-                    <a title="Tambah Data" type="button"  class="btn btn-danger btn-sm text-white" > {{ $data['pstatus'] }}</a>
+                    <h5 title="Tambah Data" class="btn btn-danger btn-sm text-white" > {{ $data['pstatus'] }}</h5>
                   @elseif ($data['pstatus'] == 'Done') 
-                    <a title="Tambah Data" type="button"  class="btn btn-success btn-sm text-white" > {{ $data['pstatus'] }}</a>
+                    <h5 title="Tambah Data" class="btn btn-success btn-sm text-white" > {{ $data['pstatus'] }}</h5>
                   @endif
                 </td>
-                <td style="min-width: 50px"class="text-center align-middle ">
-                    {{ $data['pnama_document'] }}
-                </td>
-                <td style="min-width: 50px"class="text-center align-middle ">
-                  {{ $data['pketerangan'] }}
-              </td>
                 <td style="min-width: 100px"class="text-center align-middle ">
                   <a title="File" class="badge rounded-pill-lg text-white bg-primary" href="{{ asset('storage/' . $data['pfile']) }}" target="_blank"> File</a>
+              </td>
+                <td style="min-width: 50px"class="text-center align-middle ">
+                  {{ $data['pketerangan'] }}
               </td>
                 <td>
                   <a title="Tambah Data" type="button"  class="btn btn-secondary btn-sm text-white" data-bs-toggle="modal"
@@ -156,11 +156,11 @@
                                 </div>
                             </form>
                         </div>
-                                    @else
-                                        <div class="text-center">
-                                            <p>{{ __('No data.') }}</p>
-                                        </div>
-                                    @endif
+                            @else
+                                <div class="text-center">
+                                    <p>{{ __('No data.') }}</p>
+                                </div>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -168,7 +168,7 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 id="modal-title" class="modal-title">{{ __('Tambah Document') }}</h4>
+                            <h4 id="modal-title" class="modal-title">{{ __('Edit Document') }}</h4>
                             <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -181,19 +181,25 @@
                                   <input type="hidden" name="nama_item" id="nama_item" value="{{ $data['pnama_item'] }}">
                                   <input type="hidden" name="zat_aktif" id="zat_aktif" value="{{ $data['pzat_aktif'] }}">
                                   <input type="hidden" name="time_line" id="time_line" value="{{ $data['ptime_line'] }}">
-                                  <div class="form-group row">
+                                  {{-- <div class="form-group row">
                                     <label for="judul" class="col-sm-4 col-form-label">{{ __('Judul') }}</label>
                                     <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="judul" name="judul" value="{{ $data['pjudul'] }}" required>
+                                        <input type="text" class="form-control" id="judul" name="judul" value="{{ $data['pjudul'] }}" >
                                     </div>
                                   </div>
                                   <br>
-                                  <div class="form-group row">
-                                    <label for="deskripsi" class="col-sm-4 col-form-label">{{ __('Deskripsi') }}</label>
-                                    <div class="col-sm-8">
-                                        <textarea type="text" class="form-control" id="deskripsi" name="deskripsi" value="{{ $data['pdeskripsi'] }}" required>{{ $data['pdeskripsi'] }}</textarea>
+                                    <div class="form-group row">
+                                      <label for="deskripsi" class="col-sm-4 col-form-label">{{ __('Deskripsi') }}</label>
+                                      <div class="col-sm-8">
+                                        <textarea type="text" class="form-control" id="deskripsi" name="deskripsi" value="{{ $data['pdeskripsi'] }}" >{{ $data['pdeskripsi'] }}</textarea>
+                                      </div>
+                                    </div> --}}
+                                    <div class="form-group row">
+                                      <label for="nama_document" class="col-sm-4 col-form-label">{{ __('Nama Document') }}<span style="color: red;">*</span></label>
+                                      <div class="col-sm-8">
+                                          <input type="text" class="form-control" id="nama_document" name="nama_document"  value="{{ $data['pnama_document'] }}" required>
+                                      </div>
                                     </div>
-                                  </div>
                                   <br>
                                   <div class="form-group row">
                                     <label for="status" class="col-sm-4 col-form-label">{{ __('Status') }}</label>
@@ -214,22 +220,23 @@
                                     <div class="form-group row">
                                       <label for="keterangan" class="col-sm-4 col-form-label">{{ __('Keterangan') }}</label>
                                       <div class="col-sm-8">
-                                          <textarea type="text" class="form-control" id="keterangan" name="keterangan"  value="{{ $data['pketerangan'] }}" required>{{ $data['pketerangan'] }}</textarea>
+                                          <textarea type="text" class="form-control" id="keterangan" name="keterangan"  value="{{ $data['pketerangan'] }}">{{ $data['pketerangan'] }}</textarea>
                                       </div>
                                     </div>
-                                    <br>
+                                    {{-- <br>
                                     <div class="form-group row">
                                       <label for="nama_document" class="col-sm-4 col-form-label">{{ __('Nama Document') }}</label>
                                       <div class="col-sm-8">
-                                          <input type="text" class="form-control" id="nama_document" name="nama_document"  value="{{ $data['pnama_document'] }}" required>
+                                          <input type="text" class="form-control" id="nama_document" name="nama_document"  value="{{ $data['pnama_document'] }}" >
                                       </div>
-                                    </div>
+                                    </div> --}}
                                     <br>
                                     <div class="form-group row">
                                       <label for="file" class="col-sm-4 col-form-label">{{ __('File') }}</label>
                                       <div class="col-sm-8">
                                         @if($data['pfile'])
                                         <p>File yang sudah diunggah:  <a href="{{ asset('storage/' . $data['pfile']) }}" target="_blank">Lihat File</a>
+                                          <input type="file" >
                                         @endif
                                         <input type="file" class="form-control" id="file" name="file">
                                         @error('file')
@@ -238,8 +245,9 @@
                                       </div>
                                   </div>
                                   <br>
-                                  <div class="d-flex justify-content-end">
-                                      <button id="button-save" type="submit" class="btn btn-primary text-white">Tambahkan</button>
+                                  <div class="d-flex justify-content-end gap-3">
+                                    <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn btn-danger text-white close">Batal</button>
+                                      <button id="button-save" type="submit" class="btn btn-primary text-white">Simpan perubahan</button>
                                   </div>
                             </form>
                         </div>
@@ -289,7 +297,7 @@
                     </div>
                 </div>
               </div>
-             
+
 <div class="modal fade"  id="create_document">
   <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -307,17 +315,23 @@
                     <input type="hidden" name="nama_item" id="nama_item" value="{{ Request::get('nama_item') }}">
                     <input type="hidden" name="zat_aktif" id="zat_aktif" value="{{ Request::get('category') }}">
                     <input type="hidden" name="time_line" id="time_line" value="{{ Request::get('time_line') }}">
-                    <div class="form-group row">
+                    {{-- <div class="form-group row">
                       <label for="judul" class="col-sm-4 col-form-label">{{ __('Judul') }}</label>
                       <div class="col-sm-8">
-                          <input type="text" class="form-control" id="judul" name="judul" required>
+                          <input type="text" class="form-control" id="judul" name="judul" >
                       </div>
                     </div>
                     <br>
                     <div class="form-group row">
                       <label for="deskripsi" class="col-sm-4 col-form-label">{{ __('Deskripsi') }}</label>
                       <div class="col-sm-8">
-                          <textarea type="text" class="form-control" id="deskripsi" name="deskripsi" required></textarea>
+                          <textarea type="text" class="form-control" id="deskripsi" name="deskripsi" ></textarea>
+                      </div>
+                    </div> --}}
+                    <div class="form-group row">
+                      <label for="nama_document" class="col-sm-4 col-form-label">{{ __('Nama Document') }}</label>
+                      <div class="col-sm-8">
+                          <input type="text" class="form-control" id="nama_document" name="nama_document" required>
                       </div>
                     </div>
                     <br>
@@ -344,13 +358,13 @@
                         </div>
                       </div>
                       <br>
-                      <div class="form-group row">
+                      {{-- <div class="form-group row">
                         <label for="nama_document" class="col-sm-4 col-form-label">{{ __('Nama Document') }}</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" id="nama_document" name="nama_document" required>
+                            <input type="text" class="form-control" id="nama_document" name="nama_document" >
                         </div>
                       </div>
-                      <br>
+                      <br> --}}
                       <div class="form-group row">
                         <label for="file" class="col-sm-4 col-form-label">{{ __('File') }}</label>
                         <div class="col-sm-8">
