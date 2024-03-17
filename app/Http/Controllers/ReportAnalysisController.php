@@ -428,13 +428,13 @@ class ReportAnalysisController extends Controller
         } else {
             $data['file_upload'] = $scar->file_upload; // Gunakan nama file yang sudah ada jika tidak ada file baru
         }
-         
-            $scar->update($data);
-            if ($scar) {
-                return redirect()->back()->with('success', 'Data berhasil Dibuat !');
-            } else {
-                return redirect()->back()->with('error', 'Gagal Dibuat !');
-            }
+
+        $scar->update($data);
+        if ($scar) {
+            return redirect()->back()->with('success', 'Data berhasil Diperbarui !');
+        } else {
+            return redirect()->back()->with('error', 'Gagal Diperbarui !');
+        }
         }
     }
 

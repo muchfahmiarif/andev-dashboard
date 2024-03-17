@@ -418,10 +418,13 @@ public function mikro_timeline(Request $req)
             ];
             if ($request->hasFile('file')) {
                 $fileRefGambar = $request->file('file');
-                $filenameRefGambar = $fileRefGambar->getClientOriginalName();
+                $filenameRefGambar = uniqid() . '_' . time() . '_' . $scar->jenis_journey . '_' . $fileRefGambar->getClientOriginalName();
                 $fileRefGambar->storeAs('dokumen', $filenameRefGambar, 'public'); 
                 $data['file'] = 'dokumen/' . $filenameRefGambar;
+            } else {
+                $data['file'] = $scar->file; // Gunakan nama file yang sudah ada jika tidak ada file baru
             }
+
             $scar->update($data);
             } else {
                 $scar = Develop_Detail::create([
@@ -440,17 +443,19 @@ public function mikro_timeline(Request $req)
                 ]);
                 if ($request->hasFile('file')) {
                     $fileRefGambar = $request->file('file');
-                    $filenameRefGambar = $fileRefGambar->getClientOriginalName();
+                    $filenameRefGambar = uniqid() . '_' . time() . '_' . $scar->jenis_journey . '_' .  $fileRefGambar->getClientOriginalName();
                     $fileRefGambar->storeAs('dokumen', $filenameRefGambar, 'public'); 
                     $data['file'] = 'dokumen/' . $filenameRefGambar;
+                } else {
+                    $data['file_'] = $scar->file; // Gunakan nama file yang sudah ada jika tidak ada file baru
                 }
                 $scar->update($data);
             }
-        if ($scar) {
-            return redirect()->back()->with('success', 'Data berhasil Ditambahkan !');
-        } else {
-            return redirect()->back()->with('error', 'Data Gagal Ditambahkan !');
-        }
+            if ($scar) {
+                return redirect()->back()->with('success', 'Data berhasil Ditambahkan !');
+            } else {
+                return redirect()->back()->with('error', 'Data Gagal Ditambahkan !');
+            }
     }
     
     
