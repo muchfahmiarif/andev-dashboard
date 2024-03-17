@@ -44,7 +44,7 @@
                 <div>
                     <a onclick="window.location.href='{{ route('ShowFormLKA', ['jenis_lka' => 'Raw Material']) }}'"
                         class="btn btn-primary text-white" style="width: 200px; text-align: center; margin-right: 10px;">
-                        <i class="fas fa-plus"></i> Create Report
+                        <i class="fas fa-plus"></i> Create LKA
                     </a>
                     <a title="Tambah Scar" type="button" class="btn btn-primary text-white"
                         style="width: 200px; text-align: center; margin-right: 10px;" data-bs-toggle="modal"

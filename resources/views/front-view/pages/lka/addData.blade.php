@@ -15,7 +15,7 @@
     <div class="container" style="border-radius: 15px;">
         <div class="card ">
             <div class="card-header">
-                <h4>Create Report</h4>
+                <h4>Create LKA</h4>
             </div>
 
             <div class="card-body">
@@ -25,7 +25,7 @@
                     <input type="hidden" id="id_lka" name="id_lka">
                     <input type="hidden" id="user_id" name="user_id">
                     <div class="form-group row">
-                        <label for="contact_person" class="col-sm-4 col-form-label">{{ __('Jenis Report') }}</label>
+                        <label for="contact_person" class="col-sm-4 col-form-label">{{ __('Jenis LKA') }}</label>
                         <div class="col-sm-8">
                             <select class="form-control select2" style="width: 100%;" id="jenis_lka" name="jenis_lka">
                                 <option value="" disabled selected>Option Report</option>

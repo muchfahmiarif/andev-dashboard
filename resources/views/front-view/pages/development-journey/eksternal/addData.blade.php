@@ -15,7 +15,7 @@
     <div class="container" style="border-radius: 15px;">
         <div class="card ">
             <div class="card-header">
-                <h4>Create LKA</h4>
+                <h4>Create Report</h4>
             </div>
 
             <div class="card-body">
