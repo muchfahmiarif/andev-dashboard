@@ -419,13 +419,14 @@ class ReportAnalysisController extends Controller
                 'tgl_selesai_report' => $request->tgl_selesai_report,
                 'status_lt' => $request->status_lt,
             ];
-
             
         if ($request->hasFile('file_upload')) {
             $fileRefGambar = $request->file('file_upload');
-            $filenameRefGambar = uniqid() . '_' . time() . '.' . $fileRefGambar->getClientOriginalExtension();
+            $filenameRefGambar = uniqid() . '_' . time() . '_' . $scar->jenis_report . '_' .  $fileRefGambar->getClientOriginalName();
             $fileRefGambar->storeAs('dokumen', $filenameRefGambar, 'public'); 
             $data['file_upload'] = 'dokumen/' . $filenameRefGambar;
+        } else {
+            $data['file_upload'] = $scar->file_upload; // Gunakan nama file yang sudah ada jika tidak ada file baru
         }
          
             $scar->update($data);

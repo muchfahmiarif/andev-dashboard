@@ -2,7 +2,8 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "format": "./node_modules/.bin/prettier --write resources/**/*.blade.php"
     },
     "devDependencies": {
         "@popperjs/core": "^2.11.6",

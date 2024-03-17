@@ -56,22 +56,22 @@
                                         No
                                     </th>
                                     <th>
-                                        Tanggal
-                                    </th>
-                                    <th>
                                         Nama Dokumen
                                     </th>
                                     {{-- <th>
-                  Judul
-                </th>
-                <th>
-                  Deskripsi
-                </th> --}}
+                                        Judul
+                                    </th>
+                                    <th>
+                                        Deskripsi
+                                    </th> --}}
                                     <th>
                                         Status
                                     </th>
                                     <th>
                                         Download
+                                    </th>
+                                    <th>
+                                        Tanggal
                                     </th>
                                     <th>
                                         Keterangan
@@ -107,34 +107,34 @@
                                         @endphp
                                         <tr>
                                             <td class="text-center align-middle">{{ $startNumber++ }}</td>
-                                            <td style="min-width: 100px"class="text-center align-middle ">
-                                                {{ Carbon\Carbon::parse($data['created_at'])->translatedFormat('j M Y') }}
-                                            </td>
                                             <td style="min-width: 50px"class="text-center align-middle ">
                                                 {{ $data['pnama_document'] }}
                                             </td>
                                             {{-- <td style="min-width: 100px"class="align-middle ">
-                    {{ $data['pjudul'] }}
-                </td>
-                <td style="min-width: 100px"class="text-center align-middle ">
-                  {{ $data['pdeskripsi'] }}
-                </td> --}}
+                                                {{ $data['pjudul'] }}
+                                            </td>
+                                            <td style="min-width: 100px"class="text-center align-middle ">
+                                                {{ $data['pdeskripsi'] }}
+                                            </td> --}}
                                             <td style="min-width: 100px"class="text-center align-middle ">
                                                 @if ($data['pstatus'] == 'Work In Progress')
-                                                    <h5 title="Tambah Data" class="btn btn-warning btn-sm text-white">
-                                                        {{ $data['pstatus'] }}</h5>
+                                                    <h4 class="badge text-bg-warning  text-white">
+                                                        {{ $data['pstatus'] }}</h4>
                                                 @elseif ($data['pstatus'] == 'Not yet')
-                                                    <h5 title="Tambah Data" class="btn btn-danger btn-sm text-white">
-                                                        {{ $data['pstatus'] }}</h5>
+                                                    <h4 class="badge text-bg-danger  text-white">
+                                                        {{ $data['pstatus'] }}</h4>
                                                 @elseif ($data['pstatus'] == 'Done')
-                                                    <h5 title="Tambah Data" class="btn btn-success btn-sm text-white">
-                                                        {{ $data['pstatus'] }}</h5>
+                                                    <h4 class="badge text-bg-success  text-white">
+                                                        {{ $data['pstatus'] }}</h4>
                                                 @endif
                                             </td>
                                             <td style="min-width: 100px"class="text-center align-middle ">
                                                 <a title="File" class="badge rounded-pill-lg text-white bg-primary"
                                                     href="{{ asset('storage/' . $data['pfile']) }}" target="_blank">
                                                     File</a>
+                                            </td>
+                                            <td style="min-width: 100px"class="text-center align-middle ">
+                                                {{ Carbon\Carbon::parse($data['created_at'])->translatedFormat('j M Y') }}
                                             </td>
                                             <td style="min-width: 50px"class="text-center align-middle ">
                                                 {{ $data['pketerangan'] }}
@@ -211,16 +211,17 @@
                                 {{-- <div class="form-group row">
                                     <label for="judul" class="col-sm-4 col-form-label">{{ __('Judul') }}</label>
                                     <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="judul" name="judul" value="{{ $data['pjudul'] }}" >
+                                        <input type="text" class="form-control" id="judul" name="judul"
+                                            value="{{ $data['pjudul'] }}">
                                     </div>
-                                  </div>
-                                  <br>
-                                    <div class="form-group row">
-                                      <label for="deskripsi" class="col-sm-4 col-form-label">{{ __('Deskripsi') }}</label>
-                                      <div class="col-sm-8">
-                                        <textarea type="text" class="form-control" id="deskripsi" name="deskripsi" value="{{ $data['pdeskripsi'] }}" >{{ $data['pdeskripsi'] }}</textarea>
-                                      </div>
-                                    </div> --}}
+                                </div>
+                                <br>
+                                <div class="form-group row">
+                                    <label for="deskripsi" class="col-sm-4 col-form-label">{{ __('Deskripsi') }}</label>
+                                    <div class="col-sm-8">
+                                        <textarea type="text" class="form-control" id="deskripsi" name="deskripsi" value="{{ $data['pdeskripsi'] }}">{{ $data['pdeskripsi'] }}</textarea>
+                                    </div>
+                                </div> --}}
                                 <div class="form-group row">
                                     <label for="nama_document"
                                         class="col-sm-4 col-form-label">{{ __('Nama Document') }}<span
@@ -237,8 +238,8 @@
                                         <select class="form-control" style="width: 100%;" id="status" name="status"
                                             required>
                                             <option value="" disabled selected>Status</option>
-                                            <option value="Not yet"
-                                                {{ $data['pstatus'] == 'Not yet' ? 'selected' : '' }}>Not yet</option>
+                                            <option value="Not yet" {{ $data['pstatus'] == 'Not yet' ? 'selected' : '' }}>
+                                                Not yet</option>
                                             <option value="Work In Progress"
                                                 {{ $data['pstatus'] == 'Work In Progress' ? 'selected' : '' }}>Work In
                                                 Progress</option>
@@ -357,18 +358,18 @@
                         <input type="hidden" name="zat_aktif" id="zat_aktif" value="{{ Request::get('category') }}">
                         <input type="hidden" name="time_line" id="time_line" value="{{ Request::get('time_line') }}">
                         {{-- <div class="form-group row">
-                      <label for="judul" class="col-sm-4 col-form-label">{{ __('Judul') }}</label>
-                      <div class="col-sm-8">
-                          <input type="text" class="form-control" id="judul" name="judul" >
-                      </div>
-                    </div>
-                    <br>
-                    <div class="form-group row">
-                      <label for="deskripsi" class="col-sm-4 col-form-label">{{ __('Deskripsi') }}</label>
-                      <div class="col-sm-8">
-                          <textarea type="text" class="form-control" id="deskripsi" name="deskripsi" ></textarea>
-                      </div>
-                    </div> --}}
+                            <label for="judul" class="col-sm-4 col-form-label">{{ __('Judul') }}</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="judul" name="judul">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group row">
+                            <label for="deskripsi" class="col-sm-4 col-form-label">{{ __('Deskripsi') }}</label>
+                            <div class="col-sm-8">
+                                <textarea type="text" class="form-control" id="deskripsi" name="deskripsi"></textarea>
+                            </div>
+                        </div> --}}
                         <div class="form-group row">
                             <label for="nama_document" class="col-sm-4 col-form-label">{{ __('Nama Document') }}</label>
                             <div class="col-sm-8">
@@ -401,12 +402,12 @@
                         </div>
                         <br>
                         {{-- <div class="form-group row">
-                        <label for="nama_document" class="col-sm-4 col-form-label">{{ __('Nama Document') }}</label>
-                        <div class="col-sm-8">
-                            <input type="text" class="form-control" id="nama_document" name="nama_document" >
+                            <label for="nama_document" class="col-sm-4 col-form-label">{{ __('Nama Document') }}</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="nama_document" name="nama_document">
+                            </div>
                         </div>
-                      </div>
-                      <br> --}}
+                        <br> --}}
                         <div class="form-group row">
                             <label for="file" class="col-sm-4 col-form-label">{{ __('File') }}</label>
                             <div class="col-sm-8">
