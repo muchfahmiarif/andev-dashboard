@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="/plugin/toastr/toastr.min.css">
     <link rel="stylesheet" href="/plugin/select2/css/select2.min.css">
     <link rel="stylesheet" href="/plugin/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 @endsection
 @section('content')
     <div class="content-header">
@@ -20,7 +21,7 @@
 
             <div class="card-body">
                 <form role="form" id="save" action="{{ route('addReport') }}" method="post"
-                    enctype="multipart/form-data">
+                    enctype="multipart/form-data" autocomplete="off">
                     @csrf
                     <input type="hidden" id="id_report" name="id_report">
                     <input type="hidden" id="user_id" name="user_id" value="1">
@@ -156,7 +157,7 @@
                         <label for="storage" class="col-sm-1 col-form-label">Storage</label>
                         <div class="col-sm-3">
                             <select class="form-control multiple" name="storage[]" multiple="multiple">
-                                <option value="" disabled selected>Option Storage</option>
+                                <option value="" disabled >Option Storage</option>
                                 <option value="LE">LE</option>
                                 <option value="SK">SK</option>
                                 <option value="SO">SO</option>
@@ -169,32 +170,32 @@
                     <div class="form-group row">
                         <label for="tgl_masuk" class="col-sm-4 col-form-label">{{ __('Tgl Masuk') }}</label>
                         <div class="col-sm-8">
-                            <input type="date" class="form-control" id="tgl_masuk" name="tgl_masuk"
-                                value="{{ old('tgl_masuk') }}">
+                            <input type="text"  class="form-control" id="tgl_masuk" placeholder="Enter Entry Date" name="tgl_masuk"
+                            value="{{ old('tgl_masuk') }}">
                         </div>
                     </div>
                     <br>
                     <div class="form-group row">
                         <label for="tgl_analisa" class="col-sm-4 col-form-label">{{ __('Tgl Analisa') }}</label>
                         <div class="col-sm-8">
-                            <input type="date" class="form-control" id="tgl_analisa" name="tgl_analisa"
-                                value="{{ old('tgl_analisa') }}">
+                            <input type="text" class="form-control"  id="tgl_analisa"  placeholder="Enter Analysis Date" name="tgl_analisa"
+                            value="{{ old('tgl_analisa') }}">
                         </div>
                     </div>
                     <br>
                     <div class="form-group row">
                         <label for="tgl_est" class="col-sm-4 col-form-label">{{ __('Tgl Estimasi Selesai') }}</label>
                         <div class="col-sm-8">
-                            <input type="date" class="form-control" id="tgl_est" name="tgl_est"
-                                value="{{ old('tgl_est') }}">
+                            <input type="text"  class="form-control"  id="tgl_est" placeholder="Enter Estimate Date" name="tgl_est"
+                            value="{{ old('tgl_est') }}">
                         </div>
                     </div>
                     <br>
                     <div class="form-group row">
                         <label for="tgl_selesai" class="col-sm-4 col-form-label">{{ __('Tgl Selesai Analisa') }}</label>
                         <div class="col-sm-8">
-                            <input type="date" class="form-control" id="tgl_selesai" name="tgl_selesai"
-                                value="{{ old('tgl_selesai') }}">
+                            <input type="text"  class="form-control" id="tgl_selesai"  placeholder="Enter Analysis Finished Date" name="tgl_selesai"
+                            value="{{ old('tgl_selesai') }}">
                         </div>
                     </div>
                     <br>
@@ -202,8 +203,8 @@
                         <label for="tgl_selesai_report"
                             class="col-sm-4 col-form-label">{{ __('Tgl Selesai Report') }}</label>
                         <div class="col-sm-8">
-                            <input type="date" class="form-control" id="tgl_selesai_report" name="tgl_selesai_report"
-                                value="{{ old('tgl_selesai_report') }}">
+                            <input type="text"  class="form-control"id="tgl_selesai_report"  placeholder="Enter Finished The Report Date" name="tgl_selesai_report"
+                            value="{{ old('tgl_selesai_report') }}">
                         </div>
                     </div>
                     <br>
@@ -284,6 +285,7 @@
 @section('custom-js')
     <script src="/plugin/toastr/toastr.min.js"></script>
     <script src="/plugin/select2/js/select2.full.min.js"></script>
+    
     <script>
         $(function() {
             $('.select2').select2({
@@ -295,6 +297,13 @@
         $('#sort').on('change', function() {
             $("#sorting").submit();
         });
+        $( function() {
+    $( "#tgl_masuk" ).datepicker();
+    $( "#tgl_analisa" ).datepicker();
+    $( "#tgl_est" ).datepicker();
+    $( "#tgl_selesai" ).datepicker();
+    $( "#tgl_selesai_report" ).datepicker();
+  } );
     </script>
     <script>
         @if (Session::has('success'))
