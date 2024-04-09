@@ -11,8 +11,8 @@
 @endsection
 @section('content')
     <nav class="page-breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">
+        <ol class="breadcrumb d-flex justify-content-between">
+            <li class="breadcrumb-item " id="first">
                 <p href="{{ url('#') }}">
                     <a style="color:#000000" href="/development-journey/eksternal">Eksternal</a> /
                     <a style="color:#000000"
@@ -24,12 +24,17 @@
                     <b>{{ Request::get('time_line') }}</b>
                 </p>
             </li>
+            <div>
+                <button class="btn btn-primary text-light" id="start" type="button">
+                    Start intro
+                </button>
+            </div>
         </ol>
     </nav>
     <div class="row">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-body">
+                <div class="card-body" id="quote">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <h6 class="card-title mb-3">Description</h6>
                         <a title="Tambah Data" type="button" class="btn btn-secondary btn-sm text-white"
@@ -42,7 +47,7 @@
                     </div>
                 </div>
 
-                <div class="card-body">
+                <div class="card-body" id="on-right">
                     <a title="Tambah Data" type="button" class="btn btn-secondary btn-sm text-white" data-bs-toggle="modal"
                         data-bs-target="#create_document" style="width: 300px; text-align: center; margin-right: 10px;"><i
                             class="fas fa-plus"></i> Tambah Document</a>
@@ -428,6 +433,7 @@
 @endsection
 @section('custom-js')
     <script src="/plugin/select2/js/select2.full.min.js"></script>
+    <script src="/js/ownintro.min.js"></script>
     <script src="/plugin/toastr/toastr.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/trix@2.0.8/dist/trix.umd.min.js"></script>
     <script>
@@ -478,5 +484,33 @@
             }
             toastr.warning("{{ session('warning') }}");
         @endif
+    </script>
+    <script>
+        const STEPS = [{
+                content: "This is the first step, click next to continue",
+                element: document.getElementById("first"),
+            },
+            {
+                content: "Size will be adjusted automatically",
+                element: document.getElementById("quote"),
+            },
+            {
+                content: "You can change the position of the modal",
+                element: document.getElementById("on-right"),
+                position: "top",
+            },
+        ]
+
+        const buttonStart = document.getElementById("start")
+
+        const ownIntro = new Ownintro(STEPS, {
+            buttonBackText: "Back",
+            buttonNextText: "Next",
+            buttonFinishText: "Finish",
+        })
+
+        buttonStart.addEventListener("click", () => {
+            ownIntro.start()
+        })
     </script>
 @endsection
