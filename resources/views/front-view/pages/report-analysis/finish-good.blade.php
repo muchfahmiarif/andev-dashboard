@@ -46,10 +46,15 @@
                         class="btn btn-primary text-white" style="width: 200px; text-align: center; margin-right: 10px;">
                         <i class="fas fa-plus"></i> Create Report
                     </a>
-                    <a title="Tambah Scar" type="button" class="btn btn-primary text-white"
+                    <a title="Export" type="button" class="btn btn-primary text-white"
                         style="width: 200px; text-align: center; margin-right: 10px;" data-bs-toggle="modal"
                         data-bs-target="#export">
                         <i class='bx bxs-file-export'></i> Export
+                    </a>
+                    <a title="Import" type="button" class="btn btn-primary text-white"
+                            style="width: 200px; text-align: center; margin-right: 10px;" data-bs-toggle="modal"
+                            data-bs-target="#import">
+                            <i class='bx bxs-file-export'></i> Import
                     </a>
                 </div>
                 <div class="form-group row col-sm-2" style="margin-right: 10px;">
@@ -686,6 +691,31 @@
     </div>
     <div style="margin-left:10px; margin-top:10px;">
         {{ $products->appends(request()->except('page'))->links('pagination::bootstrap-4') }}
+    </div>
+    <div class="modal fade" id="import" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Import Data</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="{{ route('import') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>PILIH FILE</label>
+                            <input type="file" name="file" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary text-white" data-dismiss="modal">TUTUP</button>
+                        <button type="submit" class="btn btn-primary text-white">Import</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
     <div class="modal fade" id="export">
         <div class="modal-dialog modal-lg">

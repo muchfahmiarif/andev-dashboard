@@ -41,6 +41,10 @@ Route::get('/hello', function () {
     return view('welcome');
 }); 
 
+Route::get('/chart/document', [HomeController::class, 'echart']);
+Route::get('/chart/document1', [HomeController::class, 'echart1']);
+Route::get('/chart/document2', [HomeController::class, 'echart2']);
+
 Route::get('fullcalender', [FullCalendarController::class, 'index']);
 Route::post('fullcalenderAjax', [FullCalendarController::class, 'ajax']);
 
@@ -106,6 +110,7 @@ Route::group(['prefix' => 'report-analysis'], function () {
     Route::post('/addReport',  [ReportAnalysisController::class, 'addReport'])->name('addReport');
     Route::post('/update_report', [ReportAnalysisController::class, 'update_report'])->name('update_report');
     Route::delete('/delete_report',  [ReportAnalysisController::class, 'delete_report'])->name('delete_report');
+    Route::post('/import',  [ReportAnalysisController::class, 'import'])->name('import');
 });
 
 Route::group(['prefix' => 'lka'], function () {

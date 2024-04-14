@@ -8,6 +8,8 @@ use App\Models\ReportAnalysis;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Imports\ReportAnalysisImport;
 
 class ReportAnalysisController extends Controller
 {
@@ -275,10 +277,6 @@ class ReportAnalysisController extends Controller
         return view("front-view.pages.report-analysis.stabilita", compact("products"));
     }
 
-   
-    
-
-
     protected function generateRunningNumber($jenis_report) {
         $currentYear = Carbon::now()->format('Y');
         $lastrunning = ReportAnalysis::whereYear('created_at', $currentYear)
@@ -451,6 +449,21 @@ class ReportAnalysisController extends Controller
             return redirect()->back()->with('error', 'Gagal Menghapus !');
         }
 
+    }
+
+    public function import(Request $request)
+    {
+        $request->validate([
+            'file' => 'required|file|mimes:xlsx,csv,txt'
+        ]);
+
+        try {
+            Excel::import(new ReportAnalysisImport, $request->file('file'));
+
+            return redirect()->back()->with('success', 'Data has been imported successfully.');
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', 'Error occurred while importing data: ' . $e->getMessage());
+        }
     }
     
 }
